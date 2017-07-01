@@ -1,0 +1,3 @@
+[submodule "zeepin-bootstrap"]
+	path = zeepin-bootstrap
+	url = git@github.com:mutanio/zeepin-bootstrap.git
