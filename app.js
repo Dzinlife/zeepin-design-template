@@ -17,7 +17,7 @@ app.use(function(req, res, next){
 })
 
 app.use('/static', express.static(path.join(__dirname, 'src')))
-app.use('/static', express.static(path.join(__dirname, '../bootstrap-3.3.7/dist')))
+app.use('/assets', express.static(path.join(__dirname, 'zeepin-bootstrap/dist')))
 
 app.get('/', (req, res) => {
   res.render('index')
