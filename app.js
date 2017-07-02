@@ -6,7 +6,7 @@ var server = require('http').createServer(app)
 
 var root = path.join(__dirname, './src')
 
-// app.locals.pretty = false
+app.locals.pretty = true
 // app.engine('.hbs', expressHandlebars({extname: '.hbs'}))
 // app.set('view engine', '.hbs')
 app.set('view engine', 'pug')
