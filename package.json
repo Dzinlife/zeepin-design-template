@@ -10,6 +10,11 @@
     "bootstrap": "^3.3.7",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-watch": "^4.3.11",
     "handlebars": "^4.0.10",
     "pug": "^2.0.0-rc.2"
   }

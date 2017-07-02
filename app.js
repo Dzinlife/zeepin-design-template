@@ -7,8 +7,9 @@ var server = require('http').createServer(app)
 var root = path.join(__dirname, './src')
 
 // app.locals.pretty = false
-app.engine('.hbs', expressHandlebars({extname: '.hbs'}))
-app.set('view engine', '.hbs')
+// app.engine('.hbs', expressHandlebars({extname: '.hbs'}))
+// app.set('view engine', '.hbs')
+app.set('view engine', 'pug')
 app.set('views', root + '/views')
 
 app.use(function(req, res, next){
@@ -16,7 +17,8 @@ app.use(function(req, res, next){
   next()
 })
 
-app.use('/static', express.static(path.join(__dirname, 'src')))
+app.use('/static', express.static(path.join(__dirname, 'dist')))
+app.use('/static/imgs', express.static(path.join(__dirname, 'src/imgs')))
 app.use('/assets', express.static(path.join(__dirname, 'zeepin-bootstrap/dist')))
 
 app.get('/', (req, res) => {
