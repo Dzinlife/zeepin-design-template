@@ -1,0 +1,180 @@
+@import 'variables.styl'
+.view.latest-trade
+
+  .key-vision-latest-trade
+    background #386DFF no-repeat
+    height 347px
+    background-size auto 140%
+    background-position 36% 50%
+    background-image url("/static/imgs/world-map-bg.png")
+    
+    .width-limit
+      position relative
+      height 100%
+
+    h1
+      font-size 40px
+      color brand-primary
+      font-weight bold
+      padding-top 88px
+      padding-bottom 13px
+      margin 0
+    
+    .kv-description
+      color white
+      font-size 16px
+      font-weight 300
+      width 50%
+
+    button.register
+      letter-spacing 2px
+      padding-left 28px
+      padding-right 28px
+      margin-top 30px
+    
+  .panel.kv-data
+    width 384px
+    position absolute
+    right 24px
+    bottom -96px
+    overflow hidden
+    box-shadow 0 3px 7px rgba(gray, 0.3)
+    
+    .kv-data-label
+      .cn
+        color gray
+        font-size 16px
+        font-weight 300
+      .en
+        color gray-lighter
+        font-size 10px
+      
+    .panel-body
+      padding 0 48px
+    
+    .kv-data-main
+      height 195px
+              
+    .kv-data-sub
+      margin 0 -48px
+      
+    .kv-data-sub-single
+      height 50px
+      background #ECF5FF
+      padding 0 48px
+      display flex
+      align-items center
+      
+      & + .kv-data-sub-single
+        border-top 1px solid gray-lightest
+      
+      .kv-data-sub-number
+        font-size 24px
+        color brand-primary
+        margin-left auto
+        width 160px
+
+    .kv-data-footer
+      background #E7EFF7
+      height 44px
+      margin 0 -48px
+      padding 0 48px
+      padding-top 15px
+      color gray-light
+      font-size 12px
+      
+    .kv-data-main-number
+      font-size 50px
+      padding-top 38px
+      color brand-primary
+    
+
+    @keyframes blocks-animation
+      0%
+        opacity 0
+      40%
+        opacity 0
+      50%
+        opacity 1
+      60%
+        opacity 0
+      100%
+        opacity 0
+      
+    .block-animate
+      display flex
+      justify-content space-between
+      width 170px
+      margin-top 10px
+      .block-single
+        background url("/static/imgs/kv-block-icon.svg") no-repeat
+        height 23px
+        width 20px
+        position relative
+        &:after
+          content ""
+          display block
+          position absolute
+          left 0
+          top 0
+          width 100%
+          height 100%
+          background url("/static/imgs/kv-block-icon-active.svg") no-repeat
+          animation blocks-animation 4s linear infinite alternate
+          opacity 0
+        for n in 1 2 3 4 5
+          &:nth-child({n}):after
+            animation-delay n * 0.8s
+          
+  h1.trade
+    font-size 24px
+    margin-top 56px
+    margin-bottom 35px
+    color gray
+    font-weight normal
+    display flex
+    align-items center
+    
+    .trade-icon
+      display inline-block
+      width 24px
+      height 24px
+      background url("/static/imgs/latest-trade-icon.svg") no-repeat
+      margin-right 10px
+
+  .panel.trade-list
+    .row.head
+      color gray
+      padding 10px 0
+      margin-bottom 24px
+    .col
+      text-align center
+      overflow hidden
+      text-overflow ellipsis
+    
+    .content
+      .row
+        height 44px
+        display flex
+        align-items center
+        border-radius 22px
+        margin 18px 0
+        .col:first-child
+          height 100%
+          background-position center
+          background-repeat no-repeat
+        &.purple
+          background #E6E8F8
+          color #7F8BDC
+          .col:first-child
+            background-image url("/static/imgs/block-icon-purple.svg")
+        &.green
+          background #E6F6ED
+          color #78D0A3
+          .col:first-child
+            background-image url("/static/imgs/block-icon-green.svg")
+        &.red
+          background #FCE8E8
+          color #F08988
+          .col:first-child
+            background-image url("/static/imgs/block-icon-red.svg")

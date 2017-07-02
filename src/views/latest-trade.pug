@@ -1,4 +1,87 @@
 extends ./layouts/main.pug
 
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/latest-trade.css')
+
 block header
   include ./components/header.pug
+
+block content
+  .view.latest-trade
+    .key-vision-latest-trade
+      .width-limit
+        h1 Blockchain Protect Your Idea
+        .kv-description
+          | OmiseGO is a public Ethereum-based financial technology for use in mainstream digital wallets, that enables real-time, peer-to-peer value
+        button.btn.btn-primary.register 立即注册
+        .panel.panel-default.kv-data
+          .panel-body
+            .kv-data-main
+              .kv-data-main-number 3,523,048
+              .kv-data-label
+                .cn 区块高度
+                .en Block
+              .block-animate
+                .block-single
+                .block-single
+                .block-single
+                .block-single
+                .block-single
+            .kv-data-sub
+              .kv-data-sub-single
+                .kv-data-label
+                  .cn 节点
+                  .en Block
+                .kv-data-sub-number 48
+              .kv-data-sub-single
+                .kv-data-label
+                  .cn 交易数
+                  .en Deal
+                .kv-data-sub-number 13,763
+            .kv-data-footer 11:53:43 GMT+0800 (CST).
+
+    .width-limit
+      h1.trade
+        .trade-icon
+        | 最新交易
+      .panel.panel-default.trade-list
+        .panel-body
+          .container-fluid
+            .row.head
+              .col.col-xs-1 
+              .col.col-xs-4 交易ID
+              .col.col-xs-3 交易时间
+              .col.col-xs-2 交易数
+              .col.col-xs-2 高度
+            .content
+              .row.purple
+                .col.col-xs-1
+                .col.col-xs-4 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0
+                .col.col-xs-3 2017-06-21 12:31:45
+                .col.col-xs-2 类型：版权通
+                .col.col-xs-2 已版权保护
+              .row.green
+                .col.col-xs-1
+                .col.col-xs-4 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0
+                .col.col-xs-3 2017-06-21 12:31:45
+                .col.col-xs-2 类型：版权通
+                .col.col-xs-2 已版权保护
+              .row.red
+                .col.col-xs-1
+                .col.col-xs-4 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0
+                .col.col-xs-3 2017-06-21 12:31:45
+                .col.col-xs-2 类型：版权通
+                .col.col-xs-2 已版权保护
+              .row.purple
+                .col.col-xs-1
+                .col.col-xs-4 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0
+                .col.col-xs-3 2017-06-21 12:31:45
+                .col.col-xs-2 类型：版权通
+                .col.col-xs-2 已版权保护
+              .row.green
+                .col.col-xs-1
+                .col.col-xs-4 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0
+                .col.col-xs-3 2017-06-21 12:31:45
+                .col.col-xs-2 类型：版权通
+                .col.col-xs-2 已版权保护
+              

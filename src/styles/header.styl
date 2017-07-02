@@ -1,3 +1,5 @@
+@import 'variables.styl'
+
 nav.navbar.navbar-default
   font-size 16px
   .navbar-brand
@@ -11,8 +13,20 @@ nav.navbar.navbar-default
       justify-content center
       flex 1
       li
-        padding-left 8px
-        padding-right 8px
+        margin-left 22px
+        margin-right 22px
+        a
+          padding-left 6px
+          padding-right 6px
+        &.active
+          position relative
+          &:after
+            content ""
+            position absolute
+            height 3px
+            width 100%
+            bottom 26px
+            background brand-primary
       li.market
         a
           display flex
