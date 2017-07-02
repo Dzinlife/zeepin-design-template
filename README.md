@@ -1,6 +1,6 @@
 项目含有 submodules，clone 记得加 --recursive 参数
 
-`git clone git@github.com:jjz/pod-project.git --recursive`
+`git clone git@github.com:mutanio/zeepin-design-template.git --recursive`
 
 如果已经 clone 未加 --recursive，要手动获取 submodules
 
