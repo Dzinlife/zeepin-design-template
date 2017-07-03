@@ -18,12 +18,19 @@ function buildStyle(path){
   
 
 gulp.task('watch-css', () => {
-    gulp.watch(['src/styles/**/*.styl'], e => {
-      buildStyle(e.path)
-    })
+  gulp.watch(['src/styles/**/*.styl'], e => {
+    buildStyle(e.path)
+  })
+})
+
+gulp.task('build-css', () => {
+  buildStyle()
 })
 
 gulp.task('watch', () => {
   gulp.start('watch-css')
 })
 
+gulp.task('build', () => {
+  gulp.start('build-css')
+})

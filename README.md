@@ -16,6 +16,8 @@
 
 ```
 npm install
+npm i gulp -g
+gulp build
 npm start
 ```
 
