@@ -1,3 +1,6 @@
+block locals
+
+doctype html
 html
   head
     //- title 智品 - #{title}
@@ -5,7 +8,7 @@ html
     link(rel='stylesheet', type='text/css', href='/assets/css/bootstrap.css')
     link(rel='stylesheet', type='text/css', href='/static/css/main.css')
     block styles
-  body
+  body(id != pid)
     block header
     block content
     block footer

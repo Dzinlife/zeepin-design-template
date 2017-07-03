@@ -1,0 +1,35 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'search-block'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/search-block.css')
+
+block header
+  include ./components/header.pug
+  +header('search')
+block content
+  .width-limit
+    .block-search-result
+      table.table.table-bordered
+        thead
+          tr
+            th(colspan=2) 区块详情
+        tbody
+          tr
+            td 区块地址
+            td 62WLADBZ76T4FUM93WO3OV3YL7JI3ISLIMVS3CQJM8WCVGSYZW
+          tr
+            td 发布时间
+            td 2017-06-20 18:36:06
+          tr
+            td 区块高度
+            td 183891
+          tr
+            td 上一区块地址
+            td
+              a(href="#") 1D7FVXY30P83UE439BDTMLZL56IU79UD0J44PC8DP5MLJAZPE2
+          tr
+            td 条目数量
+            td 4

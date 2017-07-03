@@ -33,11 +33,27 @@ nav.navbar.navbar-default
           align-items center
           img
             margin-right 10px
-    .login-register
-      width 220px
-      text-align right
-      li
-        float right
-      a
-        padding-left 10px
-        padding-right 10px
+  .navbar-text.navbar-right.login-register
+    width 172px
+    margin-right 8px
+    .navbar-link
+      margin-left 28px
+      text-decoration none
+            
+nav.navbar.search-block
+  input
+    flex 1
+    margin-left 80px
+    margin-right 180px
+    margin-top 20px
+    margin-bottom 20px
+    border none
+    border-bottom 1px solid gray-lightest
+    padding-left 44px
+    outline none
+    background url("/static/imgs/header-search-icon.svg") no-repeat
+    background-position left center
+    font-size 24px
+    color gray-dark
+    &:focus
+      border-color brand-primary
