@@ -1,19 +1,23 @@
-nav.navbar.navbar-default
-  .container-fluid
-    .navbar-header
-      a.navbar-brand(href='/')
-        img(src="/static/imgs/logo.svg")
-    ul.nav.navbar-nav.tabs
-      li
-        a(href='#') 案例场景
-      li.active
-        a(href='/latest-trade') 最新公示
-      li.market
-        a(href='#')
-          img(src="/static/imgs/copyright-market-icon.svg")
-          | 版权市场
-    ul.nav.navbar-nav.login-register
-      li
-        a.navbar-register(href='#') 注册
-      li
-        a.navbar-login(href='#') 登录
+mixin header(type, active)
+  case type
+    when 'no-login'
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            a.navbar-brand(href='/')
+              img(src="/static/imgs/logo.svg")
+          ul.nav.navbar-nav.tabs
+            li(class = active === 0 ? 'active' : '')
+              a(href='#') 案例场景
+            li(class = active === 1 ? 'active' : '')
+              a(href='/latest-trade') 最新公示
+            li.market(class = active === 2 ? 'active' : '')
+              a(href='#')
+                img(src="/static/imgs/copyright-market-icon.svg")
+                | 版权市场
+          ul.nav.navbar-nav.login-register
+            li
+              a.navbar-register(href='#') 注册
+            li
+              a.navbar-login(href='#') 登录
+
