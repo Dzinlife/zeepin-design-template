@@ -136,7 +136,8 @@
 #auth-enterprise .line {
   height: 1px;
   background: #e7ecf3;
-  margin: 20px -116px;
+  margin: 44px -116px;
+  margin-top: 72px;
 }
 #auth-enterprise .input-group.location-select {
   margin: 0;
