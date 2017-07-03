@@ -1,0 +1,36 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'login'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/login.css')
+
+block header
+  include ./components/header.pug
+  +header('no-login')
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .panel.panel-default.login
+    .panel-heading
+      h2 欢迎再次回到智品
+      ul.nav.nav-tabs
+        li.active
+          a(href="#") 账号登录
+        li
+          a(href="#") 微信登录
+    .panel-body
+      .account-login
+        .input-wrapper
+          input(placeholder="输入您的手机号码")
+        .input-wrapper
+          input(placeholder="输入您的密码")
+          a.forget-password(href="#") 忘记密码?
+        .input-wrapper
+          button.btn.btn-lg.btn-primary.login-button 登录
+        span.guide-to-register
+          | 还没有账号? 
+          a(href="#") 请注册

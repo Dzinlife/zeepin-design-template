@@ -1,3 +1,4 @@
+@import 'variables.styl'
 @import 'header.styl'
 @import 'footer.styl'
 
@@ -5,9 +6,17 @@
   max-width 1136px
   margin 0 auto
   padding 0 24px
-
+  
+html
+  height 100%
 body
   min-width 1024px
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
+  min-height 100%
+  position relative
+  &:after
+    content ""
+    display block
+    height footer-height
   

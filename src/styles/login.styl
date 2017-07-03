@@ -1,0 +1,71 @@
+@import 'variables.styl'
+
+#login
+
+  h2 
+    font-size 24px
+    color brand-primary
+    text-align center
+    padding-top 50px
+    margin 0
+    
+  .panel.panel-default.login
+    width 560px
+    margin 0 auto
+    margin-top 60px
+    margin-bottom 160px
+    
+    .panel-heading
+      padding 0
+      border none
+      
+    .panel-body
+      width 330px
+      margin 0 auto
+      padding 50px 0
+      .input-wrapper
+        position relative
+        input, button
+          display block
+          width 100%
+      input
+        padding 0 16px
+        padding-left 64px
+        height 44px 
+        border 1px solid gray-lightest
+        border-radius 8px
+        outline none
+        margin-bottom 16px
+        &:focus
+          border-color gray-lighter
+        &::placeholder
+          color gray-lighter
+      a.forget-password
+        position absolute
+        top 100%
+        right 0
+        font-size 12px
+        color gray-light
+        padding-top 10px
+      
+      .login-button
+        margin-top 40px
+        letter-spacing 6px
+        
+      .guide-to-register
+        display block
+        font-size 12px
+        color gray-light
+        text-align center
+        margin-top 116px
+        margin-bottom 50px
+    .nav
+      margin-top 36px
+      padding 0 76px
+      li
+        width 50%
+      a
+        font-size 20px
+        margin 0 40px
+        text-align center
+        line-height 44px
