@@ -1,0 +1,245 @@
+#latest-trade .key-vision-latest-trade {
+  background: #386dff no-repeat;
+  height: 347px;
+  background-size: auto 140%;
+  background-position: 36% 50%;
+  background-image: url("/static/imgs/world-map-bg.png");
+}
+#latest-trade .key-vision-latest-trade .width-limit {
+  position: relative;
+  height: 100%;
+}
+#latest-trade .key-vision-latest-trade h1 {
+  font-size: 40px;
+  color: #12ce83;
+  font-weight: bold;
+  padding-top: 88px;
+  padding-bottom: 13px;
+  margin: 0;
+}
+#latest-trade .key-vision-latest-trade .kv-description {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  width: 50%;
+}
+#latest-trade .key-vision-latest-trade button.register {
+  letter-spacing: 2px;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-top: 30px;
+}
+#latest-trade .panel.kv-data {
+  width: 384px;
+  position: absolute;
+  right: 24px;
+  bottom: -96px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 7px rgba(118,141,167,0.3);
+          box-shadow: 0 3px 7px rgba(118,141,167,0.3);
+}
+#latest-trade .panel.kv-data .kv-data-label .cn {
+  color: #768da7;
+  font-size: 16px;
+  font-weight: 300;
+}
+#latest-trade .panel.kv-data .kv-data-label .en {
+  color: #d2dbe6;
+  font-size: 10px;
+}
+#latest-trade .panel.kv-data .panel-body {
+  padding: 0 48px;
+}
+#latest-trade .panel.kv-data .kv-data-main {
+  height: 195px;
+}
+#latest-trade .panel.kv-data .kv-data-sub {
+  margin: 0 -48px;
+}
+#latest-trade .panel.kv-data .kv-data-sub-single {
+  height: 50px;
+  background: #ecf5ff;
+  padding: 0 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#latest-trade .panel.kv-data .kv-data-sub-single + .kv-data-sub-single {
+  border-top: 1px solid #e7ecf3;
+}
+#latest-trade .panel.kv-data .kv-data-sub-single .kv-data-sub-number {
+  font-size: 24px;
+  color: #12ce83;
+  margin-left: auto;
+  width: 160px;
+}
+#latest-trade .panel.kv-data .kv-data-footer {
+  background: #e7eff7;
+  height: 44px;
+  margin: 0 -48px;
+  padding: 0 48px;
+  padding-top: 15px;
+  color: #a1a9b2;
+  font-size: 12px;
+}
+#latest-trade .panel.kv-data .kv-data-main-number {
+  font-size: 50px;
+  padding-top: 38px;
+  color: #12ce83;
+}
+#latest-trade .panel.kv-data .block-animate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 170px;
+  margin-top: 10px;
+}
+#latest-trade .panel.kv-data .block-animate .block-single {
+  background: url("/static/imgs/kv-block-icon.svg") no-repeat;
+  height: 23px;
+  width: 20px;
+  position: relative;
+}
+#latest-trade .panel.kv-data .block-animate .block-single:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/static/imgs/kv-block-icon-active.svg") no-repeat;
+  -webkit-animation: blocks-animation 4s linear infinite alternate;
+          animation: blocks-animation 4s linear infinite alternate;
+  opacity: 0;
+}
+#latest-trade .panel.kv-data .block-animate .block-single:nth-child(1):after {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+#latest-trade .panel.kv-data .block-animate .block-single:nth-child(2):after {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+#latest-trade .panel.kv-data .block-animate .block-single:nth-child(3):after {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+#latest-trade .panel.kv-data .block-animate .block-single:nth-child(4):after {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+#latest-trade .panel.kv-data .block-animate .block-single:nth-child(5):after {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+@-webkit-keyframes blocks-animation {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blocks-animation {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#latest-trade h1.trade {
+  font-size: 24px;
+  margin-top: 56px;
+  margin-bottom: 35px;
+  color: #768da7;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#latest-trade h1.trade .trade-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("/static/imgs/latest-trade-icon.svg") no-repeat;
+  margin-right: 10px;
+}
+#latest-trade .panel.trade-list {
+  margin-bottom: 140px;
+}
+#latest-trade .panel.trade-list .row.head {
+  color: #768da7;
+  padding: 10px 0;
+  margin-bottom: 24px;
+}
+#latest-trade .panel.trade-list .col {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#latest-trade .panel.trade-list .content .row {
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 22px;
+  margin: 18px 0;
+}
+#latest-trade .panel.trade-list .content .row .col:first-child {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#latest-trade .panel.trade-list .content .row.purple {
+  background: #e6e8f8;
+  color: #7f8bdc;
+}
+#latest-trade .panel.trade-list .content .row.purple .col:first-child {
+  background-image: url("/static/imgs/block-icon-purple.svg");
+}
+#latest-trade .panel.trade-list .content .row.green {
+  background: #e6f6ed;
+  color: #78d0a3;
+}
+#latest-trade .panel.trade-list .content .row.green .col:first-child {
+  background-image: url("/static/imgs/block-icon-green.svg");
+}
+#latest-trade .panel.trade-list .content .row.red {
+  background: #fce8e8;
+  color: #f08988;
+}
+#latest-trade .panel.trade-list .content .row.red .col:first-child {
+  background-image: url("/static/imgs/block-icon-red.svg");
+}

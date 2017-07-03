@@ -1,0 +1,209 @@
+#auth-enterprise .panel.panel-default.auth-enterprise {
+  width: 830px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 160px;
+}
+#auth-enterprise .panel-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 116px;
+  color: #3c4046;
+}
+#auth-enterprise .panel-heading h1 {
+  font-size: 20px;
+  margin: 0;
+  margin-right: 30px;
+}
+#auth-enterprise .panel-heading .heading-description {
+  font-size: 12px;
+}
+#auth-enterprise .panel-body {
+  padding: 48px 116px;
+}
+#auth-enterprise .input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+#auth-enterprise .input-wrapper label {
+  padding-top: 12px;
+  width: 128px;
+  color: #768da7;
+  font-size: 14px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+#auth-enterprise .input-wrapper .sms-code {
+  margin-left: 10px;
+}
+#auth-enterprise .input-wrapper .right-column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 160px;
+}
+#auth-enterprise .input-group {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+#auth-enterprise .input-group input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#auth-enterprise .id-photo-area {
+  color: #768da7;
+}
+#auth-enterprise .id-photo-area label {
+  padding-top: 12px;
+  width: 128px;
+  color: #768da7;
+  font-size: 14px;
+  display: block;
+  padding-bottom: 38px;
+}
+#auth-enterprise .id-photo-area img.img-thumbnail {
+  float: left;
+  margin-right: 16px;
+}
+#auth-enterprise .id-photo-area h3 {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 16px;
+  letter-spacing: 2px;
+}
+#auth-enterprise .id-photo-area .description {
+  font-size: 12px;
+  width: 500px;
+  line-height: 20px;
+}
+#auth-enterprise .id-photo-area .description:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#auth-enterprise .image-upload-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -6px;
+  margin-top: 42px;
+}
+#auth-enterprise .image-upload-area .image-upload-single {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 6px;
+}
+#auth-enterprise .image-upload-area .image-upload-single input[type=file] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#auth-enterprise .image-upload-area .image-upload-single label {
+  height: 100px;
+  width: 100%;
+  border: 1px dashed #d2dbe6;
+  border-radius: 8px;
+  height: 130px;
+  background: url("/static/imgs/auth-upload-plus-icon.svg") no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+#auth-enterprise .image-upload-area .image-upload-single label:hover {
+  background-color: #d2dbe6;
+}
+#auth-enterprise .image-upload-area .img-label {
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 4px;
+  color: #768da7;
+}
+#auth-enterprise .line {
+  height: 1px;
+  background: #e7ecf3;
+  margin: 20px -116px;
+}
+#auth-enterprise .input-group.location-select {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -6px;
+  width: 322px;
+}
+#auth-enterprise .input-group.location-select +.input-group {
+  padding-right: 6px;
+  margin-top: 12px;
+}
+#auth-enterprise .input-group.location-select select {
+  margin: 0 6px;
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  outline: none;
+  border-color: #e7ecf3;
+  width: 0;
+  background: #fff;
+  -webkit-appearance: none;
+  padding: 0 10px;
+  position: relative;
+  border-radius: 8px;
+}
+#auth-enterprise .input-group.date-pick {
+  margin: 0 -6px;
+  width: 322px;
+}
+#auth-enterprise .input-group.date {
+  margin: 0 6px;
+}
+#auth-enterprise .input-group.date input {
+  height: 44px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #e7ecf3;
+  border-radius: 8px 0 0 8px;
+  border-right: none;
+  -webkit-transition: none;
+  transition: none;
+  color: #3c4046;
+}
+#auth-enterprise .input-group.date input::-webkit-input-placeholder {
+  color: #d2dbe6;
+}
+#auth-enterprise .input-group.date input:-ms-input-placeholder {
+  color: #d2dbe6;
+}
+#auth-enterprise .input-group.date input::placeholder {
+  color: #d2dbe6;
+}
+#auth-enterprise .input-group.date .input-group-addon {
+  border-radius: 0 8px 8px 0;
+  border-color: #e7ecf3;
+  width: 38px;
+  background: url("/static/imgs/input-date-icon.svg") no-repeat center;
+}
+#auth-enterprise button.submit {
+  width: 330px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}

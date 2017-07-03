@@ -1,0 +1,22 @@
+#search-block {
+  background: #e7ecf3;
+}
+#search-block .block-search-result {
+  margin-top: 108px;
+  margin-bottom: 140px;
+  background: #fff;
+}
+#search-block .block-search-result td,
+#search-block .block-search-result th {
+  line-height: 53px;
+  padding-left: 32px;
+  padding-right: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#search-block .block-search-result thead {
+  background: #f6fbff;
+}
+#search-block .block-search-result td:first-child {
+  width: 160px;
+}

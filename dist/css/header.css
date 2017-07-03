@@ -1,0 +1,86 @@
+nav.navbar.navbar-default {
+  font-size: 16px;
+}
+nav.navbar.navbar-default .navbar-brand {
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav.navbar.navbar-default .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav.navbar.navbar-default .container-fluid .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+nav.navbar.navbar-default .container-fluid .tabs li {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+nav.navbar.navbar-default .container-fluid .tabs li a {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+nav.navbar.navbar-default .container-fluid .tabs li.active {
+  position: relative;
+}
+nav.navbar.navbar-default .container-fluid .tabs li.active:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  bottom: 26px;
+  background: #12ce83;
+}
+nav.navbar.navbar-default .container-fluid .tabs li.market a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav.navbar.navbar-default .container-fluid .tabs li.market a img {
+  margin-right: 10px;
+}
+nav.navbar.navbar-default .navbar-text.navbar-right.login-register {
+  width: 172px;
+  margin-right: 8px;
+}
+nav.navbar.navbar-default .navbar-text.navbar-right.login-register .navbar-link {
+  margin-left: 28px;
+  text-decoration: none;
+}
+nav.navbar.search-block input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 80px;
+  margin-right: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #e7ecf3;
+  padding-left: 44px;
+  outline: none;
+  background: url("/static/imgs/header-search-icon.svg") no-repeat;
+  background-position: left center;
+  font-size: 24px;
+  color: #3c4046;
+}
+nav.navbar.search-block input:focus {
+  border-color: #12ce83;
+}

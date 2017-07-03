@@ -1,0 +1,151 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'auth-enterprise'
+
+block styles
+  link(rel='stylesheet', href='/static/css/bootstrap-datetimepicker.min.css')
+  link(rel='stylesheet', type='text/css', href='/static/css/auth-enterprise.css')
+
+block header
+  include ./components/header.pug
+  +header('no-login')
+
+block footer
+  include ./components/footer.pug
+
+block content
+  .panel.panel-default.auth-enterprise
+    .panel-heading
+      h1 企业用户注册
+      .heading-description Zeepin允许原创人登记版权。请提交身份认证，<br>通过后便可登记备案及交易作品
+    .panel-body
+      form
+        .input-wrapper
+          label 法人姓名
+          .right-column
+            .input-group
+              input
+        .input-wrapper
+          label 法人手机
+          .right-column
+            .input-group
+              input
+            .input-group
+              input(placeholder="验证码")
+              button.btn.btn-lg.btn-primary.sms-code 发送验证码
+        .input-wrapper
+          label 邮件地址
+          .right-column
+            .input-group
+              input
+            .input-group
+              input(placeholder="验证码")
+              button.btn.btn-lg.btn-primary.sms-code 发送验证码
+
+        .id-photo-area
+          label 证件照片
+          img.img-thumbnail(src="/static/imgs/id-photo-example.jpg" width="109")
+          h3 参考示范
+          .description 
+            | 身份证上的所有信息清晰可见，必须看清证件号码<br>
+            | 照片需免冠，建议未化妆，手持证件人的五官清晰可见。<br>
+            | 照片内容真实有效，不得做任何修改。<br>
+            | 支持.jpg .jpeg .bmp .gif 格式照片，大小不超过 2M
+          .image-upload-area
+            .image-upload-single
+              label
+                input.custom-file-input(type="file")
+              .img-label 手持身份证
+            .image-upload-single
+              label
+                input.custom-file-input(type="file")
+              .img-label 身份证正面
+            .image-upload-single
+              label
+                input.custom-file-input(type="file")
+              .img-label 手持身背面
+        .line
+        .input-wrapper
+          label 企业名称
+          .right-column
+            .input-group
+              input
+        .input-wrapper
+          label 企业地址
+          .right-column
+            .input-group.location-select(data-toggle="distpicker")
+              select(data-province="省")
+              select(data-city="市")
+              select(data-district="区")
+            .input-group
+              input(placeholder="详细地址")
+        .input-wrapper
+          label 统一信用代码
+          .right-column
+            .input-group
+              input
+        .input-wrapper
+          label 有效期
+          .right-column
+            .input-group.date-pick
+              #datetimepicker1.input-group.date
+                input.form-control(type='text' placeholder="yyyy/mm/dd")
+                span.input-group-addon
+                  span.glyphicon
+              #datetimepicker2.input-group.date
+                input.form-control(type='text' placeholder="yyyy/mm/dd")
+                span.input-group-addon
+                  span.glyphicon
+        .image-upload-area
+          .image-upload-single
+            label
+              input.custom-file-input(type="file")
+            .img-label 营业执照
+          .image-upload-single
+            label
+              input.custom-file-input(type="file")
+            .img-label 组织机构代码
+          .image-upload-single
+            label
+              input.custom-file-input(type="file")
+            .img-label 税务登记证
+        button.btn.btn-lg.btn-primary.submit(type="submit") 认证
+
+block scripts
+  script(type='text/javascript', src='/static/js/moment.min.js')
+  script(type='text/javascript', src='/static/js/bootstrap-datetimepicker.min.js')
+  script(type='text/javascript', src='/static/js/distpicker.min.js')
+
+  script.
+    $(function () {
+      $('#datetimepicker1').datetimepicker({
+        format: 'YYYY/MM/DD'
+      })
+
+      $('#datetimepicker2').datetimepicker({
+        format: 'YYYY/MM/DD'
+      })
+    })
+
+  script.
+    //上传照片预览
+    var inputs = document.querySelectorAll( 'input.custom-file-input' )
+
+    Array.prototype.forEach.call( inputs, function(input){
+      var label  = input.parentElement
+
+      input.addEventListener( 'change', function(e){
+        if (input.files && input.files[0]) {
+          var reader = new FileReader()
+          reader.onload = function (e) {
+            label.style.backgroundImage = "url('" + e.target.result + "')"
+            label.style.backgroundSize = "cover"
+            label.style.boxShadow = "inset 0 0 0 3px white"
+            label.style.borderStyle = "solid"
+          }
+          reader.readAsDataURL(input.files[0])
+        }
+      })
+    })
+
