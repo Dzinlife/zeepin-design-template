@@ -15,14 +15,9 @@ mixin header(type, active)
               a(href='#')
                 img(src="/static/imgs/copyright-market-icon.svg")
                 | 版权市场
-          //- ul.nav.navbar-nav.login-register
-          //-   li
-          //-     a.navbar-register(href='#') 注册
-          //-   li
-          //-     a.navbar-login(href='#') 登录
           p.navbar-text.navbar-right.login-register
-            a.navbar-link(href='#') 注册
-            a.navbar-link(href='#') 登录
+            a.navbar-link(href='/register') 注册
+            a.navbar-link(href='/login') 登录
 
     when 'search'
       nav.navbar.navbar-default.search-block

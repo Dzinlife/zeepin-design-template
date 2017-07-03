@@ -14,24 +14,23 @@ block footer
   include ./components/footer.pug
   
 block content
-  .panel.panel-default.login
+  .panel.panel-default.register
     .panel-heading
-      h2 欢迎再次回到智品
-      ul.nav.nav-tabs
-        li.active
-          a(href="#") 账号登录
-        li
-          a(href="#") 微信登录
+      h2 欢迎注册智品
     .panel-body
       .account-login
         form(action="#")
           .input-wrapper
             input.mobile(placeholder="输入您的手机号码")
+          .input-wrapper.sms-code
+            input.code(placeholder="短信验证码")
+            button.btn.btn-lg.btn-primary.sms-code 获取验证码
           .input-wrapper
             input.password(placeholder="输入您的密码")
-            a.forget-password(href="#") 忘记密码?
+          .checkbox-wrapper
+            label
+              input(type="checkbox")
+              | 我已阅读并同意&nbsp;&nbsp;
+              a(href="#") 智品用户协议
           .input-wrapper
-            button.btn.btn-lg.btn-primary.login-button(type="submit") 登录
-        span.guide-to-register
-          | 还没有账号? 
-          a(href="#") 请注册
+            button.btn.btn-lg.btn-primary.register-button(type="submit") 注册

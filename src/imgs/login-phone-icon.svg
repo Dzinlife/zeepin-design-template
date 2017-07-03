@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="18px" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="002_02_注册" transform="translate(-640.000000, -337.000000)" stroke="#96979B">
+            <g id="Group" transform="translate(641.000000, 338.000000)">
+                <path d="M7.6394,0.315866667 L1.68206667,0.315866667 C0.937,0.315866667 0.3276,0.9256 0.3276,1.67006667 L0.3276,14.3185333 C0.3276,15.0634 0.937,15.6725333 1.68206667,15.6725333 L7.6394,15.6725333 C8.38446667,15.6725333 8.99386667,15.0634 8.99386667,14.3185333 L8.99386667,1.67 C8.99386667,0.925533333 8.38446667,0.315866667 7.6394,0.315866667 L7.6394,0.315866667 Z" id="Shape"></path>
+                <ellipse id="Oval" cx="4.66073333" cy="14.0198667" rx="1" ry="1"></ellipse>
+                <rect id="Rectangle-path" x="0.333333333" y="2.33333333" width="8.66666667" height="10"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
