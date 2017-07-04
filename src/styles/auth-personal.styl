@@ -1,0 +1,159 @@
+@import "variables.styl"
+
+#auth-personal
+  .panel.panel-default.auth-personal
+    width 830px
+    margin 0 auto
+    margin-top 60px
+    margin-bottom 160px
+  
+  .panel-heading
+    display flex
+    align-items center
+    padding 20px 116px
+    color gray-dark
+    h1
+      font-size 20px
+      margin 0
+      margin-right 30px
+    .heading-description
+      font-size 12px
+  .panel-body
+    padding 48px 116px
+  .input-wrapper
+    display flex
+    margin-bottom 12px
+    label
+      padding-top 12px
+      width 128px
+      color gray
+      font-size 14px
+      flex-shrink 0
+    .sms-code
+      margin-left 10px
+    .right-column
+      flex 1
+      margin-right 160px
+  .input-group
+    margin-bottom 12px
+    display flex
+    width 100%
+    input 
+      flex 1
+  .id-photo-area
+    color gray
+    label
+      padding-top 12px
+      width 128px
+      color gray
+      font-size 14px
+      display block 
+      padding-bottom 38px
+    img.img-thumbnail
+      float left
+      margin-right 16px
+    h3
+      font-size 14px
+      margin 0
+      padding-bottom 16px
+      letter-spacing 2px
+    .description 
+      font-size 12px
+      width 500px
+      line-height 20px
+      &:after
+        content ""
+        display block
+        clear both
+  .image-upload-area
+    display flex
+    margin 0 -6px
+    margin-top 42px
+    .image-upload-single
+      flex 1
+      padding 0 6px
+      input[type=file]
+        width 0.1px
+        height 0.1px
+        opacity 0
+        overflow hidden
+        position absolute
+        z-index -1
+      label
+        height 100px
+        width 100%
+        border 1px dashed gray-lighter
+        border-radius 8px
+        height 130px
+        background url("/static/imgs/auth-upload-plus-icon.svg") no-repeat
+        background-position center
+        cursor pointer
+        &:hover
+          background-color gray-lighter
+  
+    .img-label
+      width 100%
+      text-align center
+      font-weight normal
+      font-size 12px
+      margin-top 4px
+      color gray
+  
+    
+  .line
+    height 1px
+    background gray-lightest
+    margin 44px -116px
+    margin-top 72px
+  .input-group.location-select
+    margin 0
+    display flex
+    margin-left -6px
+    width 322px
+    
+    +.input-group
+      padding-right 6px
+      margin-top 12px
+    
+    select
+      margin 0 6px
+      display block
+      height 44px
+      line-height 44px
+      flex 1
+      outline none
+      border-color gray-lightest
+      width 0
+      background white
+      -webkit-appearance none
+      padding 0 10px
+      position relative
+      border-radius 8px
+  
+  .input-group.date-pick
+    margin 0 -6px
+    width 322px
+  .input-group.date
+    margin 0 6px
+    input
+      height 44px
+      box-shadow none
+      border-color gray-lightest
+      border-radius 8px 0 0 8px
+      border-right none
+      transition none
+      color gray-dark
+      &::placeholder
+        color gray-lighter
+    .input-group-addon
+      border-radius 0 8px 8px 0
+      border-color gray-lightest
+      width 38px
+      background url("/static/imgs/input-date-icon.svg") no-repeat center
+    
+  button.submit
+    width 330px
+    margin 0 auto
+    display block
+    margin-top 80px
+    margin-bottom 80px
