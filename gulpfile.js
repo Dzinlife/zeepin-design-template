@@ -15,12 +15,20 @@ function buildStyle(path){
       console.log(`${path}`)
     })
 }
-  
+
+function copyBootstrapFiles(){
+  gulp.src(['zeepin-bootstrap/dist/css/bootstrap.css', 'zeepin-bootstrap/dist/css/bootstrap.min.css'])
+    .pipe(gulp.dest('dist/css'))
+
+  gulp.src(['zeepin-bootstrap/dist/js/bootstrap.js', 'zeepin-bootstrap/dist/js/bootstrap.min.js'])
+    .pipe(gulp.dest('dist/js'))
+}
 
 gulp.task('watch-css', () => {
   gulp.watch(['src/styles/**/*.styl'], e => {
     buildStyle(e.path)
   })
+
 })
 
 gulp.task('build-css', () => {
@@ -29,8 +37,13 @@ gulp.task('build-css', () => {
 
 gulp.task('watch', () => {
   gulp.start('watch-css')
+
+  gulp.watch(['zeepin-bootstrap/dist/css/bootstrap.css', 'zeepin-bootstrap/dist/css/bootstrap.min.css'], e => {
+    copyBootstrapFiles()
+  })
 })
 
 gulp.task('build', () => {
   gulp.start('build-css')
+  copyBootstrapFiles()
 })
