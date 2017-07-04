@@ -39,6 +39,34 @@ nav.navbar.navbar-default
     .navbar-link
       margin-left 28px
       text-decoration none
+  .navbar-text.navbar-right.cart-account
+    width 280px
+    margin-right 8px
+    display flex
+    .navbar-link
+      display flex
+      align-items center
+      margin-left 28px
+      text-decoration none
+      img.navbar-cart-icon
+        margin-right 10px
+      &.account
+        width 140px
+        flex-shrink 0
+        .navbar-avatar
+          margin-right 10px
+          flex-shrink 0
+          display inline-block
+          width 24px
+          height 24px
+          border-radius 50%
+          background-color gray-lightest
+          
+        .navbar-avatar-name
+          overflow hidden
+          text-overflow ellipsis
+          white-space nowrap
+
             
 nav.navbar.search-block
   input

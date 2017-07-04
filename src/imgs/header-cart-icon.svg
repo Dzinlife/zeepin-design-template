@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>nc sample glyph shopping cart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="003_01_首次上传" transform="translate(-1331.000000, -39.000000)" fill-rule="nonzero" fill="#768DA7">
+            <g id="nc-sample-glyph-shopping-cart" transform="translate(1331.000000, 39.000000)">
+                <ellipse id="Oval" cx="5.16129032" cy="14.4516129" rx="1.5483871" ry="1.5483871"></ellipse>
+                <circle id="Oval" cx="13.9354839" cy="14.4516129" r="1.5483871"></circle>
+                <path d="M15.483871,2.58064516 L3.40645161,2.58064516 L3.09677419,0.464516129 C3.04516129,0.206451613 2.83870968,0 2.58064516,0 L0.516129032,0 C0.206451613,0 0,0.206451613 0,0.516129032 C0,0.825806452 0.206451613,1.03225806 0.516129032,1.03225806 L2.11612903,1.03225806 L3.61290323,10.8903226 C3.66451613,11.1483871 3.87096774,11.3548387 4.12903226,11.3548387 L14.4516129,11.3548387 C14.7096774,11.3548387 14.916129,11.1483871 14.9677419,10.8903226 L16,3.1483871 C16,2.99354839 16,2.83870968 15.8967742,2.73548387 C15.7935484,2.63225806 15.6387097,2.58064516 15.483871,2.58064516 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -19,6 +19,30 @@ mixin header(type, active)
             a.navbar-link(href='/register') 注册
             a.navbar-link(href='/login') 登录
 
+    when 'logined'
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            a.navbar-brand(href='/')
+              img(src="/static/imgs/logo.svg")
+          ul.nav.navbar-nav.tabs
+            li(class = active === 0 ? 'active' : '')
+              a(href='#') 暂存区
+            li(class = active === 1 ? 'active' : '')
+              a(href='/copyright-protect') 版权保护
+            li.market(class = active === 2 ? 'active' : '')
+              a(href='#')
+                img(src="/static/imgs/copyright-market-icon.svg")
+                | 版权市场
+          p.navbar-text.navbar-right.cart-account
+            a.navbar-link(href='/register')
+              img.navbar-cart-icon(src="/static/imgs/header-cart-icon.svg")
+              | 购物车
+            a.navbar-link.account(href='/login')
+              span.navbar-avatar
+              span.navbar-avatar-name Long Long Username
+
+
     when 'search'
       nav.navbar.navbar-default.search-block
         .container-fluid

@@ -1,0 +1,20 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'first-copyright'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/first-copyright.css')
+
+block header
+  include ./components/header.pug
+  +header('logined', 1)
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  h1.first-copyright 添加第一个版权保护项
+  img.first-copyright(src="/static/imgs/first-copyright-image.svg")
+  .first-copyright-description 基于智品区块链，让你的创作都有版权指纹<br>极速完成版权保护
+  button.btn.btn-sm.btn-primary.first-copyright 开始
