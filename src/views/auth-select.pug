@@ -1,0 +1,29 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'auth-select'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/auth-select.css')
+
+block header
+  include ./components/header.pug
+  +header('no-login')
+
+block footer
+  include ./components/footer.pug
+
+block content
+  h1.auth-select-title 请选择认证方式
+  .auth-select-description Zeepin允许原创人登记版权。请提交身份认证，通过后便可登记备案及交易作品
+  .auth-select-panels-wrapper
+    .panel.panel-default.auth-personal-card
+      h3 个人认证
+      .auth-select-subtitle 独立创作者极速版权保护
+      .auth-select-icon.personal
+      button.btn.btn-sm.btn-primary.start 开始
+    .panel.panel-default.auth-enterprise-card
+      h3 企业认证
+      .auth-select-subtitle 机构代理方便的批量操作
+      .auth-select-icon.enterprise
+      button.btn.btn-sm.btn-primary.start 开始

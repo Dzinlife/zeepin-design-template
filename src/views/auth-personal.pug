@@ -4,7 +4,6 @@ block locals
   - var pid = 'auth-personal'
 
 block styles
-  link(rel='stylesheet', href='/static/css/bootstrap-datetimepicker.min.css')
   link(rel='stylesheet', type='text/css', href='/static/css/auth-personal.css')
 
 block header
@@ -68,21 +67,6 @@ block content
         button.btn.btn-lg.btn-primary.submit(type="submit") 认证
 
 block scripts
-  script(type='text/javascript', src='/static/js/moment.min.js')
-  script(type='text/javascript', src='/static/js/bootstrap-datetimepicker.min.js')
-  script(type='text/javascript', src='/static/js/distpicker.min.js')
-
-  script.
-    $(function () {
-      $('#datetimepicker1').datetimepicker({
-        format: 'YYYY/MM/DD'
-      })
-
-      $('#datetimepicker2').datetimepicker({
-        format: 'YYYY/MM/DD'
-      })
-    })
-
   script.
     //上传照片预览
     var inputs = document.querySelectorAll( 'input.custom-file-input' )

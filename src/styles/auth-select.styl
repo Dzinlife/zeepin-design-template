@@ -1,0 +1,57 @@
+@import "variables.styl"
+
+#auth-select
+  h1.auth-select-title
+    text-align center
+    margin 0
+    margin-top 85px
+    font-size 24px
+    color gray
+    letter-spacing 4px
+  .auth-select-description
+    font-size 14px
+    color gray-light
+    text-align center
+    width 306px
+    margin 0 auto
+    margin-top 16px
+    line-height 21px
+  .auth-select-panels-wrapper
+    margin-top 48px
+    margin-bottom 140px
+    display flex
+    justify-content center
+    .panel.panel-default
+      width 380px
+      height 450px
+      transition 0.2s
+      text-align center
+      h3
+        font-size 24px
+        color gray-dark
+        font-weight normal
+        letter-spacing 4px
+        margin 0 
+        margin-top 60px
+      .auth-select-subtitle
+        font-size 14px
+        color gray-light
+        margin-top 20px
+      &:first-child
+        margin-right 30px
+      &:hover
+        box-shadow 0 9px 9px rgba(gray, 0.3)
+      .auth-select-icon
+        width 144px
+        height 144px
+        margin 0 auto
+        margin-top 44px
+        &.personal
+          background url("/static/imgs/auth-select-icon-personal.svg") no-repeat
+        &.enterprise
+          background url("/static/imgs/auth-select-icon-enterprise.svg") no-repeat
+      button.start
+        width 138px
+        display block
+        margin 0 auto
+        margin-top 48px

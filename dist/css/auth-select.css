@@ -1,0 +1,72 @@
+#auth-select h1.auth-select-title {
+  text-align: center;
+  margin: 0;
+  margin-top: 85px;
+  font-size: 24px;
+  color: #768da7;
+  letter-spacing: 4px;
+}
+#auth-select .auth-select-description {
+  font-size: 14px;
+  color: #a1a9b2;
+  text-align: center;
+  width: 306px;
+  margin: 0 auto;
+  margin-top: 16px;
+  line-height: 21px;
+}
+#auth-select .auth-select-panels-wrapper {
+  margin-top: 48px;
+  margin-bottom: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#auth-select .auth-select-panels-wrapper .panel.panel-default {
+  width: 380px;
+  height: 450px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-align: center;
+}
+#auth-select .auth-select-panels-wrapper .panel.panel-default h3 {
+  font-size: 24px;
+  color: #3c4046;
+  font-weight: normal;
+  letter-spacing: 4px;
+  margin: 0;
+  margin-top: 60px;
+}
+#auth-select .auth-select-panels-wrapper .panel.panel-default .auth-select-subtitle {
+  font-size: 14px;
+  color: #a1a9b2;
+  margin-top: 20px;
+}
+#auth-select .auth-select-panels-wrapper .panel.panel-default:first-child {
+  margin-right: 30px;
+}
+#auth-select .auth-select-panels-wrapper .panel.panel-default:hover {
+  -webkit-box-shadow: 0 9px 9px rgba(118,141,167,0.3);
+          box-shadow: 0 9px 9px rgba(118,141,167,0.3);
+}
+#auth-select .auth-select-panels-wrapper .panel.panel-default .auth-select-icon {
+  width: 144px;
+  height: 144px;
+  margin: 0 auto;
+  margin-top: 44px;
+}
+#auth-select .auth-select-panels-wrapper .panel.panel-default .auth-select-icon.personal {
+  background: url("/static/imgs/auth-select-icon-personal.svg") no-repeat;
+}
+#auth-select .auth-select-panels-wrapper .panel.panel-default .auth-select-icon.enterprise {
+  background: url("/static/imgs/auth-select-icon-enterprise.svg") no-repeat;
+}
+#auth-select .auth-select-panels-wrapper .panel.panel-default button.start {
+  width: 138px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+}
