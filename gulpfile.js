@@ -20,7 +20,9 @@ function buildStyle(path){
 function buildHtml(path){
   gulp.src(['src/views/**/*.pug'])
     .pipe(plumber())
-    .pipe(pug())
+    .pipe(pug({
+      pretty: true
+    }))
     .pipe(gulp.dest('dist/views'))
     .on('end', () => {
       console.log(`${path}`)

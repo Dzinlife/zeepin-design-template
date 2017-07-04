@@ -1,31 +1,212 @@
-<!DOCTYPE html><html><head><title>智品 - Zeepin</title><link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css"><link rel="stylesheet" type="text/css" href="/static/css/main.css"><link rel="stylesheet" href="/static/css/bootstrap-datetimepicker.min.css"><link rel="stylesheet" type="text/css" href="/static/css/auth-enterprise.css"></head><body id="auth-enterprise"><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><a class="navbar-brand" href="/"><img src="/static/imgs/logo.svg"></a></div><ul class="nav navbar-nav tabs"><li><a href="#">案例场景</a></li><li><a href="/latest-trade">最新公示</a></li><li class="market"><a href="#"><img src="/static/imgs/copyright-market-icon.svg">版权市场</a></li></ul><p class="navbar-text navbar-right login-register"><a class="navbar-link" href="/register">注册</a><a class="navbar-link" href="/login">登录</a></p></div></nav><div class="panel panel-default auth-enterprise"><div class="panel-heading"><h1>企业用户注册</h1><div class="heading-description">Zeepin允许原创人登记版权。请提交身份认证，<br>通过后便可登记备案及交易作品</div></div><div class="panel-body"><form><div class="input-wrapper"><label>法人姓名</label><div class="right-column"><div class="input-group"><input></div></div></div><div class="input-wrapper"><label>法人手机</label><div class="right-column"><div class="input-group"><input></div><div class="input-group"><input placeholder="验证码"><button class="btn btn-lg btn-primary sms-code">发送验证码</button></div></div></div><div class="input-wrapper"><label>邮件地址</label><div class="right-column"><div class="input-group"><input></div><div class="input-group"><input placeholder="验证码"><button class="btn btn-lg btn-primary sms-code">发送验证码</button></div></div></div><div class="id-photo-area"><label>证件照片</label><img class="img-thumbnail" src="/static/imgs/id-photo-example.jpg" width="109"><h3>参考示范</h3><div class="description"> 身份证上的所有信息清晰可见，必须看清证件号码<br>
-照片需免冠，建议未化妆，手持证件人的五官清晰可见。<br>
-照片内容真实有效，不得做任何修改。<br>
-支持.jpg .jpeg .bmp .gif 格式照片，大小不超过 2M</div><div class="image-upload-area"><div class="image-upload-single"><label><input class="custom-file-input" type="file"></label><div class="img-label">手持身份证</div></div><div class="image-upload-single"><label><input class="custom-file-input" type="file"></label><div class="img-label">身份证正面</div></div><div class="image-upload-single"><label><input class="custom-file-input" type="file"></label><div class="img-label">手持身背面</div></div></div></div><div class="line"></div><div class="input-wrapper"><label>企业名称</label><div class="right-column"><div class="input-group"><input></div></div></div><div class="input-wrapper"><label>企业地址</label><div class="right-column"><div class="input-group location-select" data-toggle="distpicker"><select data-province="省"></select><select data-city="市"></select><select data-district="区"></select></div><div class="input-group"><input placeholder="详细地址"></div></div></div><div class="input-wrapper"><label>统一信用代码</label><div class="right-column"><div class="input-group"><input></div></div></div><div class="input-wrapper"><label>有效期</label><div class="right-column"><div class="input-group date-pick"><div class="input-group date" id="datetimepicker1"><input class="form-control" type="text" placeholder="yyyy/mm/dd"><span class="input-group-addon"><span class="glyphicon"></span></span></div><div class="input-group date" id="datetimepicker2"><input class="form-control" type="text" placeholder="yyyy/mm/dd"><span class="input-group-addon"><span class="glyphicon"></span></span></div></div></div></div><div class="image-upload-area"><div class="image-upload-single"><label><input class="custom-file-input" type="file"></label><div class="img-label">营业执照</div></div><div class="image-upload-single"><label><input class="custom-file-input" type="file"></label><div class="img-label">组织机构代码</div></div><div class="image-upload-single"><label><input class="custom-file-input" type="file"></label><div class="img-label">税务登记证</div></div></div><button class="btn btn-lg btn-primary submit" type="submit">认证</button></form></div></div><div class="website-footer"><div class="width-limit"><div class="website-footer-left-column"><div class="website-footer-logo-area"><div class="website-footer-logo"><img src="/static/imgs/logo-footer.svg"><span class="website-footer-sologan">区块链版权保护与交易</span></div></div><div class="website-footer-icp">沪ICP备16040562号-1</div><div class="website-footer-copyright">© 2016-2017 Zeepin.com. All rights reserved. 智品忘行空  版权所有 保留一切权利</div></div><div class="website-footer-right-column"><div class="website-footer-links"><a href="#">服务条款</a><a href="#">联系我们</a><a href="#">团队博客</a><a href="#">关于智品</a></div><div class="website-footer-counter"><span class="copyright-counter-number">302,153</span>copyrights protected</div></div></div></div><script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script><script src="/static/js/bootstrap.min.js"></script><script type="text/javascript" src="/static/js/moment.min.js"></script><script type="text/javascript" src="/static/js/bootstrap-datetimepicker.min.js"></script><script type="text/javascript" src="/static/js/distpicker.min.js"></script><script>$(function () {
-  $('#datetimepicker1').datetimepicker({
-    format: 'YYYY/MM/DD'
-  })
-
-  $('#datetimepicker2').datetimepicker({
-    format: 'YYYY/MM/DD'
-  })
-})
-</script><script>//上传照片预览
-var inputs = document.querySelectorAll( 'input.custom-file-input' )
-
-Array.prototype.forEach.call( inputs, function(input){
-  var label  = input.parentElement
-
-  input.addEventListener( 'change', function(e){
-    if (input.files && input.files[0]) {
-      var reader = new FileReader()
-      reader.onload = function (e) {
-        label.style.backgroundImage = "url('" + e.target.result + "')"
-        label.style.backgroundSize = "cover"
-        label.style.boxShadow = "inset 0 0 0 3px white"
-        label.style.borderStyle = "solid"
-      }
-      reader.readAsDataURL(input.files[0])
-    }
-  })
-})</script></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>智品 - Zeepin</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/auth-enterprise.css">
+  </head>
+  <body id="auth-enterprise">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="/"><img src="/static/imgs/logo.svg"></a></div>
+            <ul class="nav navbar-nav tabs">
+              <li><a href="#">案例场景</a></li>
+              <li><a href="/latest-trade">最新公示</a></li>
+              <li class="market"><a href="#"><img src="/static/imgs/copyright-market-icon.svg">版权市场</a></li>
+            </ul>
+            <p class="navbar-text navbar-right login-register"><a class="navbar-link" href="/register">注册</a><a class="navbar-link" href="/login">登录</a></p>
+          </div>
+        </nav>
+    <div class="panel panel-default auth-enterprise">
+      <div class="panel-heading">
+        <h1>企业用户注册</h1>
+        <div class="heading-description">Zeepin允许原创人登记版权。请提交身份认证，<br>通过后便可登记备案及交易作品</div>
+      </div>
+      <div class="panel-body">
+        <form>
+          <div class="input-wrapper">
+            <label>法人姓名</label>
+            <div class="right-column">
+              <div class="input-group">
+                <input>
+              </div>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label>法人手机</label>
+            <div class="right-column">
+              <div class="input-group">
+                <input>
+              </div>
+              <div class="input-group">
+                <input placeholder="验证码">
+                <button class="btn btn-lg btn-primary sms-code">发送验证码</button>
+              </div>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label>邮件地址</label>
+            <div class="right-column">
+              <div class="input-group">
+                <input>
+              </div>
+              <div class="input-group">
+                <input placeholder="验证码">
+                <button class="btn btn-lg btn-primary sms-code">发送验证码</button>
+              </div>
+            </div>
+          </div>
+          <div class="id-photo-area">
+            <label>证件照片</label><img class="img-thumbnail" src="/static/imgs/id-photo-example.jpg" width="109">
+            <h3>参考示范</h3>
+            <div class="description">
+               身份证上的所有信息清晰可见，必须看清证件号码<br>
+              照片需免冠，建议未化妆，手持证件人的五官清晰可见。<br>
+              照片内容真实有效，不得做任何修改。<br>
+              支持.jpg .jpeg .bmp .gif 格式照片，大小不超过 2M
+            </div>
+            <div class="image-upload-area">
+              <div class="image-upload-single">
+                <label>
+                  <input class="custom-file-input" type="file">
+                </label>
+                <div class="img-label">手持身份证</div>
+              </div>
+              <div class="image-upload-single">
+                <label>
+                  <input class="custom-file-input" type="file">
+                </label>
+                <div class="img-label">身份证正面</div>
+              </div>
+              <div class="image-upload-single">
+                <label>
+                  <input class="custom-file-input" type="file">
+                </label>
+                <div class="img-label">手持身背面</div>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="input-wrapper">
+            <label>企业名称</label>
+            <div class="right-column">
+              <div class="input-group">
+                <input>
+              </div>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label>企业地址</label>
+            <div class="right-column">
+              <div class="input-group location-select" data-toggle="distpicker">
+                <select data-province="省"></select>
+                <select data-city="市"></select>
+                <select data-district="区"></select>
+              </div>
+              <div class="input-group">
+                <input placeholder="详细地址">
+              </div>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label>统一信用代码</label>
+            <div class="right-column">
+              <div class="input-group">
+                <input>
+              </div>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label>有效期</label>
+            <div class="right-column">
+              <div class="input-group date-pick">
+                <div class="input-group date" id="datetimepicker1">
+                  <input class="form-control" type="text" placeholder="yyyy/mm/dd"><span class="input-group-addon"><span class="glyphicon"></span></span>
+                </div>
+                <div class="input-group date" id="datetimepicker2">
+                  <input class="form-control" type="text" placeholder="yyyy/mm/dd"><span class="input-group-addon"><span class="glyphicon"></span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image-upload-area">
+            <div class="image-upload-single">
+              <label>
+                <input class="custom-file-input" type="file">
+              </label>
+              <div class="img-label">营业执照</div>
+            </div>
+            <div class="image-upload-single">
+              <label>
+                <input class="custom-file-input" type="file">
+              </label>
+              <div class="img-label">组织机构代码</div>
+            </div>
+            <div class="image-upload-single">
+              <label>
+                <input class="custom-file-input" type="file">
+              </label>
+              <div class="img-label">税务登记证</div>
+            </div>
+          </div>
+          <button class="btn btn-lg btn-primary submit" type="submit">认证</button>
+        </form>
+      </div>
+    </div>
+    <div class="website-footer">
+      <div class="width-limit">
+        <div class="website-footer-left-column">
+          <div class="website-footer-logo-area">
+            <div class="website-footer-logo"><img src="/static/imgs/logo-footer.svg"><span class="website-footer-sologan">区块链版权保护与交易</span></div>
+          </div>
+          <div class="website-footer-icp">沪ICP备16040562号-1</div>
+          <div class="website-footer-copyright">© 2016-2017 Zeepin.com. All rights reserved. 智品忘行空  版权所有 保留一切权利</div>
+        </div>
+        <div class="website-footer-right-column">
+          <div class="website-footer-links"><a href="#">服务条款</a><a href="#">联系我们</a><a href="#">团队博客</a><a href="#">关于智品</a></div>
+          <div class="website-footer-counter"><span class="copyright-counter-number">302,153</span>copyrights protected</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/moment.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/static/js/distpicker.min.js"></script>
+    <script>
+      $(function () {
+        $('#datetimepicker1').datetimepicker({
+          format: 'YYYY/MM/DD'
+        })
+      
+        $('#datetimepicker2').datetimepicker({
+          format: 'YYYY/MM/DD'
+        })
+      })
+      
+    </script>
+    <script>
+      //上传照片预览
+      var inputs = document.querySelectorAll( 'input.custom-file-input' )
+      
+      Array.prototype.forEach.call( inputs, function(input){
+        var label  = input.parentElement
+      
+        input.addEventListener( 'change', function(e){
+          if (input.files && input.files[0]) {
+            var reader = new FileReader()
+            reader.onload = function (e) {
+              label.style.backgroundImage = "url('" + e.target.result + "')"
+              label.style.backgroundSize = "cover"
+              label.style.boxShadow = "inset 0 0 0 3px white"
+              label.style.borderStyle = "solid"
+            }
+            reader.readAsDataURL(input.files[0])
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
