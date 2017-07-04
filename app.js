@@ -3,6 +3,7 @@ var path = require('path')
 var expressHandlebars = require('express-handlebars')
 var app = express()
 var server = require('http').createServer(app)
+var opn = require('opn')
 
 var root = path.join(__dirname, './src')
 
@@ -40,3 +41,6 @@ app.set('port', 9090)
 server.listen(app.get('port'), '0.0.0.0', () => {
   console.log( 'Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.' )
 })
+
+opn(`http://127.0.0.1:${app.get('port')}`)
+
