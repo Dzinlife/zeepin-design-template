@@ -1,0 +1,18 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'copyright-upload'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/copyright-upload.css')
+
+block header
+  include ./components/header.pug
+  +header('logined', 1)
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .panel.panel-default
+
