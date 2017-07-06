@@ -1,5 +1,195 @@
 @import "variables.styl"
 
 #copyright-upload
-  .panel.panel-default
-  
+  .panel.panel-default.copyright-upload
+    margin 0 auto
+    margin-top 48
+    margin-bottom 140px
+
+    .panel-heading
+      display flex
+      height 64px
+      padding 0 64px
+      .copyright-step
+        display flex
+        align-items center
+        margin-right 64px
+        color gray-lighter
+        .copyright-step-bullet
+          width 24px
+          height 24px
+          border 1px solid gray-lighter
+          border-radius 50%
+          display flex
+          margin-right 10px
+          align-items center
+          justify-content center
+        &.active
+          color brand-primary
+          .copyright-step-bullet
+            border-color brand-primary
+    .panel-body
+      padding 0
+      .column-wrapper
+        display flex
+        height 600px
+        .column-left
+          flex 2 0
+          border-right 1px solid gray-lightest
+          label.upload-area
+            display block
+            margin 0 100px
+            margin-top 85px
+            margin-bottom 56px
+            height 320px
+            border 1px dashed gray-lighter
+            border-radius 8px
+            cursor pointer
+            &:hover
+              background-color gray-lightest
+            input[type=file]
+              width 0.1px
+              height 0.1px
+              opacity 0
+              overflow hidden
+              position absolute
+              z-index -1
+            img.upload-area-icon
+              display block
+              margin 0 auto
+              margin-top 109px
+            .upload-area-text
+              font-size 16px
+              color gray-light
+              font-weight normal
+              text-align center
+              margin-top 23px
+          label.copyright-type-radio
+            display block
+            color gray-light
+            font-weight normal
+            margin-right 10px
+            input
+              margin-right 10px
+          label.copyright-rule-accept
+            font-weight normal
+            input
+              margin-right 10px
+              &:disabled
+                & + span
+                  color gray-light
+          table
+            margin-left 100px
+            font-size 12px
+            td
+              padding 8px 10px
+              input[type="text"]
+                border none
+                border-radius 0
+                border-bottom 1px solid gray-lightest
+                height 28px
+                padding 0
+                margin-bottom 2px
+          input#copyright-owner-name-input:disabled
+            cursor not-allowed
+            
+          label.copyright-licence-upload              
+            #licence-upload-button
+              border 1px solid gray-lighter
+              border-radius 16px
+              font-weight normal
+              padding 5px 20px
+              max-width 256px
+              overflow hidden
+              text-overflow ellipsis
+              white-space nowrap
+              cursor pointer
+              &:hover
+                background-color gray-lightest
+                
+            &.disabled #licence-upload-button
+              color gray-lighter
+              cursor not-allowed
+              border-color gray-lightest
+              &:hover
+                color gray-lighter
+                background-color inherit
+                
+            input[type=file]
+              width 0.1px
+              height 0.1px
+              opacity 0
+              overflow hidden
+              position absolute
+              z-index -1
+              
+        .column-right
+          flex 1 1
+          min-width 0
+          display flex
+          flex-direction column
+          .file-upload-list-heading
+            display flex
+            justify-content space-between
+            align-items center
+            height 44px
+            border-bottom 1px solid gray-lightest
+            padding 0 30px
+            h3
+              margin 0
+              display inline
+              font-size inherit
+            font-size 14px
+            color gray-light
+          ul.file-upload-list-body
+            list-style-type none
+            padding 15px 24px
+            overflow-y scroll
+            overflow-x hidden
+            margin 0
+            flex 1
+            li
+              height 60px
+              width 100%
+              align-items center
+              display flex
+              .file-upload-list-bullet
+                height 24px
+                width 24px
+                flex-shrink 0
+                background url('/static/imgs/file-upload-list-bullet-icon.svg') no-repeat center
+              .file-upload-list-content
+                flex 1
+                padding 0 20px
+                min-width 0
+                .progress
+                  margin 0
+                  margin-top 4px
+              .file-upload-list-name
+                white-space nowrap
+                overflow hidden
+                text-overflow ellipsis
+                color gray
+              .file-upload-list-delete
+                width 16px
+                height 16px
+                flex-shrink 0
+                background url("/static/imgs/file-upload-list-delete-icon.svg") no-repeat center
+                cursor pointer
+                &:hover
+                  opacity 0.8
+                &:active
+                  opacity 0.6
+            
+      .line
+        height 1px
+        background gray-lightest
+    button.next-step
+      width 138px
+      display block
+      margin 0 auto
+      margin-top 32px
+      margin-bottom 44px
+          
+          
+        
