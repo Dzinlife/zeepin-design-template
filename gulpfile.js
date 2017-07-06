@@ -30,6 +30,7 @@ function buildHtml(path){
 }
 
 function copyBootstrapFiles(){
+  console.log("copyBootstrapFiles")
   gulp.src(['zeepin-bootstrap/dist/css/bootstrap.css', 'zeepin-bootstrap/dist/css/bootstrap.min.css'])
     .pipe(gulp.dest('dist/css'))
 
@@ -64,6 +65,7 @@ gulp.task('watch', () => {
   gulp.start('build-html')
   gulp.start('watch-html')
 
+  copyBootstrapFiles()
   gulp.watch(['zeepin-bootstrap/dist/css/bootstrap.css', 'zeepin-bootstrap/dist/css/bootstrap.min.css'], e => {
     copyBootstrapFiles()
   })

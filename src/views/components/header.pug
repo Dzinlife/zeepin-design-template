@@ -34,13 +34,19 @@ mixin header(type, active)
               a(href='#')
                 img(src="/static/imgs/copyright-market-icon.svg")
                 | 版权市场
-          p.navbar-text.navbar-right.cart-account
-            a.navbar-link(href='/register')
-              img.navbar-cart-icon(src="/static/imgs/header-cart-icon.svg")
-              | 购物车
-            a.navbar-link.account(href='/login')
-              span.navbar-avatar
-              span.navbar-avatar-name Long Long Username
+          ul.nav.navbar-nav.account
+            li.cart
+              a.navbar-link(href='/register')
+                img.navbar-cart-icon(src="/static/imgs/header-cart-icon.svg")
+                | 购物车
+            li.dropdown
+              a.dropdown-toggle(href="#" data-toggle="dropdown")
+                .navbar-avatar
+                span.navbar-avatar-name 这是个比较长的用户名
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href="#") 退出登录
 
 
     when 'search'

@@ -39,33 +39,41 @@ nav.navbar.navbar-default
     .navbar-link
       margin-left 28px
       text-decoration none
-  .navbar-text.navbar-right.cart-account
-    width 280px
+  .nav.navbar-nav.account
     margin-right 8px
     display flex
-    .navbar-link
+    align-items center
+    white-space nowrap    
+    img.navbar-cart-icon
+      margin-right 10px
+    &>li
       display flex
       align-items center
-      margin-left 28px
-      text-decoration none
-      img.navbar-cart-icon
-        margin-right 10px
-      &.account
-        width 140px
-        flex-shrink 0
-        .navbar-avatar
-          margin-right 10px
-          flex-shrink 0
-          display inline-block
-          width 24px
-          height 24px
-          border-radius 50%
-          background-color gray-lightest
-          
-        .navbar-avatar-name
-          overflow hidden
-          text-overflow ellipsis
-          white-space nowrap
+      margin-right 10px   
+      &>a
+        padding 0
+        display flex
+        align-items center
+      &.cart
+        margin-right 40px
+      &.dropdown
+        height 44px
+        li a
+          font-size 14px
+    .navbar-avatar
+      margin-right 10px
+      flex-shrink 0
+      display inline-block
+      width 24px
+      height 24px
+      border-radius 50%
+      background-color gray-lightest
+      
+    .navbar-avatar-name
+      max-width 100px      
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
 
             
 nav.navbar.search-block

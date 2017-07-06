@@ -64,32 +64,47 @@ nav.navbar.navbar-default .navbar-text.navbar-right.login-register .navbar-link 
   margin-left: 28px;
   text-decoration: none;
 }
-nav.navbar.navbar-default .navbar-text.navbar-right.cart-account {
-  width: 280px;
+nav.navbar.navbar-default .nav.navbar-nav.account {
   margin-right: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-nav.navbar.navbar-default .navbar-text.navbar-right.cart-account .navbar-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 28px;
-  text-decoration: none;
+  white-space: nowrap;
 }
-nav.navbar.navbar-default .navbar-text.navbar-right.cart-account .navbar-link img.navbar-cart-icon {
+nav.navbar.navbar-default .nav.navbar-nav.account img.navbar-cart-icon {
   margin-right: 10px;
 }
-nav.navbar.navbar-default .navbar-text.navbar-right.cart-account .navbar-link.account {
-  width: 140px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+nav.navbar.navbar-default .nav.navbar-nav.account>li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
 }
-nav.navbar.navbar-default .navbar-text.navbar-right.cart-account .navbar-link.account .navbar-avatar {
+nav.navbar.navbar-default .nav.navbar-nav.account>li>a {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.cart {
+  margin-right: 40px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown {
+  height: 44px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown li a {
+  font-size: 14px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .navbar-avatar {
   margin-right: 10px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -99,7 +114,8 @@ nav.navbar.navbar-default .navbar-text.navbar-right.cart-account .navbar-link.ac
   border-radius: 50%;
   background-color: #e7ecf3;
 }
-nav.navbar.navbar-default .navbar-text.navbar-right.cart-account .navbar-link.account .navbar-avatar-name {
+nav.navbar.navbar-default .nav.navbar-nav.account .navbar-avatar-name {
+  max-width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
