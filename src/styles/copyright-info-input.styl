@@ -1,0 +1,194 @@
+@import "variables.styl"
+
+#copyright-info-input
+  .panel.panel-default.copyright-info-input
+    margin 0 auto
+    margin-top 48
+    margin-bottom 140px
+    .panel-heading
+      display flex
+      height 64px
+      padding 0 64px
+      .copyright-step
+        display flex
+        align-items center
+        margin-right 64px
+        color gray-lighter
+        .copyright-step-bullet
+          width 24px
+          height 24px
+          border 1px solid gray-lighter
+          border-radius 50%
+          display flex
+          margin-right 10px
+          align-items center
+          justify-content center
+        &.finish
+          .copyright-step-bullet
+            color transparent
+            background gray-lightest url('/static/imgs/file-upload-list-heading-finish-icon.svg') no-repeat center
+        &.active
+          color brand-primary
+          .copyright-step-bullet
+            border-color brand-primary
+    .panel-body
+      padding 0
+      h3
+        font-size 22px
+        font-weight normal
+        color gray-dark
+        margin 0
+        margin-bottom 32px
+        display inline-block
+      .subtitle
+        display inline-block
+        color gray-light
+        padding-left 28px
+      .block-wrapper
+        position relative
+        width 800px
+        margin 50px auto
+      .information-input-container
+        display flex
+        .information-input-column-left
+          margin-right 44px
+        .information-input-column-right
+          flex 1
+          input
+            width 100%
+          textarea
+            resize vertical
+            width 100%
+          textarea.description
+            min-height 80px
+            margin-top 12px
+          .tokenfield.form-control
+            margin-top 10px
+            border 1px solid gray-lightest
+            min-height 44px
+            padding-top 9px
+            padding-bottom 20px
+            border-radius 8px
+            box-shadow none
+            position relative
+            &:after
+              content "输入回车作为区分"
+              position absolute
+              right 12px
+              bottom 6px
+              color gray-lighter
+              font-size 12px
+            .token-input
+              height 32px
+            &.focus
+              box-shadow none
+              border-color gray-lighter
+              
+            .token
+              border none
+              height 30px
+              line-height 30px
+              border-radius 15px
+              padding 0 18px
+              margin-bottom 8px
+              margin-right 12px
+              .token-label
+                margin 0
+                padding 0
+              .close
+                display none
+              &:nth-child(3n)
+                background #B7ECD7
+                color #12CE83
+              &:nth-child(3n + 1)
+                background #E6E8F8
+                color #7F8BDC
+              &:nth-child(3n + 2)
+                background #DBECFF
+                color #68B0FF
+                  
+              
+              
+      .line
+        height 1px
+        background gray-lightest
+    label.accept-service-rule
+      font-weight normal
+      font-size 12px
+      position absolute
+      bottom 4px
+      input 
+        margin-right 10px
+    button.next-step
+      width 138px
+      display block
+      margin 0 auto
+      margin-top 32px
+      margin-bottom 44px
+      
+  #image-cropper    
+    width 186px
+    .cropit-preview
+      height 186px
+      width 186px
+      border-radius 8px
+      overflow hidden
+      mask-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC')
+      background-color gray-lightest
+      cursor move
+    .image-control-wrapper
+      display flex
+      margin-top 10px
+      margin-bottom 16px
+      
+      
+    .rotate-cw-btn
+      background url("/static/imgs/rotate-right.svg") no-repeat center
+      margin-right 7px
+     
+    .rotate-ccw-btn
+      background url("/static/imgs/rotate-left.svg") no-repeat center
+      margin-right 4px
+     
+    .rotate-cw-btn, .rotate-ccw-btn
+      height 18px
+      width 18px
+      background-size 100%
+      opacity 0.3
+      cursor pointer
+      &:hover
+        opacity 0.4
+      &:active
+        opacity 0.3
+      
+    input.cropit-image-input
+      width 0.1px
+      height 0.1px
+      opacity 0
+      overflow hidden
+      position absolute
+      z-index -1
+    label.cropit-image-input-btn
+      margin 0 auto
+      display block
+      span  
+        font-weight normal
+        font-size 12px
+        color gray
+        height 32px
+        width 112px
+        display flex
+        align-items center
+        justify-content center
+        border 1px solid gray-light
+        border-radius 18px
+        margin 0 auto
+        cursor pointer
+        &:hover
+          background gray-lightest
+          
+          
+          
+          
+          
+        

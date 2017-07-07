@@ -1,0 +1,109 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'copyright-info-input'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/bootstrap-tokenfield.min.css')
+  link(rel='stylesheet', type='text/css', href='/static/css/copyright-info-input.css')
+
+block header
+  include ./components/header.pug
+  +header('logined', 1)
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .width-limit
+    .panel.panel-default.copyright-info-input
+      .panel-heading
+        .copyright-step.finish
+          .copyright-step-bullet 1
+          | 上传文件
+        .copyright-step.active
+          .copyright-step-bullet 2
+          | 版权信息
+        .copyright-step
+          .copyright-step-bullet 3
+          | 申请证书
+      .panel-body
+        form
+          .block-wrapper
+            h3 信息录入
+            .subtitle 填写版权基本信息，方便日后维权
+            .information-input-container
+              .information-input-column-left
+                #image-cropper
+                  .cropit-preview
+                  .image-control-wrapper
+                    .rotate-ccw-btn
+                    .rotate-cw-btn
+                    input.cropit-image-zoom-input(type="range")
+                  label.cropit-image-input-btn
+                    span 更换略缩图
+                    input.cropit-image-input(type="file") 
+              .information-input-column-right
+                input(placeholder="图片名")
+                textarea.description(placeholder="图片描述")
+                textarea#tags-input(type="text" placeholder="标签")
+
+
+          .line
+          .block-wrapper
+            label.accept-service-rule
+              input(type="checkbox")
+              | 同意
+              a(href="#") 数字作品版权服务协议
+            button.btn.btn-sm.btn-primary.next-step(type="submit") 下一步
+
+block scripts
+  script(src="/static/js/jquery.cropit.js")
+  script(src="/static/js/bootstrap-tokenfield.min.js")
+  script.
+    //初始化标签输入框
+    $('#tags-input').tokenfield()
+
+
+    var $imageCropper = $('#image-cropper')
+    //初始化图片裁剪
+    $imageCropper.cropit()
+
+    //默认缩略图
+    $imageCropper.cropit('imageSrc', 'http://placekitten.com/g/1280/800')
+
+    //绑定旋转略缩图按钮
+    $('.rotate-cw-btn').click(function() {
+      $('#image-cropper').cropit('rotateCW')
+    })
+    $('.rotate-ccw-btn').click(function() {
+      $('#image-cropper').cropit('rotateCCW')
+    })
+
+    //获取裁剪图片的 dataUrl
+    function getCropedImage(){
+      return $imageCropper.cropit('export')
+    }
+
+    //dataURL 转换为 Blob 对象
+    function dataURItoBlob(dataURI) {
+      var byteString
+      if (dataURI.split(',')[0].indexOf('base64') >= 0)
+        byteString = atob(dataURI.split(',')[1])
+      else
+        byteString = unescape(dataURI.split(',')[1])
+      var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0]
+      var ia = new Uint8Array(byteString.length)
+      for (var i = 0; i < byteString.length; i++) {
+        ia[i] = byteString.charCodeAt(i)
+      }
+      return new Blob([ia], {type:mimeString})
+    }
+
+    //提交表单时用来获取裁剪后图片的方法
+    function getCropedImageFormData(){
+      var dataURL = getCropedImage()
+      var blob = dataURItoBlob(dataURL)
+      return blob
+    }
+
