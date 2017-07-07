@@ -66,6 +66,9 @@
                 </div>
               </div>
             </div>
+            <div class="line">
+              <div class="fold-page expe"></div>
+            </div>
             <div class="line"></div>
             <div class="block-wrapper">
               <label class="accept-service-rule">
@@ -98,7 +101,16 @@
     <script src="/static/js/bootstrap-tokenfield.min.js"></script>
     <script>
       //初始化标签输入框
-      $('#tags-input').tokenfield()
+      //控件文档 http://sliptree.github.io/bootstrap-tokenfield/
+      var $tagsInput = $('#tags-input')
+      $tagsInput.tokenfield({
+        delimiter: " " //以空格作为区分
+      })
+      
+      //获取已输入的标签
+      function getTokens(){
+        return $tagsInput.tokenfield('getTokens')
+      }
       
       
       var $imageCropper = $('#image-cropper')

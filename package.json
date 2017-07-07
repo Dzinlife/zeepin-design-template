@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "NODE_ENV=development node app.js"
+    "dev": "NODE_ENV=development node app.js",
+    "start": "node app.js"
   },
   "author": "dzinlife",
   "dependencies": {
+    "micro": "latest",
     "bootstrap": "^3.3.7",
     "bootstrap-tokenfield": "^0.12.0",
     "cropit": "^0.5.1",

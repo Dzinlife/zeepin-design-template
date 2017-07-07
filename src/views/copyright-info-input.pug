@@ -47,8 +47,8 @@ block content
                 input(placeholder="图片名")
                 textarea.description(placeholder="图片描述")
                 textarea#tags-input(type="text" placeholder="标签")
-
-
+          .line
+            .fold-page.expe
           .line
           .block-wrapper
             label.accept-service-rule
@@ -62,7 +62,16 @@ block scripts
   script(src="/static/js/bootstrap-tokenfield.min.js")
   script.
     //初始化标签输入框
-    $('#tags-input').tokenfield()
+    //控件文档 http://sliptree.github.io/bootstrap-tokenfield/
+    var $tagsInput = $('#tags-input')
+    $tagsInput.tokenfield({
+      delimiter: " " //以空格作为区分
+    })
+
+    //获取已输入的标签
+    function getTokens(){
+      return $tagsInput.tokenfield('getTokens')
+    }
 
 
     var $imageCropper = $('#image-cropper')
