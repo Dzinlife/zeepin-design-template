@@ -229,6 +229,7 @@ body:after {
 }
 input:not([type]),
 input[type='text'],
+input[type='password'],
 textarea {
   height: 44px;
   border: 1px solid #e7ecf3;
@@ -239,21 +240,25 @@ textarea {
 }
 input:not([type])::-webkit-input-placeholder,
 input[type='text']::-webkit-input-placeholder,
+input[type='password']::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #d2dbe6;
 }
 input:not([type]):-ms-input-placeholder,
 input[type='text']:-ms-input-placeholder,
+input[type='password']:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #d2dbe6;
 }
 input:not([type])::placeholder,
 input[type='text']::placeholder,
+input[type='password']::placeholder,
 textarea::placeholder {
   color: #d2dbe6;
 }
 input:not([type]):focus,
 input[type='text']:focus,
+input[type='password']:focus,
 textarea:focus {
   border-color: #d2dbe6;
 }
