@@ -4,6 +4,7 @@
     <title>智品 - Zeepin</title>
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/quill.snow.css">
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-tokenfield.min.css">
     <link rel="stylesheet" type="text/css" href="/static/css/copyright-info-input.css">
   </head>
@@ -44,7 +45,7 @@
           <form>
             <div class="block-wrapper">
               <h3>信息录入</h3>
-              <div class="subtitle">填写版权基本信息，方便日后维权</div>
+              <h3 class="subtitle">填写版权基本信息，方便日后维权</h3>
               <div class="information-input-container">
                 <div class="information-input-column-left">
                   <div id="image-cropper">
@@ -66,8 +67,89 @@
                 </div>
               </div>
             </div>
-            <div class="line">
-              <div class="fold-page expe"></div>
+            <div class="line"></div>
+            <div class="fold-page">
+              <div class="click-to-expand" onclick="toogleFoldPanel()">
+                <div class="click-to-expand-content">
+                  <div class="click-to-expand-icon"></div>
+                  <h4>我想出售版权</h4>
+                  <h4 class="subtitle">你的版权还可以变现哦!</h4>
+                </div>
+              </div>
+              <div class="folding-content">
+                <div class="click-to-fold"><a onclick="toogleFoldPanel()">- 收起</a></div>
+                <div class="block-wrapper">
+                  <h3>信息录入</h3>
+                  <h3 class="subtitle">填写版权基本信息，方便日后维权</h3>
+                  <div class="panel-sold-type-wrapper">
+                    <label class="copyright-sold-type reserve">
+                      <input type="radio" name="copyright-sold-type">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <div class="icon"></div>
+                          <div class="text">
+                            <h5>版权通</h5>
+                            <h5 class="subtitle">版权通是帮助创作者转让版权资产的便捷方式</h5>
+                          </div>
+                        </div>
+                        <div class="panel-body">
+                          <label>转让价格
+                            <div class="input-wrapper">
+                              <input type="number" min="0">
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </label>
+                    <label class="copyright-sold-type licence">
+                      <input type="radio" name="copyright-sold-type">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <div class="icon"></div>
+                          <div class="text">
+                            <h5>授权通</h5>
+                            <h5 class="subtitle">授权通是帮助创作者转让版权资产</h5>
+                          </div><a>选择配置</a>
+                        </div>
+                        <div class="panel-body">
+                          <ul>
+                            <li>著作权</li>
+                            <li>中国大陆</li>
+                            <li>6-12个月</li>
+                          </ul>
+                          <label>转让价格
+                            <div class="input-wrapper">
+                              <input type="number" min="0">
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="block-wrapper">
+                  <h3>选择分类</h3>
+                  <h3 class="subtitle">选择正确的分类，能够提高交易几率</h3>
+                  <div class="industry-selector-wrapper">
+                    <select>
+                      <option selected disabled>选择行业应用</option>
+                    </select>
+                    <select>
+                      <option selected disabled>选择一级分类</option>
+                    </select>
+                    <select>
+                      <option selected disabled>选择二级分类</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="block-wrapper">
+                  <h3>版权详情</h3>
+                  <h3 class="subtitle">跟淘宝商品介绍一样，如何让你在版权市场脱颖而出</h3>
+                  <div id="text-editor" style="height: 320px;"></div>
+                </div>
+              </div>
             </div>
             <div class="line"></div>
             <div class="block-wrapper">
@@ -99,6 +181,7 @@
     <script src="/static/js/bootstrap.min.js"></script>
     <script src="/static/js/jquery.cropit.js"></script>
     <script src="/static/js/bootstrap-tokenfield.min.js"></script>
+    <script src="/static/js/quill.min.js"></script>
     <script>
       //初始化标签输入框
       //控件文档 http://sliptree.github.io/bootstrap-tokenfield/
@@ -153,6 +236,22 @@
         var dataURL = getCropedImage()
         var blob = dataURItoBlob(dataURL)
         return blob
+      }
+      
+      //展开／关闭 版权出售表单
+      function toogleFoldPanel(){
+        document.querySelector(".fold-page").classList.toggle("expand")
+      }
+      
+      //初始化富文本编辑器
+      var textEditor = new Quill('#text-editor', {
+        modules: { toolbar: true },
+        theme: 'snow'
+      })
+      
+      //获取富文本编辑器 html
+      function getEditorContent(){
+        return textEditor.container.firstChild.innerHTML
       }
     </script>
   </body>

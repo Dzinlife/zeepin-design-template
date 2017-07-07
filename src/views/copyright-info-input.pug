@@ -4,6 +4,7 @@ block locals
   - var pid = 'copyright-info-input'
 
 block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/quill.snow.css')
   link(rel='stylesheet', type='text/css', href='/static/css/bootstrap-tokenfield.min.css')
   link(rel='stylesheet', type='text/css', href='/static/css/copyright-info-input.css')
 
@@ -31,7 +32,7 @@ block content
         form
           .block-wrapper
             h3 信息录入
-            .subtitle 填写版权基本信息，方便日后维权
+            h3.subtitle 填写版权基本信息，方便日后维权
             .information-input-container
               .information-input-column-left
                 #image-cropper
@@ -48,7 +49,67 @@ block content
                 textarea.description(placeholder="图片描述")
                 textarea#tags-input(type="text" placeholder="标签")
           .line
-            .fold-page.expe
+          //- [.expand]
+          .fold-page
+            .click-to-expand(onclick="toogleFoldPanel()")
+              .click-to-expand-content
+                .click-to-expand-icon
+                h4 我想出售版权
+                h4.subtitle 你的版权还可以变现哦!
+            .folding-content
+              .click-to-fold
+                a(onclick="toogleFoldPanel()") - 收起
+              .block-wrapper
+                h3 信息录入
+                h3.subtitle 填写版权基本信息，方便日后维权
+                .panel-sold-type-wrapper
+                  label.copyright-sold-type.reserve
+                    input(type="radio" name="copyright-sold-type")
+                    .panel.panel-default
+                      .panel-heading
+                        .icon
+                        .text
+                          h5 版权通
+                          h5.subtitle 版权通是帮助创作者转让版权资产的便捷方式
+                      .panel-body
+                        label
+                          | 转让价格
+                          .input-wrapper
+                            input(type="number" min="0")
+                  label.copyright-sold-type.licence
+                    input(type="radio" name="copyright-sold-type")
+                    .panel.panel-default
+                      .panel-heading
+                        .icon
+                        .text
+                          h5 授权通
+                          h5.subtitle 授权通是帮助创作者转让版权资产
+                        a 选择配置
+                      .panel-body
+                        ul
+                          li 著作权
+                          li 中国大陆
+                          li 6-12个月
+                        label
+                          | 转让价格
+                          .input-wrapper
+                            input(type="number" min="0")
+              .line
+              .block-wrapper
+                h3 选择分类
+                h3.subtitle 选择正确的分类，能够提高交易几率
+                .industry-selector-wrapper
+                  select
+                    option(selected disabled) 选择行业应用
+                  select
+                    option(selected disabled) 选择一级分类
+                  select
+                    option(selected disabled) 选择二级分类
+              .line
+              .block-wrapper
+                h3 版权详情
+                h3.subtitle 跟淘宝商品介绍一样，如何让你在版权市场脱颖而出
+                #text-editor(style="height: 320px")
           .line
           .block-wrapper
             label.accept-service-rule
@@ -60,6 +121,7 @@ block content
 block scripts
   script(src="/static/js/jquery.cropit.js")
   script(src="/static/js/bootstrap-tokenfield.min.js")
+  script(src="/static/js/quill.min.js")
   script.
     //初始化标签输入框
     //控件文档 http://sliptree.github.io/bootstrap-tokenfield/
@@ -114,5 +176,21 @@ block scripts
       var dataURL = getCropedImage()
       var blob = dataURItoBlob(dataURL)
       return blob
+    }
+
+    //展开／关闭 版权出售表单
+    function toogleFoldPanel(){
+      document.querySelector(".fold-page").classList.toggle("expand")
+    }
+
+    //初始化富文本编辑器
+    var textEditor = new Quill('#text-editor', {
+      modules: { toolbar: true },
+      theme: 'snow'
+    })
+
+    //获取富文本编辑器 html
+    function getEditorContent(){
+      return textEditor.container.firstChild.innerHTML
     }
 
