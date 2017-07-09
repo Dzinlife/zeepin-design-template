@@ -502,8 +502,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 -6px;
 }
 #copyright-info-input .industry-selector-wrapper select {
+  margin: 0 6px;
   display: block;
 }
 #copyright-info-input #licence-modal.modal .modal-dialog {
