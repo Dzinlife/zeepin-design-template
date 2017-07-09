@@ -1,0 +1,94 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'licence-template'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/licence-template.css')
+
+block content
+  .width-limit
+    .panel.panel-default
+      .panel-heading
+        h1 微信用图授权
+      .panel-body
+        .form-group
+          label.control-label 版权取得方式
+          .column-wrapper
+            | 继续取得
+        .form-group
+          label.control-label 授权期限
+          .column-wrapper
+            | 6个月
+        .form-group
+          label.control-label 授权版权范围
+          .column-wrapper
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 复制权
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 发行权
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 出租权
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 展览权
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 表演权
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 放映权
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 广播权
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 信息网络传播权
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 摄制
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 改编权
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 翻译权
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 汇编权
+            
+        .form-group
+          label.control-label 授权方式
+          .column-wrapper
+            .licence-method-text 普通授权许可&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转授权权限： <span style="color:red;">不允许</span>
+        .form-group
+          label.control-label 授权区域
+          .column-wrapper.licence-zone
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 中国大陆
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 中国香港
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 中国澳门
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 中国台湾
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 全球国家及地区
+            label.checkbox-inline
+              input(type="checkbox" checked disabled)
+              | 其他地区
+        a.quit(onclick="quitBox()") 关闭
+    .footer-text 本授权模版是由智品团队根据市场习惯进行配置，请仔细查看。<br>如需修改，可通过“自定义授权”进行权限配置
+  block scripts
+    script.
+      function quitBox(cmd){   
+        open(location, '_self').close()
+      }
