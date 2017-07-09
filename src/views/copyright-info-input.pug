@@ -175,7 +175,7 @@ block content
                 .form-group
                   label.control-label 模版名称
                   .column-wrapper
-                    input(value="!23")
+                    input(value="自定义方案")
                 .form-group
                   label.control-label 版权取得方式
                   .column-wrapper
@@ -242,10 +242,56 @@ block content
                             input(type="checkbox")
                             | 其他权
                           input
-
-
+                .form-group
+                  label.control-label 授权方式
+                  .column-wrapper
+                    .licence-method-text 普通授权许可&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转授权权限： 不允许
+                .form-group
+                  label.control-label 授权区域
+                  .column-wrapper.licence-zone
+                    label.checkbox-inline
+                      input(type="checkbox")
+                      | 中国大陆
+                    label.checkbox-inline
+                      input(type="checkbox")
+                      | 中国香港
+                    label.checkbox-inline
+                      input(type="checkbox")
+                      | 中国澳门
+                    label.checkbox-inline
+                      input(type="checkbox")
+                      | 中国台湾
+                    label.checkbox-inline
+                      input(type="checkbox")
+                      | 全球国家及地区
+                    label.checkbox-inline
+                      input(type="checkbox")
+                      | 其他地区
+                .form-group
+                  label.control-label 授权时间
+                  .column-wrapper.licence-period
+                    label
+                      input(type="radio" name="licence-period" checked)
+                      .licence-period-radio-button 3个月
+                    label
+                      input(type="radio" name="licence-period")
+                      .licence-period-radio-button 6个月
+                    label
+                      input(type="radio" name="licence-period")
+                      .licence-period-radio-button 12个月
+                    label
+                      input(type="radio" name="licence-period")
+                      .licence-period-radio-button 24个月
+                    label
+                      input(type="radio" name="licence-period")
+                      .licence-period-radio-button 无限期
+                    label
+                      input(type="radio" name="licence-period")
+                      .licence-period-radio-button 自定义
+                      input
         .modal-footer
-          button.btn.btn-default(type='button', data-dismiss='modal') Close
+          button.btn.btn-sm.btn-primary(type='button', data-dismiss='modal') 确定
+          a(data-dismiss='modal') 关闭
 
 block scripts
   script(src="/static/js/jquery.cropit.js")

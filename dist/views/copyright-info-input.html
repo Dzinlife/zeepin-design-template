@@ -236,7 +236,7 @@
                   <div class="form-group">
                     <label class="control-label">模版名称</label>
                     <div class="column-wrapper">
-                      <input value="!23">
+                      <input value="自定义方案">
                     </div>
                   </div>
                   <div class="form-group">
@@ -328,12 +328,71 @@
                       </table>
                     </div>
                   </div>
+                  <div class="form-group">
+                    <label class="control-label">授权方式</label>
+                    <div class="column-wrapper">
+                      <div class="licence-method-text">普通授权许可&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转授权权限： 不允许</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">授权区域</label>
+                    <div class="column-wrapper licence-zone">
+                      <label class="checkbox-inline">
+                        <input type="checkbox">中国大陆
+                      </label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox">中国香港
+                      </label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox">中国澳门
+                      </label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox">中国台湾
+                      </label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox">全球国家及地区
+                      </label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox">其他地区
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">授权时间</label>
+                    <div class="column-wrapper licence-period">
+                      <label>
+                        <input type="radio" name="licence-period" checked>
+                        <div class="licence-period-radio-button">3个月</div>
+                      </label>
+                      <label>
+                        <input type="radio" name="licence-period">
+                        <div class="licence-period-radio-button">6个月</div>
+                      </label>
+                      <label>
+                        <input type="radio" name="licence-period">
+                        <div class="licence-period-radio-button">12个月</div>
+                      </label>
+                      <label>
+                        <input type="radio" name="licence-period">
+                        <div class="licence-period-radio-button">24个月</div>
+                      </label>
+                      <label>
+                        <input type="radio" name="licence-period">
+                        <div class="licence-period-radio-button">无限期</div>
+                      </label>
+                      <label>
+                        <input type="radio" name="licence-period">
+                        <div class="licence-period-radio-button">自定义</div>
+                        <input>
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer">
-            <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+            <button class="btn btn-sm btn-primary" type="button" data-dismiss="modal">确定</button><a data-dismiss="modal">关闭</a>
           </div>
         </div>
       </div>
