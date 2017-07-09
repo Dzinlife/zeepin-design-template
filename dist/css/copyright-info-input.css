@@ -317,6 +317,19 @@
   margin: 0 10px;
   background: url("/static/imgs/copyright-info-sold-type-bg.svg") no-repeat;
 }
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel:before {
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("/static/imgs/copyright-info-sold-type-selected-icon.svg") no-repeat;
+  width: 44px;
+  height: 44px;
+  left: 0;
+  top: 0;
+}
 #copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel:hover {
   border-color: #d2dbe6;
   -webkit-box-shadow: 0 11px 11px rgba(118,141,167,0.3);
@@ -428,6 +441,7 @@
   content: "¥";
   position: absolute;
   left: 0;
+  top: 0;
   font-size: 34px;
   color: #b0d5ff;
   font-weight: 300;
@@ -444,7 +458,7 @@
   background: transparent;
   text-align: center;
 }
-#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper input[type=radio] {
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper input[type=checkbox] {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -460,33 +474,28 @@
 #copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type.licence .icon {
   background: url("/static/imgs/copyright-info-sold-type-licence-icon-gray.svg") no-repeat center;
 }
-#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type.licence input[type=radio]:checked + .panel .icon {
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type.licence input[type=checkbox]:checked + .panel .icon {
   background-image: url("/static/imgs/copyright-info-sold-type-licence-icon-blue.svg");
 }
 #copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type.reserve .icon {
   background: url("/static/imgs/copyright-info-sold-type-reserve-icon-gray.svg") no-repeat center;
 }
-#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type.reserve input[type=radio]:checked + .panel .icon {
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type.reserve input[type=checkbox]:checked + .panel .icon {
   background-image: url("/static/imgs/copyright-info-sold-type-reserve-icon-blue.svg");
 }
-#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type input[type=radio]:checked + .panel {
-  cursor: auto;
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type input[type=checkbox]:checked + .panel {
   border-color: #469bff;
 }
-#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type input[type=radio]:checked + .panel:before {
-  content: "";
-  position: absolute;
-  display: block;
-  background: url("/static/imgs/copyright-info-sold-type-selected-icon.svg") no-repeat;
-  width: 44px;
-  height: 44px;
-  left: 0;
-  top: 0;
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type input[type=checkbox]:checked + .panel input {
+  pointer-events: none;
 }
-#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type input[type=radio]:checked + .panel .panel-heading {
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type input[type=checkbox]:checked + .panel:before {
+  opacity: 1;
+}
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type input[type=checkbox]:checked + .panel .panel-heading {
   border-color: #b0d5ff;
 }
-#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type input[type=radio]:checked + .panel .panel-heading h5 {
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper label.copyright-sold-type input[type=checkbox]:checked + .panel .panel-heading h5 {
   color: #3c4046;
 }
 #copyright-info-input .industry-selector-wrapper {
@@ -495,20 +504,160 @@
   display: flex;
 }
 #copyright-info-input .industry-selector-wrapper select {
-  color: #768da7;
-  margin: 0 6px;
   display: block;
+}
+#copyright-info-input #licence-modal.modal .modal-dialog {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1136px;
+}
+#copyright-info-input #licence-modal.modal .modal-body {
+  padding: 24px 32px;
+}
+#copyright-info-input #licence-modal.modal .modal-body:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#copyright-info-input #licence-modal.modal .modal-header {
+  padding-bottom: 0;
+}
+#copyright-info-input #licence-modal.modal label.licence-setting-label {
+  float: left;
+  width: 33.33%;
+  padding: 16px;
+}
+#copyright-info-input #licence-modal.modal label.licence-setting-label .panel-wrapper {
+  height: 0;
+  position: relative;
+  padding-top: 64%;
+}
+#copyright-info-input #licence-modal.modal input[type=radio] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#copyright-info-input #licence-modal.modal input[type=radio]:checked + .panel-wrapper .panel {
+  border-color: #12ce83;
+}
+#copyright-info-input #licence-modal.modal input[type=radio]:checked + .panel-wrapper .panel:before {
+  opacity: 1;
+}
+#copyright-info-input #licence-modal.modal .panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e7ecf3;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  margin: 0;
+}
+#copyright-info-input #licence-modal.modal .panel:before {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("/static/imgs/copyright-info-sold-type-selected-icon-primary.svg") no-repeat;
+  width: 44px;
   height: 44px;
-  line-height: 44px;
+  left: 0;
+  top: 0;
+}
+#copyright-info-input #licence-modal.modal .panel .panel-body {
+  padding: 26px 36px;
+  position: relative;
+  height: 100%;
+}
+#copyright-info-input #licence-modal.modal .panel .panel-body .title {
+  font-size: 18px;
+  color: #3c4046;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+#copyright-info-input #licence-modal.modal .panel .panel-body .description {
+  color: #768da7;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: normal;
+}
+#copyright-info-input #licence-modal.modal .panel .panel-body a {
+  position: absolute;
+  left: 36px;
+  bottom: 26px;
+  font-weight: normal;
+  color: #469bff;
+  font-size: 12px;
+}
+#copyright-info-input #licence-modal.modal button.close {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #d2dbe6;
+  opacity: 1;
+  background: url("/static/imgs/close-cross.svg") no-repeat center;
+}
+#copyright-info-input #licence-modal.modal button.close:hover {
+  background-color: #e7ecf3;
+}
+#copyright-info-input #licence-modal.modal .nav.nav-tabs {
+  border: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 56px;
+}
+#copyright-info-input #licence-modal.modal .nav.nav-tabs li a {
+  margin-top: -8px;
+  line-height: 28px;
+}
+#copyright-info-input #licence-modal.modal .nav.nav-tabs li.tab1 a {
+  color: #12ce83;
+}
+#copyright-info-input #licence-modal.modal #tab1 .custom-licence-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+#copyright-info-input #licence-modal.modal #tab1 .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#copyright-info-input #licence-modal.modal #tab1 .column-wrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  outline: none;
-  border-color: #e7ecf3;
-  width: 0;
-  background: #fff;
-  -webkit-appearance: none;
-  padding: 0 10px;
-  position: relative;
-  border-radius: 8px;
+}
+#copyright-info-input #licence-modal.modal #tab1 .column-wrapper input:not([type=checkbox]) {
+  width: 290px;
+}
+#copyright-info-input #licence-modal.modal #tab1 .column-wrapper select {
+  width: 290px;
+}
+#copyright-info-input #licence-modal.modal #tab1 label.control-label {
+  line-height: 44px;
+  width: 120px;
+}
+#copyright-info-input #licence-modal.modal #tab1 table td {
+  min-width: 88px;
+  height: 44px;
+}
+#copyright-info-input #licence-modal.modal #tab1 table label.checkbox-other {
+  padding-top: 10px;
+}
+#copyright-info-input #licence-modal.modal #tab1 table label.checkbox-other + input {
+  display: block;
+  margin-top: 12px;
 }

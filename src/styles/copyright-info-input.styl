@@ -236,6 +236,17 @@
           position relative
           margin 0 10px
           background url('/static/imgs/copyright-info-sold-type-bg.svg') no-repeat
+          &:before
+            opacity 0
+            transition 0.2s
+            content ""
+            position absolute
+            display block
+            background url("/static/imgs/copyright-info-sold-type-selected-icon.svg") no-repeat
+            width 44px
+            height 44px
+            left 0
+            top 0
           &:hover
             border-color gray-lighter
             box-shadow 0 11px 11px rgba(gray, 0.3)
@@ -267,6 +278,7 @@
               font-size 12px
               margin-left auto
               cursor pointer
+              
           .panel-body
             height 172px
             position relative
@@ -317,6 +329,7 @@
                   content "¥"
                   position absolute
                   left 0
+                  top 0                    
                   font-size 34px
                   color #B0D5FF
                   font-weight 300
@@ -332,7 +345,7 @@
                 background transparent
                 text-align center
                   
-        input[type=radio]
+        input[type=checkbox]
           width 0.1px
           height 0.1px
           opacity 0
@@ -344,31 +357,24 @@
           &.licence
             .icon
               background url('/static/imgs/copyright-info-sold-type-licence-icon-gray.svg') no-repeat center
-            input[type=radio]:checked
+            input[type=checkbox]:checked
               & + .panel
                 .icon
                   background-image url('/static/imgs/copyright-info-sold-type-licence-icon-blue.svg')
           &.reserve
             .icon
               background url('/static/imgs/copyright-info-sold-type-reserve-icon-gray.svg') no-repeat center
-            input[type=radio]:checked
+            input[type=checkbox]:checked
               & + .panel
                 .icon
                   background-image url('/static/imgs/copyright-info-sold-type-reserve-icon-blue.svg')
-          input[type=radio]:checked
+          input[type=checkbox]:checked
             & + .panel
-              cursor auto
               border-color #469BFF
-              
+              input
+                pointer-events none
               &:before
-                content ""
-                position absolute
-                display block
-                background url("/static/imgs/copyright-info-sold-type-selected-icon.svg") no-repeat
-                width 44px
-                height 44px
-                left 0
-                top 0
+                opacity 1
               .panel-heading
                 border-color #B0D5FF
                 h5
@@ -377,24 +383,131 @@
   .industry-selector-wrapper
     display flex
     select
-      color gray
-      margin 0 6px
       display block
-      height 44px
-      line-height 44px
-      flex 1
-      outline none
-      border-color gray-lightest
-      width 0
-      background white
-      -webkit-appearance none
-      padding 0 10px
-      position relative
-      border-radius 8px
       
-              
+  #licence-modal.modal
+    .modal-dialog
+      width 100%
+      min-width 1024px
+      max-width 1136px
+    .modal-body
+      padding 24px 32px
+      &:after
+        content ""
+        display block
+        clear both
+    .modal-header
+      padding-bottom 0
+    label.licence-setting-label
+      float left
+      width 33.33%
+      padding 16px
+      .panel-wrapper
+        height 0 
+        position relative
+        padding-top 64%
           
-        
+    input[type=radio]
+      width 0.1px
+      height 0.1px
+      opacity 0
+      overflow hidden
+      position absolute
+      z-index -1
+      &:checked + .panel-wrapper
+        .panel
+          border-color brand-primary
+          &:before
+            opacity 1
+    .panel
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      border 1px solid gray-lightest
+      transition 0.2s
+      cursor pointer
+      margin 0
+      &:before
+        transition 0.2s
+        opacity 0
+        content ""
+        position absolute
+        display block
+        background url("/static/imgs/copyright-info-sold-type-selected-icon-primary.svg") no-repeat
+        width 44px
+        height 44px
+        left 0
+        top 0
+      .panel-body
+        padding 26px 36px
+        position relative
+        height 100%
+        .title
+          font-size 18px
+          color gray-dark
+          font-weight normal
+          margin-bottom 12px
+        .description
+          color gray
+          line-height 18px
+          letter-spacing 1px
+          font-size 12px
+          font-weight normal
+        a
+          position absolute
+          left 36px
+          bottom 26px
+          font-weight normal
+          color #469BFF
+          font-size 12px
+          
+    button.close
+      width 32px
+      height 32px
+      border-radius 50%
+      border 1px solid gray-lighter
+      opacity 1
+      background url("/static/imgs/close-cross.svg") no-repeat center
+      &:hover
+        background-color gray-lightest
+    .nav.nav-tabs
+      border none
+      margin 0
+      display flex
+      justify-content center
+      padding-left 56px
+      li a
+        margin-top -8px
+        line-height 28px
+      li.tab1 a
+        color brand-primary
+      
+    #tab1
+      .custom-licence-wrapper
+        max-width 640px
+        margin 0 auto
+      .form-group
+        display flex
+      .column-wrapper
+        flex 1
+        input:not([type=checkbox])
+          width 290px
+        select 
+          width 290px
+      label.control-label
+        line-height 44px
+        width 120px
+      table
+        td
+          min-width 88px
+          height 44px
+        label.checkbox-other
+          padding-top 10px
+          & + input
+            display block
+            margin-top 12px
       
       
           

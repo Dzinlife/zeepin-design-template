@@ -154,19 +154,6 @@
 #auth-enterprise .input-group.location-select select {
   margin: 0 6px;
   display: block;
-  height: 44px;
-  line-height: 44px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  outline: none;
-  border-color: #e7ecf3;
-  width: 0;
-  background: #fff;
-  -webkit-appearance: none;
-  padding: 0 10px;
-  position: relative;
-  border-radius: 8px;
 }
 #auth-enterprise .input-group.date-pick {
   margin: 0 -6px;

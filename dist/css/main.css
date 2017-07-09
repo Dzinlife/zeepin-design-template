@@ -271,3 +271,26 @@ textarea:focus {
 textarea {
   padding-top: 8px;
 }
+select {
+  color: #768da7;
+  height: 44px;
+  line-height: 44px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  outline: none;
+  border-color: #e7ecf3;
+  width: 0;
+  background: #fff url("/static/imgs/select-arrow.svg") no-repeat;
+  background-position: calc(100% - 8px);
+  background-size: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0 10px;
+  position: relative;
+  border-radius: 8px;
+  padding-right: 24px;
+}
+select:focus {
+  border-color: #d2dbe6;
+}

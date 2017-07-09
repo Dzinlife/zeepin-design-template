@@ -64,7 +64,7 @@ block content
                 h3.subtitle 填写版权基本信息，方便日后维权
                 .panel-sold-type-wrapper
                   label.copyright-sold-type.reserve
-                    input(type="radio" name="copyright-sold-type")
+                    input(type="checkbox")
                     .panel.panel-default
                       .panel-heading
                         .icon
@@ -77,14 +77,14 @@ block content
                           .input-wrapper
                             input(type="number" min="0")
                   label.copyright-sold-type.licence
-                    input(type="radio" name="copyright-sold-type")
+                    input(type="checkbox")
                     .panel.panel-default
                       .panel-heading
                         .icon
                         .text
                           h5 授权通
                           h5.subtitle 授权通是帮助创作者转让版权资产
-                        a 选择配置
+                        a(data-toggle="modal" data-target="#licence-modal") 选择配置
                       .panel-body
                         ul
                           li 著作权
@@ -93,7 +93,7 @@ block content
                         label
                           | 转让价格
                           .input-wrapper
-                            input(type="number" min="0")
+                            input(type="number" min="0" pattern="[0-9]+([\.,][0-9]+)?" step="0.01")
               .line
               .block-wrapper
                 h3 选择分类
@@ -117,6 +117,135 @@ block content
               | 同意
               a(href="#") 数字作品版权服务协议
             button.btn.btn-sm.btn-primary.next-step(type="submit") 下一步
+  #licence-modal.modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal')
+          ul.nav.nav-tabs
+            li.active
+              a(data-toggle='tab', href='#tab0') 常用方案
+            li.tab1
+              a(data-toggle='tab', href='#tab1') +自定义方案
+        .modal-body
+          .tab-content
+            #tab0.tab-pane.fade.in.active
+              label.licence-setting-label
+                input(type="radio" name="licence-setting-radio" checked)
+                .panel-wrapper
+                  .panel.panel-default.licence-setting-panel
+                    .panel-body
+                      .title 微信用图授权
+                      .description 该配置适合将你的版权授权给微信公众号的用户，享有使用权、转载圈、修改权等，是大部分人的首选。
+                      a(href="/licence-detial-template" target="_blank") 查看配置详情
+              label.licence-setting-label
+                input(type="radio" name="licence-setting-radio")
+                .panel-wrapper
+                  .panel.panel-default
+                    .panel-body
+                      .title 户外广告授权
+                      .description 该配置适合将你的版权授权给微信公众号的用户，享有使用权、转载圈、修改权等，是大部分人的首选。
+                      a(href="/licence-detial-template" target="_blank") 查看配置详情
+              label.licence-setting-label
+                input(type="radio" name="licence-setting-radio")
+                .panel-wrapper
+                  .panel.panel-default
+                    .panel-body
+                      .title 户外广告授权
+                      .description 该配置适合将你的版权授权给微信公众号的用户，享有使用权、转载圈、修改权等，是大部分人的首选。
+                      a(href="/licence-detial-template" target="_blank") 查看配置详情
+              label.licence-setting-label
+                input(type="radio" name="licence-setting-radio")
+                .panel-wrapper
+                  .panel.panel-default
+                    .panel-body
+                      .title 户外广告授权
+                      .description 该配置适合将你的版权授权给微信公众号的用户，享有使用权、转载圈、修改权等，是大部分人的首选。
+                      a(href="/licence-detial-template" target="_blank") 查看配置详情
+              label.licence-setting-label.custom
+                input(type="radio" name="licence-setting-radio")
+                .panel-wrapper
+                  .panel.panel-default
+                    .panel-body
+                      .title 自定义方案一
+                      .description 你可以配置自己的授权方案
+                      a(onclick="$('#licence-modal .nav-tabs a[href=\"#tab1\"]').tab('show'); return false") 配置方案
+            #tab1.tab-pane.fade
+              .custom-licence-wrapper
+                .form-group
+                  label.control-label 模版名称
+                  .column-wrapper
+                    input(value="!23")
+                .form-group
+                  label.control-label 版权取得方式
+                  .column-wrapper
+                    select
+                      option(selected) 继续取得
+                .form-group
+                  label.control-label 授权版权范围
+                  .column-wrapper
+                    table
+                      tr
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 复制权
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 发行权
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 出租权
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 展览权
+                      tr
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 表演权
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 放映权
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 广播权
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 信息网络传播权
+                      tr
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 摄制
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 改编权
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 翻译权
+                        td
+                          label.checkbox-inline
+                            input(type="checkbox")
+                            | 汇编权
+                      tr
+                        td(colspan=4)
+                          label.checkbox-inline.checkbox-other
+                            input(type="checkbox")
+                            | 其他权
+                          input
+
+
+        .modal-footer
+          button.btn.btn-default(type='button', data-dismiss='modal') Close
 
 block scripts
   script(src="/static/js/jquery.cropit.js")
@@ -194,3 +323,4 @@ block scripts
       return textEditor.container.firstChild.innerHTML
     }
 
+    $('#licence-modal').modal('show')

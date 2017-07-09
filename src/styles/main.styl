@@ -37,3 +37,22 @@ input:not([type]), input[type='text'], input[type='password'], input[type='numbe
 textarea
   padding-top 8px
 
+select
+  color gray
+  height 44px
+  line-height 44px
+  flex 1
+  outline none
+  border-color gray-lightest
+  width 0
+  background white url("/static/imgs/select-arrow.svg") no-repeat
+  background-position calc(100% - 8px)
+  background-size 10px
+  -webkit-appearance none
+  -moz-appearance none
+  padding 0 10px
+  position relative
+  border-radius 8px
+  padding-right 24px
+  &:focus
+    border-color gray-lighter
