@@ -548,7 +548,7 @@
   position: relative;
   padding-top: 64%;
 }
-#copyright-info-input #licence-modal.modal input[type=checkbox] {
+#copyright-info-input #licence-modal.modal label.licence-setting-label input[type=checkbox] {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -556,10 +556,10 @@
   position: absolute;
   z-index: -1;
 }
-#copyright-info-input #licence-modal.modal input[type=checkbox]:checked + .panel-wrapper .panel {
+#copyright-info-input #licence-modal.modal label.licence-setting-label input[type=checkbox]:checked + .panel-wrapper .panel {
   border-color: #12ce83;
 }
-#copyright-info-input #licence-modal.modal input[type=checkbox]:checked + .panel-wrapper .panel:before {
+#copyright-info-input #licence-modal.modal label.licence-setting-label input[type=checkbox]:checked + .panel-wrapper .panel:before {
   opacity: 1;
 }
 #copyright-info-input #licence-modal.modal .panel {
