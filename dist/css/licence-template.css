@@ -18,6 +18,10 @@
   color: #3c4046;
   margin: 0;
 }
+#licence-template .panel-heading h1 span {
+  margin-left: 32px;
+  color: #12ce83;
+}
 #licence-template .panel-body {
   padding: 44px 70px;
 }

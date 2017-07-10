@@ -55,10 +55,10 @@ block content
               .click-to-expand-content
                 .click-to-expand-icon
                 h4 我想出售版权
-                h4.subtitle 你的版权还可以变现哦!
+                h4.subtitle 展开为出售版权，折叠为取消出售
             .folding-content
               .click-to-fold
-                a(onclick="toogleFoldPanel()") - 收起
+                a(onclick="toogleFoldPanel()") - 折叠-取消版权出售
               .block-wrapper
                 h3 信息录入
                 h3.subtitle 填写版权基本信息，方便日后维权
@@ -83,17 +83,20 @@ block content
                         .icon
                         .text
                           h5 授权通
+                            span (已选4个)
                           h5.subtitle 授权通是帮助创作者转让版权资产
                         a(data-toggle="modal" data-target="#licence-modal") 选择配置
                       .panel-body
                         ul
-                          li 著作权
-                          li 中国大陆
-                          li 6-12个月
-                        label
-                          | 转让价格
-                          .input-wrapper
-                            input(type="number" min="0" pattern="[0-9]+([\.,][0-9]+)?" step="0.01")
+                          li 微信授权模版
+                          li 衍生授权模版
+                          li 户外印刷授权模版
+                          li 衍生品授权模版
+                          li 微信授权模版
+                          li 衍生授权模版
+                          li 户外印刷授权模版
+                          li 衍生品授权模版
+                      
               .line
               .block-wrapper
                 h3 选择分类

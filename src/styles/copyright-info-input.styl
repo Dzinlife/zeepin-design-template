@@ -213,6 +213,7 @@
         h4.subtitle
           margin-top 6px
           font-size 12px
+          color brand-primary
     .folding-content
       display none
     &.expand
@@ -226,6 +227,7 @@
         text-align center
         a
           cursor pointer
+          color brand-danger
       .panel-sold-type-wrapper
         display flex
         margin 0 -10px
@@ -267,6 +269,13 @@
               margin 0 
               font-size 16px
               color gray-light
+              display flex
+              span
+                color brand-primary
+                font-weight normal
+                font-size 12px
+                line-height 18px
+                padding-left 10px
             h5.subtitle
               margin 0
               font-size 12px
@@ -287,7 +296,6 @@
               list-style-type none
               padding 0
               margin 0 30px
-              
               li
                 display flex
                 align-items center
@@ -295,6 +303,8 @@
                 color gray-light
                 font-weight normal
                 line-height 23px
+                width 50%
+                float left
                 &:before
                   content ""
                   display block
@@ -303,11 +313,11 @@
                   margin-right 12px
                   border-radius 50%
                   background gray-lighter
-                &:nth-child(1):before
+                &:nth-child(3n - 2):before
                   background #B0D5FF
-                &:nth-child(2):before
+                &:nth-child(3n - 1):before
                   background #FFC2AE
-                &:nth-child(3):before
+                &:nth-child(3n):before
                   background #7EEDC1
             label
               position absolute

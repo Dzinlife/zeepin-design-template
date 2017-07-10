@@ -283,6 +283,7 @@
 #copyright-info-input .fold-page .click-to-expand .click-to-expand-content h4.subtitle {
   margin-top: 6px;
   font-size: 12px;
+  color: #12ce83;
 }
 #copyright-info-input .fold-page .folding-content {
   display: none;
@@ -301,6 +302,7 @@
 }
 #copyright-info-input .fold-page .folding-content .click-to-fold a {
   cursor: pointer;
+  color: #ff470d;
 }
 #copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper {
   display: -webkit-box;
@@ -359,6 +361,16 @@
   margin: 0;
   font-size: 16px;
   color: #a1a9b2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel .panel-heading h5 span {
+  color: #12ce83;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 10px;
 }
 #copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel .panel-heading h5.subtitle {
   margin: 0;
@@ -394,6 +406,8 @@
   color: #a1a9b2;
   font-weight: normal;
   line-height: 23px;
+  width: 50%;
+  float: left;
 }
 #copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel .panel-body ul li:before {
   content: "";
@@ -404,13 +418,13 @@
   border-radius: 50%;
   background: #d2dbe6;
 }
-#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel .panel-body ul li:nth-child(1):before {
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel .panel-body ul li:nth-child(3n - 2):before {
   background: #b0d5ff;
 }
-#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel .panel-body ul li:nth-child(2):before {
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel .panel-body ul li:nth-child(3n - 1):before {
   background: #ffc2ae;
 }
-#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel .panel-body ul li:nth-child(3):before {
+#copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel .panel-body ul li:nth-child(3n):before {
   background: #7eedc1;
 }
 #copyright-info-input .fold-page .folding-content .panel-sold-type-wrapper .panel .panel-body label {
