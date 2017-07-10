@@ -732,6 +732,22 @@
   margin-right: 15px;
   margin-bottom: 20px;
 }
+#copyright-info-input #licence-modal.modal #tab1 .column-wrapper.licence-price {
+  position: relative;
+  color: #768da7;
+}
+#copyright-info-input #licence-modal.modal #tab1 .column-wrapper.licence-price:after {
+  content: "¥";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 10px;
+}
+#copyright-info-input #licence-modal.modal #tab1 .column-wrapper.licence-price input {
+  padding-left: 24px;
+}
 #copyright-info-input #licence-modal.modal .modal-footer {
   display: -webkit-box;
   display: -ms-flexbox;
