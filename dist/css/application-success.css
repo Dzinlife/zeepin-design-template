@@ -1,0 +1,105 @@
+#application-success {
+  padding-bottom: 140px;
+}
+#application-success h1 {
+  font-size: 40px;
+  color: #12ce83;
+  text-align: center;
+  margin-top: 90px;
+}
+#application-success .title-button-wrapper {
+  text-align: center;
+  margin-top: 32px;
+}
+#application-success .title-button-wrapper button {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-right: 16px;
+}
+#application-success .panel.main {
+  margin-top: 40px;
+}
+#application-success .panel.main .panel-body {
+  padding: 0;
+  background: url("/static/imgs/appllication-success-bg.svg") no-repeat calc(100% - 100px) 24px;
+}
+#application-success .panel.main .section-wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+#application-success .panel.main .section-wrapper.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 72px;
+  padding-bottom: 120px;
+}
+#application-success .panel.main .section-wrapper.top img.thumb {
+  width: 186px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 66px;
+  margin-bottom: auto;
+}
+#application-success .panel.main .section-wrapper.top .column-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+}
+#application-success .panel.main .section-wrapper.top h3 {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+#application-success .panel.main .section-wrapper.top .description {
+  color: #a1a9b2;
+  font-size: 14px;
+  height: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#application-success .panel.main .section-wrapper.top h4 {
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+#application-success .panel.main .section-wrapper.top .hash {
+  background: rgba(230,246,237,0.64) url("/static/imgs/hash-icon.svg") no-repeat 20px;
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 15px 0;
+  padding-left: 56px;
+  padding-right: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#application-success .panel.main .section-wrapper.bottom {
+  padding-top: 4px;
+}
+#application-success .panel.main .section-wrapper.bottom h5 {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  color: #768da7;
+}
+#application-success .panel.main .section-wrapper.bottom table td {
+  height: 32px;
+  color: #a1a9b2;
+}
+#application-success .panel.main .section-wrapper.bottom table td:first-child {
+  width: 120px;
+}
+#application-success .panel.main .line {
+  border-bottom: 1px solid #e7ecf3;
+}
+#application-success .panel.main .well {
+  word-wrap: break-word;
+}
+#application-success .panel.bottom .panel-body {
+  padding: 32px 180px;
+  padding-right: 44px;
+  background: url("/static/imgs/appllication-success-bottom-icon.svg") no-repeat 60px 45px;
+}

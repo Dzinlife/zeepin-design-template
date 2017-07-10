@@ -1,4 +1,86 @@
 @import 'variables.styl'
 
 #application-success
-  
+  padding-bottom 140px
+  h1
+    font-size 40px
+    color brand-primary
+    text-align center
+    margin-top 90px
+  .title-button-wrapper
+    text-align center
+    margin-top 32px
+    button
+      padding-left 32px
+      padding-right 32px
+      margin-right 16px
+  .panel.main
+    margin-top 40px
+    .panel-body
+      padding 0
+      background url('/static/imgs/appllication-success-bg.svg') no-repeat calc(100% - 100px) 24px
+    .section-wrapper
+      width 800px
+      margin 0 auto
+      &.top
+        display flex
+        padding-top 72px
+        padding-bottom 120px
+        img.thumb
+          width 186px
+          height auto
+          border-radius 8px
+          margin-right 66px
+          margin-bottom auto
+        .column-right
+          flex 1
+          min-width 0
+        h3
+          margin 0
+          margin-bottom 14px
+          font-size 18px
+        .description
+          color gray-light
+          font-size 14px
+          height 64px
+          overflow hidden
+          text-overflow ellipsis
+        h4
+          margin 0
+          margin-top 35px
+          margin-bottom 16px
+          font-size 16px
+        .hash
+          background rgba(#E6F6ED, 64%) url('/static/imgs/hash-icon.svg') no-repeat 20px
+          font-size 14px
+          border-radius 25px
+          padding 15px 0
+          padding-left 56px
+          padding-right 40px
+          overflow hidden
+          text-overflow ellipsis
+      &.bottom
+        padding-top 4px
+        h5
+          font-size 14px
+          margin 0
+          margin-top 30px
+          margin-bottom 16px
+          color gray
+        table
+          td
+            height 32px
+            color gray-light
+            &:first-child
+              width 120px
+    .line
+      border-bottom 1px solid gray-lightest
+    .well
+      word-wrap break-word
+  .panel.bottom
+    .panel-body
+      padding 32px 180px
+      padding-right 44px
+      background url('/static/imgs/appllication-success-bottom-icon.svg') no-repeat 60px 45px
+     
+      
