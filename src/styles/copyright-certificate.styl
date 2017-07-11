@@ -1,4 +1,133 @@
 @import 'variables.styl'
 
 #copyright-certificate
-  
+  padding-bottom 120px
+  .width-limit.copyright-certificate
+    width 830px
+  .panel
+    position relative
+    padding-bottom 64px
+    padding-top 12px
+    .certificate-container
+      margin 0 12px
+      background url('/static/imgs/certificate-bg.png') no-repeat center
+      background-size 100%
+      &:after
+        content ''
+        display block
+        padding-top 75%
+    h1 
+      bor-weight bold
+      font-size 30px
+      text-align center
+      margin-top 56px
+      margin-bottom 36px
+    .info-wrapper
+      padding 0 128px
+    .intro
+      font-size 14px
+      span
+        padding 0 10px
+        color brand-primary
+    table
+      margin-top 72px
+      font-size 14px
+      td
+        height 38px
+        padding-right 24px
+        &:first-child
+          color gray-dark
+        &:last-child
+          color brand-primary
+      
+    .zeepin-logo
+      background url('/static/imgs/logo.svg') no-repeat
+      wdith 175px
+      height 46px
+      margin-top 40px
+      
+    .other-info
+      width 114px
+      height 114px
+      background #D8D8D8
+      display flex
+      align-items center
+      justify-content center
+      position absolute
+      bottom 48px
+      right 38px
+      
+  .certificate-container
+    position relative
+    .certificate-info-wrapper
+      position absolute
+      bottom 0
+      left 0
+      height 43%
+      width 100%
+      padding 0 10%
+      padding-top 3.5%
+    .label-copyright-name
+      color gray-light
+      font-size 9px
+      letter-spacing 0.8px
+    .copyright-name
+      font-size 20px
+      font-weight 500
+    .line-wrapper
+      margin-top 8px
+      &:after
+        content ''
+        display block
+        clear both
+      .block-wrapper
+        float left
+        margin-right 32px
+      .label-register-time, .label-owner
+        color gray-light
+        font-size 9px
+        letter-spacing 0.8px
+      .owner
+        font-weight bold
+        font-size 16px
+        margin-top 2px
+        color black
+      table
+        margin-top 4px
+        td
+          border 2px solid black
+          height 18px
+          font-weight bold
+          font-size 10px
+          padding 0 5px
+          padding-bottom 1px
+          letter-spacing 2px
+          color black
+    .label-hash
+      color gray-light
+      font-size 9px
+      letter-spacing 0.8px
+      margin-top 14px   
+    .hash
+      font-weight bold
+      color black
+      overflow hidden
+      text-overflow ellipsis
+      width 45%
+      font-size 10px
+    .organization-name
+      color gray-light
+      font-size 11px
+      letter-spacing 0.8px
+      margin-top 6px
+    #qrcode
+      position absolute
+      right 80px
+      bottom 100px
+    .qr-text
+      position absolute
+      right 88px
+      bottom 88px
+      font-size 10px
+      font-weight bold
+      

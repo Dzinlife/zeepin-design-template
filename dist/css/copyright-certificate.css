@@ -1,0 +1,165 @@
+#copyright-certificate {
+  padding-bottom: 120px;
+}
+#copyright-certificate .width-limit.copyright-certificate {
+  width: 830px;
+}
+#copyright-certificate .panel {
+  position: relative;
+  padding-bottom: 64px;
+  padding-top: 12px;
+}
+#copyright-certificate .panel .certificate-container {
+  margin: 0 12px;
+  background: url("/static/imgs/certificate-bg.png") no-repeat center;
+  background-size: 100%;
+}
+#copyright-certificate .panel .certificate-container:after {
+  content: '';
+  display: block;
+  padding-top: 75%;
+}
+#copyright-certificate .panel h1 {
+  bor-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 36px;
+}
+#copyright-certificate .panel .info-wrapper {
+  padding: 0 128px;
+}
+#copyright-certificate .panel .intro {
+  font-size: 14px;
+}
+#copyright-certificate .panel .intro span {
+  padding: 0 10px;
+  color: #12ce83;
+}
+#copyright-certificate .panel table {
+  margin-top: 72px;
+  font-size: 14px;
+}
+#copyright-certificate .panel table td {
+  height: 38px;
+  padding-right: 24px;
+}
+#copyright-certificate .panel table td:first-child {
+  color: #3c4046;
+}
+#copyright-certificate .panel table td:last-child {
+  color: #12ce83;
+}
+#copyright-certificate .panel .zeepin-logo {
+  background: url("/static/imgs/logo.svg") no-repeat;
+  wdith: 175px;
+  height: 46px;
+  margin-top: 40px;
+}
+#copyright-certificate .panel .other-info {
+  width: 114px;
+  height: 114px;
+  background: #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 48px;
+  right: 38px;
+}
+#copyright-certificate .certificate-container {
+  position: relative;
+}
+#copyright-certificate .certificate-container .certificate-info-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 43%;
+  width: 100%;
+  padding: 0 10%;
+  padding-top: 3.5%;
+}
+#copyright-certificate .certificate-container .label-copyright-name {
+  color: #a1a9b2;
+  font-size: 9px;
+  letter-spacing: 0.8px;
+}
+#copyright-certificate .certificate-container .copyright-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+#copyright-certificate .certificate-container .line-wrapper {
+  margin-top: 8px;
+}
+#copyright-certificate .certificate-container .line-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#copyright-certificate .certificate-container .line-wrapper .block-wrapper {
+  float: left;
+  margin-right: 32px;
+}
+#copyright-certificate .certificate-container .line-wrapper .label-register-time,
+#copyright-certificate .certificate-container .line-wrapper .label-owner {
+  color: #a1a9b2;
+  font-size: 9px;
+  letter-spacing: 0.8px;
+}
+#copyright-certificate .certificate-container .line-wrapper .owner {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 2px;
+  color: #000;
+}
+#copyright-certificate .certificate-container .line-wrapper table {
+  margin-top: 4px;
+}
+#copyright-certificate .certificate-container .line-wrapper table td {
+  border: 2px solid #000;
+  height: 18px;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 0 5px;
+  padding-bottom: 1px;
+  letter-spacing: 2px;
+  color: #000;
+}
+#copyright-certificate .certificate-container .label-hash {
+  color: #a1a9b2;
+  font-size: 9px;
+  letter-spacing: 0.8px;
+  margin-top: 14px;
+}
+#copyright-certificate .certificate-container .hash {
+  font-weight: bold;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 45%;
+  font-size: 10px;
+}
+#copyright-certificate .certificate-container .organization-name {
+  color: #a1a9b2;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  margin-top: 6px;
+}
+#copyright-certificate .certificate-container #qrcode {
+  position: absolute;
+  right: 80px;
+  bottom: 100px;
+}
+#copyright-certificate .certificate-container .qr-text {
+  position: absolute;
+  right: 88px;
+  bottom: 88px;
+  font-size: 10px;
+  font-weight: bold;
+}

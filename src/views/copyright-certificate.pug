@@ -14,4 +14,51 @@ block footer
   include ./components/footer.pug
   
 block content
-  .width-limit
+  .width-limit.copyright-certificate
+    .panel.panel-default
+      .certificate-container
+        .certificate-info-wrapper
+          .label-copyright-name 版权登记名
+          .copyright-name The Marian Bring Him Home
+          .line-wrapper
+            .block-wrapper
+              .label-register-time 登记时间
+              table.register-time
+                tr
+                  td 2017-06-20
+                  td 18:36
+            .block-wrapper
+              .label-owner 版权拥有人
+              .owner 朱飞
+          .label-hash 智品区块链交易哈希
+          .hash 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0
+          .organization-name 上海智品行空文化有限公司
+          img#qrcode(onload="this.width = this.width/2")
+          .qr-text 扫码获取版权详情
+      .info-wrapper
+        h1 智品数字版权证书
+        .intro
+          | 作品
+          span 甜到了飞机
+          | 已由
+          span 朱飞
+          | 提交至智品网保护版权，并记录在智品区块链中。
+        table
+          tr
+            td 版权拥有人
+            td 朱飞
+          tr
+            td 版权所属记录机构
+            td 上海智品行空文化有限公司
+          tr
+            td 版权录入日期
+            td 2017年6月24日
+        .zeepin-logo
+      .other-info 智链信息
+
+block scripts
+  script(src="/static/js/qrcode.js")
+  script.
+    var url = "http://dzinlife.com"
+    var base64 = qrcode.toDataURL(url, 4)
+    document.getElementById('qrcode').src = base64

@@ -26,7 +26,55 @@
             </ul>
           </div>
         </nav>
-    <div class="width-limit"></div>
+    <div class="width-limit copyright-certificate">
+      <div class="panel panel-default">
+        <div class="certificate-container">
+          <div class="certificate-info-wrapper">
+            <div class="label-copyright-name">版权登记名</div>
+            <div class="copyright-name">The Marian Bring Him Home</div>
+            <div class="line-wrapper">
+              <div class="block-wrapper">
+                <div class="label-register-time">登记时间</div>
+                <table class="register-time">
+                  <tr>
+                    <td>2017-06-20</td>
+                    <td>18:36</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="block-wrapper">
+                <div class="label-owner">版权拥有人</div>
+                <div class="owner">朱飞</div>
+              </div>
+            </div>
+            <div class="label-hash">智品区块链交易哈希</div>
+            <div class="hash">2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0</div>
+            <div class="organization-name">上海智品行空文化有限公司</div><img id="qrcode" onload="this.width = this.width/2">
+            <div class="qr-text">扫码获取版权详情</div>
+          </div>
+        </div>
+        <div class="info-wrapper">
+          <h1>智品数字版权证书</h1>
+          <div class="intro">作品<span>甜到了飞机</span>已由<span>朱飞</span>提交至智品网保护版权，并记录在智品区块链中。</div>
+          <table>
+            <tr>
+              <td>版权拥有人</td>
+              <td>朱飞</td>
+            </tr>
+            <tr>
+              <td>版权所属记录机构</td>
+              <td>上海智品行空文化有限公司</td>
+            </tr>
+            <tr>
+              <td>版权录入日期</td>
+              <td>2017年6月24日</td>
+            </tr>
+          </table>
+          <div class="zeepin-logo"></div>
+        </div>
+        <div class="other-info">智链信息</div>
+      </div>
+    </div>
     <div class="website-footer">
       <div class="width-limit">
         <div class="website-footer-left-column">
@@ -44,5 +92,11 @@
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/qrcode.js"></script>
+    <script>
+      var url = "http://dzinlife.com"
+      var base64 = qrcode.toDataURL(url, 4)
+      document.getElementById('qrcode').src = base64
+    </script>
   </body>
 </html>

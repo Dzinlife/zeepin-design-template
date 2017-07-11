@@ -25,6 +25,7 @@
     "micro": "latest",
     "opn": "^5.1.0",
     "pug": "^2.0.0-rc.2",
+    "qrcode-js": "0.0.2",
     "quill": "^1.2.6"
   }
 }
