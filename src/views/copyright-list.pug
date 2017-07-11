@@ -1,0 +1,109 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'copyright-list'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/copyright-list.css')
+
+block header
+  include ./components/header.pug
+  +header('logined', 1)
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .nav-wrapper
+    .width-limit
+      ul.nav.nav-tabs
+        li.active
+          a(data-toggle='tab', href='#tab0') 自有版权
+        li
+          a(data-toggle='tab', href='#tab1') 购入版权
+        li
+          a(data-toggle='tab', href='#tab2') 已售版权
+        li
+          a(data-toggle='tab', href='#tab3') 已获授权
+  .width-limit
+    .tab-content
+      #tab0.tab-pane.fade.in.active
+        ul
+          li
+            .card.card-add
+              .add-icon
+              | 添加新版权
+          li
+            .card
+              img.thumb(src="/static/imgs/thumbnail.png")
+              .column-right
+                h3 Global Blockchain Index Populism and Post-truth
+                .abstract 标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用
+                .badge-wrapper
+                  .badge-icon.copyright
+                  .badge-icon.licence
+                  .badge-icon.derivative
+          li
+            .card
+              img.thumb(src="/static/imgs/thumbnail.png")
+              .column-right
+                h3 规范与设计建议
+                .abstract 标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用
+                .badge-wrapper
+                  .badge-icon.copyright
+                  .badge-icon.licence
+                  .badge-icon.derivative
+          li
+            .card
+              img.thumb(src="/static/imgs/thumbnail.png")
+              .column-right
+                h3 规范与设计建议
+                .abstract 标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用
+                .badge-wrapper
+                  .badge.copyright
+                  .badge.licence
+                  .badge.derivative
+      #tab1.tab-pane
+        ul
+          li
+            .card
+              img.thumb(src="/static/imgs/thumbnail.png")
+              .column-right
+                h3 Global Blockchain Index Populism and Post-truth
+                .abstract 标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用
+                .badge-wrapper
+                  .badge-icon.copyright
+                  .badge-icon.licence
+                  a(href="#") 查看详情
+          li
+            .card
+              img.thumb(src="/static/imgs/thumbnail.png")
+              .column-right
+                h3 Global Blockchain Index Populism and Post-truth
+                .abstract 标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用
+                .badge-wrapper
+                  .badge-icon.copyright.disabled
+                  .badge-icon.licence
+                    span.message 剩余45天到期
+          li
+            .card.expired
+              img.thumb(src="/static/imgs/thumbnail.png")
+              .column-right
+                h3 Global Blockchain Index Populism and Post-truth
+                .abstract 标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用
+                .badge-wrapper
+                  .badge-icon.copyright.disabled
+                  .badge-icon.licence
+                    .message 授权已到期
+                      a(href="#") 续费
+          li
+            .card
+              img.thumb(src="/static/imgs/thumbnail.png")
+              .column-right
+                h3 Global Blockchain Index Populism and Post-truth
+                .abstract 标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用标点符号和文案保持格式一致性，如：中文文字不和半角标点符号混用；英文文字不和全角标点符号混用
+                .badge-wrapper
+                  .badge-icon.copyright
+                  .badge-icon.licence.disabled
+      #tab2.tab-pane
+      #tab3.tab-pane

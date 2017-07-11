@@ -1,0 +1,143 @@
+@import 'variables.styl'
+
+#copyright-list
+  padding-bottom 160px
+  .nav-wrapper
+    border-bottom 1px solid gray-lightest
+    .nav.nav-tabs
+      border none
+  .tab-content
+    ul
+      margin 0 -10px
+      padding 0
+      padding-top 28px
+      list-style-type none      
+      &:after
+        content ''
+        display block
+        clear both
+      li 
+        padding 10px
+        width 50%
+        float left
+        .card
+          height 196px
+          box-shadow 0 2px 2px rgba(gray, 0.1)
+          border-radius 8px
+          cursor pointer
+          display flex
+          padding 28px
+          position relative
+          background white
+          &:before
+            content ''
+            display block
+            position absolute
+            left 0
+            top 0
+            width 100%
+            height 100%
+            background url('/static/imgs/copyright-list-card-bg.svg') no-repeat calc(100% - 44px) 64%
+          &:hover
+            background-color rgba(gray-lightest, 0.5)
+          &.card-add
+            border 1px dotted gray-lighter
+            box-shadow none
+            background-image none
+            align-items center
+            justify-content center
+            font-size 24px
+            color gray-lighter
+            .add-icon
+              width 50px
+              height 50px
+              background url('/static/imgs/copyright-list-add-icon.svg') no-repeat
+              margin-right 32px
+          img.thumb
+            margin-bottom auto
+            margin-right 20px
+            width 132px
+            border-radius 8px
+          .column-right
+            flex 1
+            h3
+              font-size 16px
+              margin 0
+              margin-bottom 11px
+              height 40px
+            .abstract
+              color gray-light
+              max-height 40px
+              overflow hidden
+              text-overflow ellipsis
+              margin-bottom 12px
+            .badge-wrapper
+              &:after
+                content ''
+                display block
+                clear both
+              a
+                line-height 24px
+                float right
+              .badge-icon
+                float left
+                min-width 24px
+                height 24px
+                line-height 24px
+                border-radius 12px
+                position relative
+                margin-right 10px
+                font-size 12px
+                .message
+                  padding-left 30px
+                  padding-right 12px
+                  color brand-primary
+                &:after
+                  position absolute
+                  left 0 
+                  top 0 
+                  width 24px
+                  height 24px
+                  border-radius 12px
+                  display flex
+                  align-items center
+                  justify-content center
+                  color white
+                &.copyright
+                  &:after
+                    background brand-info
+                    content '版'
+                &.licence
+                  background #B7EDD7
+                  &:after
+                    background brand-primary
+                    content '授'
+                &.derivative
+                  &:after
+                    background gray-lighter
+                    content '衍'
+                &.copyright.disabled, &.licence.disabled, &.derivative.disabled
+                  &:after
+                    background gray-lighter
+          &.expired
+            background-color #E7ECF2
+            &:before
+              opacity 0.5
+            .column-right
+              h3
+                color gray-lighter
+              .abstract
+                color gray-lighter
+              .badge-wrapper
+                .badge-icon
+                  &.licence
+                    background gray-lighter
+                    &:after
+                      background gray-light
+                  .message
+                    color gray-light
+                    a
+                      color #FF470D
+                      margin-left 8px
+                  
+                
