@@ -74,9 +74,11 @@
   padding-right: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #12ce83;
 }
 #application-success .panel.main .section-wrapper.bottom {
   padding-top: 4px;
+  padding-bottom: 100px;
 }
 #application-success .panel.main .section-wrapper.bottom h5 {
   font-size: 14px;
