@@ -1,5 +1,6 @@
 @import 'input-range.css';
 nav.navbar.navbar-default {
+  background: transparent;
   font-size: 16px;
 }
 nav.navbar.navbar-default .navbar-brand {
