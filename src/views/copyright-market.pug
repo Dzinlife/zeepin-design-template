@@ -1,0 +1,100 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'copyright-market'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/copyright-market.css')
+
+block header
+  include ./components/header.pug
+  +header('logined', 2)
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .nav-wrapper
+    .width-limit
+      ul.nav.nav-tabs
+        li.active
+          a(href='#') 全部版权
+        li
+          a(href='#') 仅版权
+        li
+          a(href='#') 仅筹全
+  .width-limit
+    ul.items-list
+      li
+        a(href="#")
+          .card
+            .card-content
+              img.thumb(src="/static/imgs/thumbnail.png")
+              h3 Global Blockchain Index Populism and Post-truth
+              .card-footer
+                .price-wrapper
+                  .badge-icon.copyright
+                  .price 2,123
+                .price-wrapper
+                  .badge-icon.licence
+                  .price 2,123
+      li
+        a(href="#")
+          .card
+            .card-content
+              img.thumb(src="/static/imgs/thumbnail.png")
+              h3 Global Blockchain Index Populism and Post-truth
+              .card-footer
+                .price-wrapper
+                  .badge-icon.copyright
+                  .price 2,123
+      li
+        a(href="#")
+          .card
+            .card-content
+              img.thumb(src="/static/imgs/thumbnail.png")
+              h3 Global Blockchain Index Populism and Post-truth
+              .card-footer
+                .price-wrapper
+                  .badge-icon.licence
+                  .price 2,12312312
+      li
+        a(href="#")
+          .card
+            .card-content
+              img.thumb(src="/static/imgs/thumbnail.png")
+              h3 Global Blockchain Index Populism and Post-truth
+              .card-footer
+                .price-wrapper
+                  .badge-icon.copyright
+                  .price 2,123
+                .price-wrapper
+                  .badge-icon.licence
+                  .price 2,123
+      li
+        a(href="#")
+          .card
+            .card-content
+              img.thumb(src="/static/imgs/thumbnail.png")
+              h3 Global Blockchain Index Populism and Post-truth
+              .card-footer
+                .price-wrapper
+                  .badge-icon.copyright
+                  .price 2,123
+                .price-wrapper
+                  .badge-icon.licence
+                  .price 2,123
+      li
+        a(href="#")
+          .card
+            .card-content
+              img.thumb(src="/static/imgs/thumbnail.png")
+              h3 Global Blockchain Index Populism and Post-truth
+              .card-footer
+                .price-wrapper
+                  .badge-icon.copyright
+                  .price 2,123
+                .price-wrapper
+                  .badge-icon.licence
+                  .price 2,123
+

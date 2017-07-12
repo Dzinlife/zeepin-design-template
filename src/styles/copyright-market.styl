@@ -1,0 +1,107 @@
+@import '/variables.styl'
+
+#copyright-market
+  .nav-wrapper
+    border-bottom 1px solid gray-lightest
+    .nav.nav-tabs
+      border none
+  ul.items-list
+    list-style-type none
+    padding 0
+    margin 0
+    &:after
+      content ''
+      display block
+      clear both
+    li
+      padding 20px
+      width 25%
+      float left
+      .card
+        background white
+        box-shadow 0 2px 2px rgba(gray, 0.1)
+        background url('/static/imgs/purchased-licence-heading-bg.svg') no-repeat 80% 82%
+        position relative
+        &:after
+          content ''
+          display block
+          padding-top 144%
+        .card-content
+          position absolute
+          left 0
+          right 0
+          top 0
+          bottom 0
+          padding 30px
+        img.thumb
+          border-radius 8px
+          width 100%
+        h3
+          font-size 16px
+          margin-top 16px
+          margin-bottom 32px
+          color gray-dark
+          overflow hidden
+          text-overflow ellipsis
+        .card-footer
+          display flex 
+        .price-wrapper
+          display flex
+          flex 1
+          min-width 0
+          justify-content flex-end
+          &:nth-child(1)
+            margin-right 0
+            text-align right
+          &:nth-child(2)
+            border-left 1px solid gray-lightest
+            padding-left 10px
+            margin-left 10px
+          .price
+            font-size 18px
+            white-space nowrap
+        .badge-icon
+          float left
+          min-width 24px
+          height 24px
+          line-height 24px
+          border-radius 12px
+          position relative
+          margin-right 10px
+          font-size 12px
+          .message
+            padding-left 30px
+            padding-right 12px
+            color brand-primary
+          &:after
+            position absolute
+            left 0 
+            top 0 
+            width 24px
+            height 24px
+            border-radius 12px
+            display flex
+            align-items center
+            justify-content center
+            color white
+          &.copyright
+            & + .price
+              color brand-info
+            &:after
+              background brand-info
+              content '版'
+          &.licence
+            background #B7EDD7
+            & + .price
+              color brand-primary
+            &:after
+              background brand-primary
+              content '授'
+          &.derivative
+            &:after
+              background gray-lighter
+              content '衍'
+          &.copyright.disabled, &.licence.disabled, &.derivative.disabled
+            &:after
+              background gray-lighter
+        

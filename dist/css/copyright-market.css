@@ -1,0 +1,142 @@
+#copyright-market .nav-wrapper {
+  border-bottom: 1px solid #e7ecf3;
+}
+#copyright-market .nav-wrapper .nav.nav-tabs {
+  border: none;
+}
+#copyright-market ul.items-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#copyright-market ul.items-list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#copyright-market ul.items-list li {
+  padding: 20px;
+  width: 25%;
+  float: left;
+}
+#copyright-market ul.items-list li .card {
+  background: #fff;
+  -webkit-box-shadow: 0 2px 2px rgba(118,141,167,0.1);
+          box-shadow: 0 2px 2px rgba(118,141,167,0.1);
+  background: url("/static/imgs/purchased-licence-heading-bg.svg") no-repeat 80% 82%;
+  position: relative;
+}
+#copyright-market ul.items-list li .card:after {
+  content: '';
+  display: block;
+  padding-top: 144%;
+}
+#copyright-market ul.items-list li .card .card-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 30px;
+}
+#copyright-market ul.items-list li .card img.thumb {
+  border-radius: 8px;
+  width: 100%;
+}
+#copyright-market ul.items-list li .card h3 {
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  color: #3c4046;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#copyright-market ul.items-list li .card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#copyright-market ul.items-list li .card .price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+#copyright-market ul.items-list li .card .price-wrapper:nth-child(1) {
+  margin-right: 0;
+  text-align: right;
+}
+#copyright-market ul.items-list li .card .price-wrapper:nth-child(2) {
+  border-left: 1px solid #e7ecf3;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+#copyright-market ul.items-list li .card .price-wrapper .price {
+  font-size: 18px;
+  white-space: nowrap;
+}
+#copyright-market ul.items-list li .card .badge-icon {
+  float: left;
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 10px;
+  font-size: 12px;
+}
+#copyright-market ul.items-list li .card .badge-icon .message {
+  padding-left: 30px;
+  padding-right: 12px;
+  color: #12ce83;
+}
+#copyright-market ul.items-list li .card .badge-icon:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+#copyright-market ul.items-list li .card .badge-icon.copyright + .price {
+  color: #2b4eaf;
+}
+#copyright-market ul.items-list li .card .badge-icon.copyright:after {
+  background: #2b4eaf;
+  content: '版';
+}
+#copyright-market ul.items-list li .card .badge-icon.licence {
+  background: #b7edd7;
+}
+#copyright-market ul.items-list li .card .badge-icon.licence + .price {
+  color: #12ce83;
+}
+#copyright-market ul.items-list li .card .badge-icon.licence:after {
+  background: #12ce83;
+  content: '授';
+}
+#copyright-market ul.items-list li .card .badge-icon.derivative:after {
+  background: #d2dbe6;
+  content: '衍';
+}
+#copyright-market ul.items-list li .card .badge-icon.copyright.disabled:after,
+#copyright-market ul.items-list li .card .badge-icon.licence.disabled:after,
+#copyright-market ul.items-list li .card .badge-icon.derivative.disabled:after {
+  background: #d2dbe6;
+}
