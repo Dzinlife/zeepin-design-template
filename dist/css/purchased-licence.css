@@ -276,10 +276,9 @@
   margin-top: 24px;
   width: auto;
 }
+#purchased-licence .panel.body .panel-body .files-information .table td,
 #purchased-licence .panel.body .panel-body .files-information .table th {
   text-align: center;
-}
-#purchased-licence .panel.body .panel-body .files-information .table td {
   padding-left: 32px;
   padding-right: 32px;
   max-width: 136px;
