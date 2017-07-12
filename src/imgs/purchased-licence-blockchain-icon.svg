@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>thin 0381 line structure relations hierarchy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="004_03_已购买授权_详情" transform="translate(-464.000000, -791.000000)">
+            <g id="Group-6" transform="translate(444.000000, 780.000000)">
+                <g id="thin-0381-line-structure-relations-hierarchy" transform="translate(19.000000, 11.000000)">
+                    <g id="Group" transform="translate(2.000000, 0.000000)" stroke="#12CE83" stroke-linecap="round" stroke-linejoin="round">
+                        <circle id="Oval" cx="16.8729" cy="2.5715" r="1.7859"></circle>
+                        <circle id="Oval" cx="10.4587" cy="21.6112" r="1.7859"></circle>
+                        <path d="M9.6902,10.1088 L15.6241,3.8204" id="Shape"></path>
+                        <path d="M8.5946,14.2937 L10.0183,19.8825" id="Shape"></path>
+                        <circle id="Oval" cx="18.7579" cy="18.0485" r="1.2236"></circle>
+                        <circle id="Oval" cx="1.2399" cy="15.8222" r="1.2236"></circle>
+                        <circle id="Oval" cx="2.6628" cy="1.9816" r="1.2236"></circle>
+                        <g transform="translate(3.000000, 3.000000)" id="Shape">
+                            <path d="M0.1882,0.0825 L0.6677,0.96"></path>
+                            <path d="M1.5568,2.5869 L2.8904,5.0272" stroke-dasharray="1.854,1.854"></path>
+                            <path d="M3.335,5.8407 L3.8145,6.7182"></path>
+                        </g>
+                        <g transform="translate(10.000000, 13.000000)" id="Shape">
+                            <path d="M7.6883,4.4643 L6.8211,3.9662"></path>
+                            <path d="M4.8804,2.8517 L1.9693,1.1797" stroke-dasharray="2.238,2.238"></path>
+                            <path d="M0.9989,0.6224 L0.1318,0.1244"></path>
+                        </g>
+                        <g transform="translate(2.000000, 13.000000)" id="Shape">
+                            <path d="M0.3086,2.2372 L2.0194,1.2014"></path>
+                            <path d="M2.0872,1.1602 L3.7981,0.1244"></path>
+                        </g>
+                        <circle id="Oval" cx="7.9846" cy="11.8983" r="2.4741"></circle>
+                    </g>
+                    <rect id="Rectangle-path" x="0" y="0" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

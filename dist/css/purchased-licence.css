@@ -1,0 +1,287 @@
+#purchased-licence {
+  padding-bottom: 120px;
+}
+#purchased-licence .width-limit.purchased-copyright {
+  padding-top: 40px;
+  width: 800px;
+}
+#purchased-licence .panel.heading {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#purchased-licence .panel.heading img.thumb {
+  margin-bottom: auto;
+  width: 132px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+#purchased-licence .panel.heading .column-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#purchased-licence .panel.heading .column-right h1 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 11px;
+}
+#purchased-licence .panel.heading .column-right .abstract {
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellpisis;
+  color: #a1a9b2;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper {
+  margin-top: 12px;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper a {
+  line-height: 24px;
+  float: right;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper .badge-icon {
+  float: left;
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 10px;
+  font-size: 12px;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper .badge-icon .message {
+  padding-left: 30px;
+  padding-right: 12px;
+  color: #12ce83;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper .badge-icon:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper .badge-icon.copyright:after {
+  background: #2b4eaf;
+  content: '版';
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper .badge-icon.licence {
+  background: #b7edd7;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper .badge-icon.licence:after {
+  background: #12ce83;
+  content: '授';
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper .badge-icon.derivative:after {
+  background: #d2dbe6;
+  content: '衍';
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper .badge-icon.copyright.disabled:after,
+#purchased-licence .panel.heading .column-right .badge-wrapper .badge-icon.licence.disabled:after,
+#purchased-licence .panel.heading .column-right .badge-wrapper .badge-icon.derivative.disabled:after {
+  background: #d2dbe6;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper.expired .badge-icon.licence {
+  background: #d2dbe6;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper.expired .badge-icon.licence:after {
+  background: #a1a9b2;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper.expired .badge-icon .message {
+  color: #a1a9b2;
+}
+#purchased-licence .panel.heading .column-right .badge-wrapper.expired .badge-icon .message a {
+  color: #ff470d;
+  margin-left: 8px;
+}
+#purchased-licence .ghost-panel {
+  margin: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#purchased-licence .ghost-panel .owner-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#purchased-licence .ghost-panel .owner-information .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+#purchased-licence .ghost-panel .owner-information .line-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#purchased-licence .ghost-panel h4 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: normal;
+}
+#purchased-licence .ghost-panel .auth-badge {
+  margin-left: 10px;
+  display: inline-block;
+  background: #12ce83 url("/static/imgs/purchased-licence-auth-icon.svg") no-repeat 5px;
+  border-radius: 5px;
+  padding: 1px 6px;
+  padding-left: 16px;
+  color: #fff;
+  font-size: 10px;
+  height: 16px;
+}
+#purchased-licence .ghost-panel h5 {
+  font-weight: normal;
+  font-size: 12px;
+  color: #a1a9b2;
+  margin: 0;
+  margin-top: 8px;
+}
+#purchased-licence .ghost-panel h5 span {
+  color: #12ce83;
+  font-weight: bold;
+  margin-left: 6px;
+}
+#purchased-licence .ghost-panel .blockchain-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#purchased-licence .ghost-panel .blockchain-information .icon {
+  width: 24px;
+  height: 24px;
+  background: url("/static/imgs/purchased-licence-calendar-icon.svg") no-repeat;
+  margin-right: 20px;
+}
+#purchased-licence .ghost-panel .blockchain-information .column-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#purchased-licence .ghost-panel .controls-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+#purchased-licence .ghost-panel .controls-wrapper button {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+}
+#purchased-licence .panel.body .pabel-heading {
+  padding: 0 32px;
+  padding-top: 10px;
+  border-bottom: 1px solid #e7ecf3;
+}
+#purchased-licence .panel.body .pabel-heading .nav.nav-tabs {
+  border: none;
+}
+#purchased-licence .panel.body .panel-body {
+  padding: 32px;
+}
+#purchased-licence .panel.body .panel-body #tab0 .copyright-text {
+  color: #a1a9b2;
+}
+#purchased-licence .panel.body .panel-body #tab0 h3 {
+  margin-top: 42px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+#purchased-licence .panel.body .panel-body #tab0 .well-blockchain,
+#purchased-licence .panel.body .panel-body #tab0 .well-certficate {
+  width: 472px;
+  padding: 12px 42px;
+  padding-left: 60px;
+  border-radius: 22px;
+  padding-left: 60px;
+  whtie-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#purchased-licence .panel.body .panel-body #tab0 .well-blockchain {
+  background: #e6f6ed url("/static/imgs/purchased-licence-blockchain-icon.svg") no-repeat 19px;
+  color: #12ce83;
+}
+#purchased-licence .panel.body .panel-body #tab0 .well-certficate {
+  background: #eaf3ff url("/static/imgs/purchased-licence-certificate-icon.svg") no-repeat 20px;
+  color: #2b4eaf;
+}
+#purchased-licence .panel.body .panel-body #tab0 .files-information {
+  margin-top: 90px;
+}
+#purchased-licence .panel.body .panel-body .files-information .files-include {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a1a9b2;
+}
+#purchased-licence .panel.body .panel-body .files-information .files-include .extension {
+  color: #d2dbe6;
+  margin-right: 12px;
+}
+#purchased-licence .panel.body .panel-body .files-information .files-include .number {
+  color: #12ce83;
+  margin: 0 4px;
+}
+#purchased-licence .panel.body .panel-body .files-information .attachment-icon {
+  width: 16px;
+  height: 17px;
+  background: url("/static/imgs/purchased-licence-attachment-icon.svg") no-repeat;
+  margin-left: 32px;
+  margin-right: 8px;
+}
+#purchased-licence .panel.body .panel-body .files-information .table {
+  margin-top: 24px;
+  width: auto;
+}
+#purchased-licence .panel.body .panel-body .files-information .table th {
+  text-align: center;
+}
+#purchased-licence .panel.body .panel-body .files-information .table td {
+  padding-left: 32px;
+  padding-right: 32px;
+  max-width: 136px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
