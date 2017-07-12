@@ -1,3 +1,6 @@
+#copyright-market {
+  padding-bottom: 160px;
+}
 #copyright-market .nav-wrapper {
   border-bottom: 1px solid #e7ecf3;
 }
@@ -47,6 +50,7 @@
   font-size: 16px;
   margin-top: 16px;
   margin-bottom: 32px;
+  height: 50px;
   color: #3c4046;
   overflow: hidden;
   text-overflow: ellipsis;
