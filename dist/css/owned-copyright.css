@@ -267,6 +267,25 @@
 .panel.body .panel-body #tab0 .files-information {
   margin-top: 90px;
 }
+.panel.body .panel-body #tab0 .line {
+  border-bottom: 1px solid #e7ecf3;
+  margin: 0 -32px;
+  margin-top: 36px;
+  margin-bottom: 25px;
+}
+.panel.body .panel-body #tab0 h5 {
+  font-size: 14px;
+  color: #768da7;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+.panel.body .panel-body #tab0 .well {
+  word-wrap: break-word;
+}
+.panel.body .panel-body #tab0 table.status td {
+  height: 32px;
+  color: #a1a9b2;
+}
 .panel.body .panel-body .files-information .files-include {
   display: -webkit-box;
   display: -ms-flexbox;
