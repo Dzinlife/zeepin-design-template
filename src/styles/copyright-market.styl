@@ -60,6 +60,10 @@
           .price
             font-size 18px
             white-space nowrap
+            &:before
+              content '¥'
+              font-size 10px
+              margin-right 2px
         .badge-icon
           float left
           min-width 24px
@@ -67,7 +71,7 @@
           line-height 24px
           border-radius 12px
           position relative
-          margin-right 10px
+          margin-right 4px
           font-size 12px
           .message
             padding-left 30px

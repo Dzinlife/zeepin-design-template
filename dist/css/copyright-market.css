@@ -81,6 +81,11 @@
   font-size: 18px;
   white-space: nowrap;
 }
+#copyright-market ul.items-list li .card .price-wrapper .price:before {
+  content: '¥';
+  font-size: 10px;
+  margin-right: 2px;
+}
 #copyright-market ul.items-list li .card .badge-icon {
   float: left;
   min-width: 24px;
@@ -88,7 +93,7 @@
   line-height: 24px;
   border-radius: 12px;
   position: relative;
-  margin-right: 10px;
+  margin-right: 4px;
   font-size: 12px;
 }
 #copyright-market ul.items-list li .card .badge-icon .message {
