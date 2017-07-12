@@ -10,6 +10,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: url("/static/imgs/purchased-licence-heading-bg.svg") no-repeat calc(100% - 40px) 50px;
 }
 #purchased-licence .panel.heading img.thumb {
   margin-bottom: auto;
