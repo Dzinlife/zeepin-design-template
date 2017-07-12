@@ -14,134 +14,133 @@ block footer
   include ./components/footer.pug
   
 block content
-  #purchased-copyright
-    .width-limit.purchased-copyright
-      .panel.panel-default.heading
-        img.thumb(src="/static/imgs/thumbnail.png")
+  .width-limit.purchased-copyright
+    .panel.panel-default.heading
+      img.thumb(src="/static/imgs/thumbnail.png")
+      .column-right
+        h1 Second, the insane connectivity
+        .abstract is planning to launch in Southeast Asia, Macy’s is hosting live-streaming events for Chinese is planning to launch in Southeast Asia, Macy’s is hosting live-streaming events for Chinese 
+        .badge-wrapper
+          .badge-icon
+            .badge-icon.copyright.disabled
+            .badge-icon.licence
+              .message 剩余45天后到期
+    .ghost-panel
+      .owner-information
+        .avatar-wrapper
+        .avatar(style="background-image: url('/static/imgs/thumbnail.png')")
         .column-right
-          h1 Second, the insane connectivity
-          .abstract is planning to launch in Southeast Asia, Macy’s is hosting live-streaming events for Chinese is planning to launch in Southeast Asia, Macy’s is hosting live-streaming events for Chinese 
-          .badge-wrapper
-            .badge-icon
-              .badge-icon.copyright.disabled
-              .badge-icon.licence
-                .message 剩余45天后到期
-      .ghost-panel
-        .owner-information
-          .avatar-wrapper
-          .avatar(style="background-image: url('/static/imgs/thumbnail.png')")
-          .column-right
-            .line-wrapper
-              h4 授权人： 朱飞
-              .auth-badge 认证
-            h5 认证
-              span 23
-        .blockchain-information
-          .icon
-          .column-right
-            h4 记录区块链时间
-            h5 2017-05-29
-        .controls-wrapper
-          button.btn.btm-sm.btn-info 下载授权书
-          button.btn.btm-sm.btn-primary(disabled) 续费
-      .panel.panel-default.body
-        .pabel-heading
-          ul.nav.nav-tabs
-            li.active
-              a(data-toggle='tab', href='#tab0') 版权详情
-            li
-              a(data-toggle='tab', href='#tab1') 文件列表
-            li
-              a(data-toggle='tab', href='#tab2') 交易记录
-        .panel-body
-          .tab-content
-            #tab0.tab-pane.fade.in.active
-              .copyright-text 
-                | The first smartphone, the Mi1 was announced in August 2011. It comes with a built-in firmware MIUI, based on Android, combining the signature styles of Samsung TouchWiz and Apple iOS. In August 2012 Xiaomi announced the Mi2 smartphone. There was a Qualcomm Snapdragon<br>
-                | <br>
-                |In September 2013, 'Saami' announced the smartphone Mi3 on Snapdragon 800 (MSM8974AB) and the version on the chipset NVIDIA Tegra 4. 25 Sep 2013 'Saami' has announced plans to open
-              h3 智品区块链地址
-              .well-blockchain 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0
-              h3 版权证书地址
-              .well-certficate 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0
-              .files-information
-                .files-include
-                  | 包含图片：
-                  .number 4
-                  .extension .JPG
-                  .attachment-icon
-                  .number 1
-                  .extension .ZIP
-                  .number 3
-                  .extension .PSD
-                  .number 6
-                  .extension .AI
-                table.table.table-bordered
-                  thead
-                    tr
-                      th 名称
-                      th 类型
-                      th 大小
-                      th 分辨率
-                  tbody
-                    tr
-                      td zheshizheshizheshizheshi
-                      td JPG
-                      td 230Mb
-                      td 1440&times;90
-                    tr
-                      td zheshizheshizheshizheshi
-                      td JPG
-                      td 230Mb
-                      td 1440&times;90
-                    tr
-                      td zheshizheshizheshizheshi
-                      td JPG
-                      td 230Mb
-                      td 1440&times;90
-            #tab1.tab-pane
-              .files-information
-                .files-include
-                  | 包含图片：
-                  span.number 4
-                  span.extension .JPG
-                  span.attachment-icon
-                  span.number 1
-                  span.extension .ZIP
-                  span.number 3
-                  span.extension .PSD
-                  span.number 6
-                  span.extension .AI
-                table.table.table-bordered
-                  thead
-                    tr
-                      th 名称
-                      th 类型
-                      th 大小
-                      th 分辨率
-                      th 下载链接
-                  tbody
-                    tr
-                      td zheshizheshizheshizheshi
-                      td JPG
-                      td 230Mb
-                      td 1440&times;90
-                      th
-                        a(href="#") 下载
-                    tr
-                      td zheshizheshizheshizheshi
-                      td PSD
-                      td 230Mb
-                      td ∕
-                      th
-                        a(href="#") 下载
-                    tr
-                      td zheshizheshizheshizheshi
-                      td AI
-                      td 230Mb
-                      td ∕
-                      th
-                        a(href="#") 下载
+          .line-wrapper
+            h4 授权人： 朱飞
+            .auth-badge 认证
+          h5 认证
+            span 23
+      .blockchain-information
+        .icon
+        .column-right
+          h4 记录区块链时间
+          h5 2017-05-29
+      .controls-wrapper
+        button.btn.btm-sm.btn-info 下载授权书
+        button.btn.btm-sm.btn-primary(disabled) 续费
+    .panel.panel-default.body
+      .pabel-heading
+        ul.nav.nav-tabs
+          li.active
+            a(data-toggle='tab', href='#tab0') 版权详情
+          li
+            a(data-toggle='tab', href='#tab1') 文件列表
+          li
+            a(data-toggle='tab', href='#tab2') 交易记录
+      .panel-body
+        .tab-content
+          #tab0.tab-pane.fade.in.active
+            .copyright-text 
+              | The first smartphone, the Mi1 was announced in August 2011. It comes with a built-in firmware MIUI, based on Android, combining the signature styles of Samsung TouchWiz and Apple iOS. In August 2012 Xiaomi announced the Mi2 smartphone. There was a Qualcomm Snapdragon<br>
+              | <br>
+              |In September 2013, 'Saami' announced the smartphone Mi3 on Snapdragon 800 (MSM8974AB) and the version on the chipset NVIDIA Tegra 4. 25 Sep 2013 'Saami' has announced plans to open
+            h3 智品区块链地址
+            .well-blockchain 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0
+            h3 版权证书地址
+            .well-certficate 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0
+            .files-information
+              .files-include
+                | 包含图片：
+                .number 4
+                .extension .JPG
+                .attachment-icon
+                .number 1
+                .extension .ZIP
+                .number 3
+                .extension .PSD
+                .number 6
+                .extension .AI
+              table.table.table-bordered
+                thead
+                  tr
+                    th 名称
+                    th 类型
+                    th 大小
+                    th 分辨率
+                tbody
+                  tr
+                    td zheshizheshizheshizheshi
+                    td JPG
+                    td 230Mb
+                    td 1440&times;90
+                  tr
+                    td zheshizheshizheshizheshi
+                    td JPG
+                    td 230Mb
+                    td 1440&times;90
+                  tr
+                    td zheshizheshizheshizheshi
+                    td JPG
+                    td 230Mb
+                    td 1440&times;90
+          #tab1.tab-pane
+            .files-information
+              .files-include
+                | 包含图片：
+                span.number 4
+                span.extension .JPG
+                span.attachment-icon
+                span.number 1
+                span.extension .ZIP
+                span.number 3
+                span.extension .PSD
+                span.number 6
+                span.extension .AI
+              table.table.table-bordered
+                thead
+                  tr
+                    th 名称
+                    th 类型
+                    th 大小
+                    th 分辨率
+                    th 下载链接
+                tbody
+                  tr
+                    td zheshizheshizheshizheshi
+                    td JPG
+                    td 230Mb
+                    td 1440&times;90
+                    th
+                      a(href="#") 下载
+                  tr
+                    td zheshizheshizheshizheshi
+                    td PSD
+                    td 230Mb
+                    td ∕
+                    th
+                      a(href="#") 下载
+                  tr
+                    td zheshizheshizheshizheshi
+                    td AI
+                    td 230Mb
+                    td ∕
+                    th
+                      a(href="#") 下载
 
 
 
