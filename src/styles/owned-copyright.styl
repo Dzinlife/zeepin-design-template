@@ -1,0 +1,220 @@
+@import 'variables.styl'
+
+#owned-copyright
+   padding-bottom 120px
+  .width-limit.owned-copyright
+    padding-top 40px
+    width 800px
+  .heading-tip
+    background #FFFBCF
+    height 36px
+    display flex
+    align-items center
+    justify-content center
+    color #F5A623
+    border-radius 18px
+    margin-bottom 18px
+    a
+      color #F5A623
+  .panel.heading
+    padding 30px
+    display flex
+    background url('/static/imgs/purchased-licence-heading-bg.svg') no-repeat calc(100% - 40px) 50px
+    img.thumb
+      margin-bottom auto
+      width 132px
+      border-radius 8px
+      margin-right 20px 
+    .column-right
+      flex 1
+      h1
+        font-size 16px
+        margin 0
+        margin-bottom 11px
+      .abstract
+        max-height 40px
+        overflow hidden
+        text-overflow ellpisis
+        color gray-light
+      .badge-wrapper
+        margin-top 12px
+        &:after
+          content ''
+          display block
+          clear both
+        a
+          line-height 24px
+          float right
+        .badge-icon
+          float left
+          min-width 24px
+          height 24px
+          line-height 24px
+          border-radius 12px
+          position relative
+          margin-right 10px
+          font-size 12px
+          .message
+            padding-left 30px
+            padding-right 12px
+            color brand-primary
+          &:after
+            position absolute
+            left 0 
+            top 0 
+            width 24px
+            height 24px
+            border-radius 12px
+            display flex
+            align-items center
+            justify-content center
+            color white
+          &.copyright
+            &:after
+              background brand-info
+              content '版'
+          &.licence
+            background #B7EDD7
+            &:after
+              background brand-primary
+              content '授'
+          &.derivative
+            &:after
+              background gray-lighter
+              content '衍'
+          &.copyright.disabled, &.licence.disabled, &.derivative.disabled
+            &:after
+              background gray-lighter
+        &.expired
+          .badge-icon
+            &.licence
+              background gray-lighter
+              &:after
+                background gray-light
+            .message
+              color gray-light
+              a
+                color #FF470D
+                margin-left 8px
+  .ghost-panel
+    margin 32px 0
+    display flex
+    justify-content space-between
+    .owner-information
+      display flex
+      align-items center
+      .avatar
+        width 50px
+        height 50px
+        border-radius 50%
+        background-size cover
+        background-position center
+        margin-right 20px
+      .line-wrapper
+        display flex
+        align-items center
+    h4
+      font-size 16px
+      margin 0
+      font-weight normal
+    .auth-badge
+      margin-left 10px
+      display inline-block
+      background brand-primary url('/static/imgs/purchased-licence-auth-icon.svg') no-repeat 5px
+      border-radius 5px
+      padding 1px 6px
+      padding-left 16px
+      color white
+      font-size 10px
+      height 16px
+      
+    h5
+      font-weight normal
+      font-size 12px
+      color gray-light
+      margin 0
+      margin-top 8px
+      span
+        color brand-primary
+        font-weight bold
+        margin-left 6px
+    .blockchain-information
+      display flex
+      align-items center
+      .icon
+        width 24px
+        height 24px
+        background url('/static/imgs/purchased-licence-calendar-icon.svg') no-repeat
+        margin-right 20px
+      .column-right
+        flex 1
+    .controls-wrapper
+      display flex
+      align-items center
+      flex-shrink 0
+      button
+        padding-left 20px
+        padding-right 20px
+        margin-left 10px
+  .panel.body
+    .pabel-heading
+      padding 0 32px
+      padding-top 10px
+      border-bottom 1px solid gray-lightest
+      .nav.nav-tabs
+        border none
+    
+    .panel-body
+      padding 32px
+      #tab0
+        .copyright-text 
+          color gray-light
+        h3
+          margin-top 42px
+          margin-bottom 16px
+          font-size 16px
+        .well-blockchain, .well-certficate
+          width 472px
+          padding 12px 42px
+          padding-left 60px
+          border-radius 22px
+          padding-left 60px
+          whtie-space nowrap
+          overflow hidden
+          text-overflow ellipsis
+        .well-blockchain
+          background #E6F6ED url('/static/imgs/purchased-licence-blockchain-icon.svg') no-repeat 19px
+          color brand-primary
+        .well-certficate
+          background #EAF3FF url('/static/imgs/purchased-licence-certificate-icon.svg') no-repeat 20px
+          color brand-info
+        .files-information
+          margin-top 90px
+      .files-information
+        .files-include
+          display flex
+          align-items center
+          color gray-light
+          .extension
+            color gray-lighter
+            margin-right 12px
+          .number
+            color brand-primary
+            margin 0 4px
+        .attachment-icon
+          width 16px
+          height 17px
+          background url('/static/imgs/purchased-licence-attachment-icon.svg') no-repeat
+          margin-left 32px
+          margin-right 8px
+        .table
+          margin-top 24px
+          width auto
+          td, th
+            text-align center
+            padding-left 32px
+            padding-right 32px
+            max-width 136px
+            overflow hidden
+            text-overflow ellipsis
+          
