@@ -68,21 +68,20 @@
       -ms-flex: 1;
           flex: 1;
   min-width: 0;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #copyright-market ul.items-list li .card .price-wrapper:nth-child(1) {
   margin-right: 0;
   text-align: right;
 }
 #copyright-market ul.items-list li .card .price-wrapper:nth-child(2) {
-  border-left: 1px solid #e7ecf3;
   padding-left: 10px;
   margin-left: 10px;
 }
 #copyright-market ul.items-list li .card .price-wrapper .price {
-  font-size: 18px;
+  font-size: 14px;
   white-space: nowrap;
 }
 #copyright-market ul.items-list li .card .price-wrapper .price:before {
@@ -92,13 +91,13 @@
 }
 #copyright-market ul.items-list li .card .badge-icon {
   float: left;
-  min-width: 24px;
-  height: 24px;
-  line-height: 24px;
-  border-radius: 12px;
+  min-width: 18px;
+  height: 18px;
+  line-height: 19px;
+  border-radius: 50%;
   position: relative;
   margin-right: 4px;
-  font-size: 12px;
+  font-size: 9px;
 }
 #copyright-market ul.items-list li .card .badge-icon .message {
   padding-left: 30px;
@@ -109,9 +108,9 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
