@@ -1,0 +1,141 @@
+@import 'variables.styl'
+
+#staging-area
+  .panel.staging-area
+    width 1200px
+    margin 0 auto
+    margin-top 24px
+    margin-bottom 160px
+    .panel-heading
+      height 64px
+      text-align center
+      color gray
+      display flex
+      align-items center
+      justify-content center
+      span
+        margin 0 20px
+    .panel-body
+      padding 0
+      margin 36px 48px
+      ul
+        list-style-type none
+        padding 0
+        margin 0
+        &:after
+          content ''
+          display block
+          clear both
+        li
+          margin-bottom 36px
+          width 20%
+          position relative
+          display block
+          float left
+          text-align center
+          &:last-child
+            margin-right auto
+          &:hover .button-wrapper
+            display block
+          .button-wrapper
+            display none
+            position absolute
+            top 12px
+            right 14px
+          .button
+            user-select none
+            position absolute
+            width 20px
+            height 20px
+            top 0px
+            cursor pointer
+            &:hover
+              opacity 0.7
+            &:active
+              opacity 0.5
+          .preview
+            position absolute
+            right 46px
+            background url('/static/imgs/staging-area-preview-icon.svg') no-repeat center
+          .delete
+            position absolute
+            right 12px
+            background url('/static/imgs/staging-area-delete-icon.svg') no-repeat center
+          label
+            display inline-block
+            input
+              display none
+              &:checked + .file-card
+                border-color brand-primary
+                box-shadow 0 1px 0 brand-primary
+                .card-body 
+                  border-color brand-primary
+                  background url('/static/imgs/staging-area-file-icon-green.svg') no-repeat center
+                  .extension
+                    color brand-primary
+                  &:before
+                    content '已选'
+                    position absolute
+                    color brand-primary
+                    left 12px
+                    top 12px
+                    font-size 12px
+                    font-weight normal
+          .file-card
+            width 190px
+            height 230px
+            border 1px solid gray-lightest
+            cursor pointer
+            box-shadow 0 1px 0 gray-lightest
+            position relative
+            .card-body 
+              height 172px
+              border-bottom 1px solid gray-lightest
+              user-select none
+              position relative
+              background url('/static/imgs/staging-area-file-icon-blue.svg') no-repeat center
+              .extension
+                text-align center
+                font-size 12px
+                color #469BFF
+                position absolute
+                left 0
+                right 0
+                bottom 48px
+                font-weight normal
+                text-indent -2px
+                &:before 
+                  content '.'
+            .card-footer
+              padding 12px 16px
+              text-align left
+              .file-name
+                font-size 12px
+                color gray-light
+                font-weight bold
+                white-space nowrap
+                overflow hidden
+                text-overflow ellipsis
+              .file-size
+                font-size 10px
+                color gray-light
+                font-weight lighter
+                margin-top 2px
+    .panel-footer
+      background transparent
+      border-color gray-lightest
+      height 100px
+      display flex
+      align-items center
+      justify-content center
+      button
+        width 138px
+      .selected-status
+        font-size 12px
+        margin-left 16px
+        color gray
+        span
+          color brand-primary
+                
+              
+      

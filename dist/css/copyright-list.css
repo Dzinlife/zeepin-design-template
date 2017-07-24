@@ -7,6 +7,9 @@
 #copyright-list .nav-wrapper .nav.nav-tabs {
   border: none;
 }
+#copyright-list .nav-wrapper .nav.nav-tabs a {
+  background: transparent;
+}
 #copyright-list .tab-content ul {
   margin: 0 -10px;
   padding: 0;

@@ -1,0 +1,114 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'staging-area'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/staging-area.css')
+
+block header
+  include ./components/header.pug
+  +header('logined', 0)
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .panel.panel-default.staging-area
+    .panel-heading
+      span 1. 申请一个版权可选择多个相关联的文件。 
+      span 2.已成功申请的文件将自动从暂存区移除
+      span 3.文件存放超过48小时未申请，将自动移除
+    .panel-body
+      ul
+        li
+          label
+            input(type="checkbox")
+            .file-card
+              .card-body
+                .extension JPG
+              .card-footer
+                .file-name Screen Shot 2017-06-20 abvdefg.jpg
+                .file-size 420k
+          .button-wrapper
+            .button.preview
+            .button.delete
+        li
+          label
+            input(type="checkbox")
+            .file-card
+              .card-body
+                .extension JPG
+              .card-footer
+                .file-name Screen Shot 2017-06-20 abvdefg.jpg
+                .file-size 420k
+          .button-wrapper
+            .button.preview
+            .button.delete
+        li
+          label
+            input(type="checkbox")
+            .file-card
+              .card-body
+                .extension JPG
+              .card-footer
+                .file-name Screen Shot 2017-06-20 abvdefg.jpg
+                .file-size 420k
+          .button-wrapper
+            .button.preview
+            .button.delete
+        li
+          label
+            input(type="checkbox")
+            .file-card
+              .card-body
+                .extension JPG
+              .card-footer
+                .file-name Screen Shot 2017-06-20 abvdefg.jpg
+                .file-size 420k
+          .button-wrapper
+            .button.preview
+            .button.delete
+        li
+          label
+            input(type="checkbox")
+            .file-card
+              .card-body
+                .extension JPG
+              .card-footer
+                .file-name Screen Shot 2017-06-20 abvdefg.jpg
+                .file-size 420k
+          .button-wrapper
+            .button.preview
+            .button.delete
+        li
+          label
+            input(type="checkbox")
+            .file-card
+              .card-body
+                .extension JPG
+              .card-footer
+                .file-name Screen Shot 2017-06-20 abvdefg.jpg
+                .file-size 420k
+          .button-wrapper
+            .button.preview
+            .button.delete
+        li
+          label
+            input(type="checkbox")
+            .file-card
+              .card-body
+                .extension JPG
+              .card-footer
+                .file-name Screen Shot 2017-06-20 abvdefg.jpg
+                .file-size 420k
+          .button-wrapper
+            .button.preview
+            .button.delete
+    .panel-footer
+      button.btn.btn-sm.btn-primary 申请证书
+      .selected-status 已选择 <span>4</span> 个关联文件
+
+
+
+
