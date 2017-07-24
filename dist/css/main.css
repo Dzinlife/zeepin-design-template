@@ -315,6 +315,9 @@ select {
   border-radius: 8px;
   padding-right: 24px;
 }
+select:hover {
+  background-color: #e7ecf3;
+}
 select:focus {
   border-color: #d2dbe6;
 }

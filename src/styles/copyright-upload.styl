@@ -93,7 +93,8 @@
           input#copyright-owner-name-input:disabled
             cursor not-allowed
             
-          label.copyright-licence-upload              
+          label.copyright-licence-upload   
+            display block         
             #licence-upload-button
               border 1px solid gray-lighter
               border-radius 16px
@@ -107,13 +108,16 @@
               &:hover
                 background-color gray-lightest
                 
-            &.disabled #licence-upload-button
-              color gray-lighter
-              cursor not-allowed
-              border-color gray-lightest
-              &:hover
+            &.disabled
+              #licence-upload-button
                 color gray-lighter
-                background-color inherit
+                cursor not-allowed
+                border-color gray-lightest
+                &:hover
+                  color gray-lighter
+                  background-color inherit
+              select
+                cursor not-allowed
                 
             input[type=file]
               width 0.1px
@@ -122,6 +126,13 @@
               overflow hidden
               position absolute
               z-index -1
+            select
+              font-weight normal
+              height 32px
+              line-height 32px
+              cursor pointer
+              display block
+              width 114px
               
         .column-right
           flex 1 1

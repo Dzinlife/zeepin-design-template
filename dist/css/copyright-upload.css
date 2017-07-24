@@ -126,6 +126,9 @@
 #copyright-upload .panel.panel-default.copyright-upload .panel-body .column-wrapper .column-left input#copyright-owner-name-input:disabled {
   cursor: not-allowed;
 }
+#copyright-upload .panel.panel-default.copyright-upload .panel-body .column-wrapper .column-left label.copyright-licence-upload {
+  display: block;
+}
 #copyright-upload .panel.panel-default.copyright-upload .panel-body .column-wrapper .column-left label.copyright-licence-upload #licence-upload-button {
   border: 1px solid #d2dbe6;
   border-radius: 16px;
@@ -149,6 +152,9 @@
   color: #d2dbe6;
   background-color: inherit;
 }
+#copyright-upload .panel.panel-default.copyright-upload .panel-body .column-wrapper .column-left label.copyright-licence-upload.disabled select {
+  cursor: not-allowed;
+}
 #copyright-upload .panel.panel-default.copyright-upload .panel-body .column-wrapper .column-left label.copyright-licence-upload input[type=file] {
   width: 0.1px;
   height: 0.1px;
@@ -156,6 +162,14 @@
   overflow: hidden;
   position: absolute;
   z-index: -1;
+}
+#copyright-upload .panel.panel-default.copyright-upload .panel-body .column-wrapper .column-left label.copyright-licence-upload select {
+  font-weight: normal;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  display: block;
+  width: 114px;
 }
 #copyright-upload .panel.panel-default.copyright-upload .panel-body .column-wrapper .column-right {
   -webkit-box-flex: 1;
