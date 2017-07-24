@@ -1,4 +1,6 @@
-#login h2 {
+#login h2,
+#register h2,
+#reset-password h2 {
   font-size: 24px;
   color: #12ce83;
   text-align: center;
@@ -7,52 +9,92 @@
   letter-spacing: 4px;
 }
 #login .panel.panel-default.login,
-#login .panel.panel-default.register {
+#register .panel.panel-default.login,
+#reset-password .panel.panel-default.login,
+#login .panel.panel-default.register,
+#register .panel.panel-default.register,
+#reset-password .panel.panel-default.register {
   width: 560px;
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 160px;
 }
 #login .panel.panel-default.login .panel-heading,
-#login .panel.panel-default.register .panel-heading {
+#register .panel.panel-default.login .panel-heading,
+#reset-password .panel.panel-default.login .panel-heading,
+#login .panel.panel-default.register .panel-heading,
+#register .panel.panel-default.register .panel-heading,
+#reset-password .panel.panel-default.register .panel-heading {
   padding: 0;
   border: none;
 }
 #login .panel.panel-default.login .panel-body,
-#login .panel.panel-default.register .panel-body {
+#register .panel.panel-default.login .panel-body,
+#reset-password .panel.panel-default.login .panel-body,
+#login .panel.panel-default.register .panel-body,
+#register .panel.panel-default.register .panel-body,
+#reset-password .panel.panel-default.register .panel-body {
   width: 330px;
   margin: 0 auto;
   padding: 50px 0;
 }
 #login .panel.panel-default.login .panel-body .input-wrapper,
-#login .panel.panel-default.register .panel-body .input-wrapper {
+#register .panel.panel-default.login .panel-body .input-wrapper,
+#reset-password .panel.panel-default.login .panel-body .input-wrapper,
+#login .panel.panel-default.register .panel-body .input-wrapper,
+#register .panel.panel-default.register .panel-body .input-wrapper,
+#reset-password .panel.panel-default.register .panel-body .input-wrapper {
   position: relative;
 }
 #login .panel.panel-default.login .panel-body .input-wrapper input,
+#register .panel.panel-default.login .panel-body .input-wrapper input,
+#reset-password .panel.panel-default.login .panel-body .input-wrapper input,
 #login .panel.panel-default.register .panel-body .input-wrapper input,
+#register .panel.panel-default.register .panel-body .input-wrapper input,
+#reset-password .panel.panel-default.register .panel-body .input-wrapper input,
 #login .panel.panel-default.login .panel-body .input-wrapper button,
-#login .panel.panel-default.register .panel-body .input-wrapper button {
+#register .panel.panel-default.login .panel-body .input-wrapper button,
+#reset-password .panel.panel-default.login .panel-body .input-wrapper button,
+#login .panel.panel-default.register .panel-body .input-wrapper button,
+#register .panel.panel-default.register .panel-body .input-wrapper button,
+#reset-password .panel.panel-default.register .panel-body .input-wrapper button {
   display: block;
   width: 100%;
 }
 #login .panel.panel-default.login .panel-body input,
-#login .panel.panel-default.register .panel-body input {
+#register .panel.panel-default.login .panel-body input,
+#reset-password .panel.panel-default.login .panel-body input,
+#login .panel.panel-default.register .panel-body input,
+#register .panel.panel-default.register .panel-body input,
+#reset-password .panel.panel-default.register .panel-body input {
   padding: 0 16px;
   padding-left: 48px;
   margin-bottom: 16px;
 }
 #login .panel.panel-default.login .panel-body input.mobile,
-#login .panel.panel-default.register .panel-body input.mobile {
+#register .panel.panel-default.login .panel-body input.mobile,
+#reset-password .panel.panel-default.login .panel-body input.mobile,
+#login .panel.panel-default.register .panel-body input.mobile,
+#register .panel.panel-default.register .panel-body input.mobile,
+#reset-password .panel.panel-default.register .panel-body input.mobile {
   background: url("/static/imgs/login-phone-icon.svg") no-repeat;
   background-position: 18px center;
 }
 #login .panel.panel-default.login .panel-body input.password,
-#login .panel.panel-default.register .panel-body input.password {
+#register .panel.panel-default.login .panel-body input.password,
+#reset-password .panel.panel-default.login .panel-body input.password,
+#login .panel.panel-default.register .panel-body input.password,
+#register .panel.panel-default.register .panel-body input.password,
+#reset-password .panel.panel-default.register .panel-body input.password {
   background: url("/static/imgs/login-key-icon.svg") no-repeat;
   background-position: 16px center;
 }
 #login .panel.panel-default.login .panel-body a.forget-password,
-#login .panel.panel-default.register .panel-body a.forget-password {
+#register .panel.panel-default.login .panel-body a.forget-password,
+#reset-password .panel.panel-default.login .panel-body a.forget-password,
+#login .panel.panel-default.register .panel-body a.forget-password,
+#register .panel.panel-default.register .panel-body a.forget-password,
+#reset-password .panel.panel-default.register .panel-body a.forget-password {
   position: absolute;
   top: 100%;
   right: 0;
@@ -61,22 +103,38 @@
   padding-top: 10px;
 }
 #login .panel.panel-default.login .panel-body .input-wrapper.sms-code,
-#login .panel.panel-default.register .panel-body .input-wrapper.sms-code {
+#register .panel.panel-default.login .panel-body .input-wrapper.sms-code,
+#reset-password .panel.panel-default.login .panel-body .input-wrapper.sms-code,
+#login .panel.panel-default.register .panel-body .input-wrapper.sms-code,
+#register .panel.panel-default.register .panel-body .input-wrapper.sms-code,
+#reset-password .panel.panel-default.register .panel-body .input-wrapper.sms-code {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 16px;
 }
 #login .panel.panel-default.login .panel-body .input-wrapper.sms-code input,
+#register .panel.panel-default.login .panel-body .input-wrapper.sms-code input,
+#reset-password .panel.panel-default.login .panel-body .input-wrapper.sms-code input,
 #login .panel.panel-default.register .panel-body .input-wrapper.sms-code input,
+#register .panel.panel-default.register .panel-body .input-wrapper.sms-code input,
+#reset-password .panel.panel-default.register .panel-body .input-wrapper.sms-code input,
 #login .panel.panel-default.login .panel-body .input-wrapper.sms-code button,
-#login .panel.panel-default.register .panel-body .input-wrapper.sms-code button {
+#register .panel.panel-default.login .panel-body .input-wrapper.sms-code button,
+#reset-password .panel.panel-default.login .panel-body .input-wrapper.sms-code button,
+#login .panel.panel-default.register .panel-body .input-wrapper.sms-code button,
+#register .panel.panel-default.register .panel-body .input-wrapper.sms-code button,
+#reset-password .panel.panel-default.register .panel-body .input-wrapper.sms-code button {
   display: inline-block;
   width: auto;
   margin: 0;
 }
 #login .panel.panel-default.login .panel-body .input-wrapper.sms-code button,
-#login .panel.panel-default.register .panel-body .input-wrapper.sms-code button {
+#register .panel.panel-default.login .panel-body .input-wrapper.sms-code button,
+#reset-password .panel.panel-default.login .panel-body .input-wrapper.sms-code button,
+#login .panel.panel-default.register .panel-body .input-wrapper.sms-code button,
+#register .panel.panel-default.register .panel-body .input-wrapper.sms-code button,
+#reset-password .panel.panel-default.register .panel-body .input-wrapper.sms-code button {
   padding-left: 0;
   padding-right: 0;
   -webkit-box-flex: 1;
@@ -85,12 +143,20 @@
   margin-left: 12px;
 }
 #login .panel.panel-default.login .panel-body .input-wrapper.sms-code input,
-#login .panel.panel-default.register .panel-body .input-wrapper.sms-code input {
+#register .panel.panel-default.login .panel-body .input-wrapper.sms-code input,
+#reset-password .panel.panel-default.login .panel-body .input-wrapper.sms-code input,
+#login .panel.panel-default.register .panel-body .input-wrapper.sms-code input,
+#register .panel.panel-default.register .panel-body .input-wrapper.sms-code input,
+#reset-password .panel.panel-default.register .panel-body .input-wrapper.sms-code input {
   background: url("/static/imgs/register-icon.svg") no-repeat;
   background-position: 18px center;
 }
 #login .panel.panel-default.login .panel-body .checkbox-wrapper,
-#login .panel.panel-default.register .panel-body .checkbox-wrapper {
+#register .panel.panel-default.login .panel-body .checkbox-wrapper,
+#reset-password .panel.panel-default.login .panel-body .checkbox-wrapper,
+#login .panel.panel-default.register .panel-body .checkbox-wrapper,
+#register .panel.panel-default.register .panel-body .checkbox-wrapper,
+#reset-password .panel.panel-default.register .panel-body .checkbox-wrapper {
   margin-top: 40px;
   font-size: 14px;
   display: -webkit-box;
@@ -101,12 +167,20 @@
           align-items: center;
 }
 #login .panel.panel-default.login .panel-body .checkbox-wrapper label,
-#login .panel.panel-default.register .panel-body .checkbox-wrapper label {
+#register .panel.panel-default.login .panel-body .checkbox-wrapper label,
+#reset-password .panel.panel-default.login .panel-body .checkbox-wrapper label,
+#login .panel.panel-default.register .panel-body .checkbox-wrapper label,
+#register .panel.panel-default.register .panel-body .checkbox-wrapper label,
+#reset-password .panel.panel-default.register .panel-body .checkbox-wrapper label {
   font-weight: normal;
   color: #768da7;
 }
 #login .panel.panel-default.login .panel-body .checkbox-wrapper input,
-#login .panel.panel-default.register .panel-body .checkbox-wrapper input {
+#register .panel.panel-default.login .panel-body .checkbox-wrapper input,
+#reset-password .panel.panel-default.login .panel-body .checkbox-wrapper input,
+#login .panel.panel-default.register .panel-body .checkbox-wrapper input,
+#register .panel.panel-default.register .panel-body .checkbox-wrapper input,
+#reset-password .panel.panel-default.register .panel-body .checkbox-wrapper input {
   margin: 0;
   margin-right: 6px;
   margin-bottom: 10px;
@@ -114,12 +188,20 @@
   height: auto;
 }
 #login .panel.panel-default.login .panel-body .login-button,
-#login .panel.panel-default.register .panel-body .login-button {
+#register .panel.panel-default.login .panel-body .login-button,
+#reset-password .panel.panel-default.login .panel-body .login-button,
+#login .panel.panel-default.register .panel-body .login-button,
+#register .panel.panel-default.register .panel-body .login-button,
+#reset-password .panel.panel-default.register .panel-body .login-button {
   margin-top: 40px;
   letter-spacing: 6px;
 }
 #login .panel.panel-default.login .panel-body .guide-to-register,
-#login .panel.panel-default.register .panel-body .guide-to-register {
+#register .panel.panel-default.login .panel-body .guide-to-register,
+#reset-password .panel.panel-default.login .panel-body .guide-to-register,
+#login .panel.panel-default.register .panel-body .guide-to-register,
+#register .panel.panel-default.register .panel-body .guide-to-register,
+#reset-password .panel.panel-default.register .panel-body .guide-to-register {
   display: block;
   font-size: 12px;
   color: #a1a9b2;
@@ -128,20 +210,36 @@
   margin-bottom: 50px;
 }
 #login .panel.panel-default.login .panel-body form,
-#login .panel.panel-default.register .panel-body form {
+#register .panel.panel-default.login .panel-body form,
+#reset-password .panel.panel-default.login .panel-body form,
+#login .panel.panel-default.register .panel-body form,
+#register .panel.panel-default.register .panel-body form,
+#reset-password .panel.panel-default.register .panel-body form {
   margin-bottom: 80px;
 }
 #login .panel.panel-default.login .nav,
-#login .panel.panel-default.register .nav {
+#register .panel.panel-default.login .nav,
+#reset-password .panel.panel-default.login .nav,
+#login .panel.panel-default.register .nav,
+#register .panel.panel-default.register .nav,
+#reset-password .panel.panel-default.register .nav {
   margin-top: 36px;
   padding: 0 76px;
 }
 #login .panel.panel-default.login .nav li,
-#login .panel.panel-default.register .nav li {
+#register .panel.panel-default.login .nav li,
+#reset-password .panel.panel-default.login .nav li,
+#login .panel.panel-default.register .nav li,
+#register .panel.panel-default.register .nav li,
+#reset-password .panel.panel-default.register .nav li {
   width: 50%;
 }
 #login .panel.panel-default.login .nav a,
-#login .panel.panel-default.register .nav a {
+#register .panel.panel-default.login .nav a,
+#reset-password .panel.panel-default.login .nav a,
+#login .panel.panel-default.register .nav a,
+#register .panel.panel-default.register .nav a,
+#reset-password .panel.panel-default.register .nav a {
   font-size: 20px;
   margin: 0 40px;
   text-align: center;

@@ -65,6 +65,10 @@
   margin-bottom: 16px;
   font-size: 16px;
 }
+#application-success .panel.main .section-wrapper.top h4 .question-tooltip {
+  position: relative;
+  top: -2px;
+}
 #application-success .panel.main .section-wrapper.top .hash {
   background: rgba(230,246,237,0.64) url("/static/imgs/hash-icon.svg") no-repeat 20px;
   font-size: 14px;

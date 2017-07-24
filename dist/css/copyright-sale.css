@@ -357,6 +357,8 @@
   cursor: pointer;
   border-radius: 14px;
   margin-right: 6px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 #copyright-sale .panel.customer .plan-select input {
   width: 0.1px;
@@ -372,7 +374,6 @@
   background: #12ce83;
   border-color: #12ce83;
   color: #fff;
-  cursor: auto;
 }
 #copyright-sale .panel.customer .plan-select input:disabled + .plan-select-button {
   border-color: #e7ecf3;

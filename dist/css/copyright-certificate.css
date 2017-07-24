@@ -6,7 +6,7 @@
 }
 #copyright-certificate .panel {
   position: relative;
-  padding-bottom: 64px;
+  padding-bottom: 12px;
   padding-top: 12px;
 }
 #copyright-certificate .panel .certificate-container {
@@ -18,60 +18,6 @@
   content: '';
   display: block;
   padding-top: 75%;
-}
-#copyright-certificate .panel h1 {
-  bor-weight: bold;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 56px;
-  margin-bottom: 36px;
-}
-#copyright-certificate .panel .info-wrapper {
-  padding: 0 128px;
-}
-#copyright-certificate .panel .intro {
-  font-size: 14px;
-}
-#copyright-certificate .panel .intro span {
-  padding: 0 10px;
-  color: #12ce83;
-}
-#copyright-certificate .panel table {
-  margin-top: 72px;
-  font-size: 14px;
-}
-#copyright-certificate .panel table td {
-  height: 38px;
-  padding-right: 24px;
-}
-#copyright-certificate .panel table td:first-child {
-  color: #3c4046;
-}
-#copyright-certificate .panel table td:last-child {
-  color: #12ce83;
-}
-#copyright-certificate .panel .zeepin-logo {
-  background: url("/static/imgs/logo.svg") no-repeat;
-  wdith: 175px;
-  height: 46px;
-  margin-top: 40px;
-}
-#copyright-certificate .panel .other-info {
-  width: 114px;
-  height: 114px;
-  background: #d8d8d8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  bottom: 48px;
-  right: 38px;
 }
 #copyright-certificate .certificate-container {
   position: relative;

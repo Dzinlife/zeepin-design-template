@@ -230,6 +230,28 @@ body:after {
   margin: 0 auto;
   padding: 0 24px;
 }
+.question-tooltip {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  line-height: 16px;
+  text-align: center;
+  background: #e7ecf3;
+  font-size: 12px;
+  color: #a1a9b2;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #fff;
+}
+.tooltip .tooltip-inner {
+  background: #fff;
+  color: #768da7;
+  text-align: left;
+  padding: 14px;
+  -webkit-box-shadow: 0 3px 7px rgba(118,141,167,0.3);
+          box-shadow: 0 3px 7px rgba(118,141,167,0.3);
+}
 input:not([type]),
 input[type='text'],
 input[type='password'],

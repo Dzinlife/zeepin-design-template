@@ -22,6 +22,26 @@ body
   margin 0 auto
   padding 0 24px
 
+.question-tooltip
+  display inline-block
+  width 16px
+  height 16px
+  border-radius 50%
+  line-height 16px
+  text-align center
+  background gray-lightest
+  font-size 12px
+  color gray-light
+
+.tooltip
+  &.top .tooltip-arrow
+    border-top-color white
+  .tooltip-inner
+    background white
+    color gray
+    text-align left
+    padding 14px
+    box-shadow 0 3px 7px rgba(gray, 0.3)
 
 input:not([type]), input[type='text'], input[type='password'], input[type='number'], textarea
   height 44px

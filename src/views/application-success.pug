@@ -12,7 +12,7 @@ block header
 
 block footer
   include ./components/footer.pug
-  
+
 block content
   .width-limit
     h1 恭喜您，申请证书成功!
@@ -29,6 +29,7 @@ block content
             h3 Global Blockchain Index
             .description Business Climate Index of Global blockchain asset market, GBI chose 15 bylockchain asset prices that are globally influential, and by using the specific weight using and the weighted average method Business Climate Index of Global blockchain asset market, GBI chose 15 blockchain asset prices that are globally influential, and by using the specific weight using and the weighted average method 
             h4 智品区块链交易哈希
+              .question-tooltip(data-toggle="tooltip" data-placement="top" title="说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字") ?
             .hash 2Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX02Q8H9Y5PJCICN9AK317GYTOBQLNHS7YXMSA5GPTKX0…
         .line
         .section-wrapper.bottom
@@ -62,3 +63,8 @@ block content
         |「所有权证明」使用数字签名技术来证明您是此原创作品的原始作者。数字签名通过验证一组公钥和密钥的匹配来证明所有权。公钥已写入「原本DNA」，随着原创作品一起发布。密钥已通过邮件发送到您的邮箱。为了安全，系统中不保存密钥，请您妥善保存此密钥，在任何情况下都不要泄露给其他人。<br>
         |「存在证明」用于证明原创作品的发布时间，使用了区块链技术以及来自国家数字证书中心的可信时间戳服务，认证信息也已经写入「原本DNA」中。
 
+block scripts
+  script.
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip()
+    })
