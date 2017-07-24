@@ -1,0 +1,16 @@
+#terms .panel {
+  width: 640px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+#terms .panel .panel-heading {
+  background: #e7ecf3;
+}
+#terms .panel .panel-heading h1 {
+  text-align: center;
+  font-size: 24px;
+}
+#terms .panel .panel-body {
+  padding: 48px;
+}

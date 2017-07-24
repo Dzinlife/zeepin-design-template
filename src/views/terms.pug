@@ -1,0 +1,28 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'terms'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/terms.css')
+
+block header
+  include ./components/header.pug
+  +header('no-login')
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .panel.panel-default.terms
+    .panel-heading
+      h1 个人承诺书
+    .panel-body
+      | 智品行空文化创意（上海）有限公司：<br>
+      | 本人（13761240027） （身份证号：33080219860716401x），承诺在“Zeepin”网站上传的所有作品，为个人原创或已经依法获得原始权利人合法授权，不存在任何权利瑕疵，且该作品符合国家相关法律法规和公序良俗，不会损害任何他方的合法权益或造成不良社会影响。<br>
+      | <br>
+      | 本人承诺在“Zeepin”网站选择的“版权通”、“授权通”服务中所勾选的各项授权范围、授权方式、授权期限等内容不会与他人权利冲突或损害第三人利益。<br>
+      | <br>
+      | 若今后产生与本人上传的作品有关的任何纠纷或责任，一概与贵公司无关。一切关于上传作品所产生的法律责任都由本人承担。<br>
+      | <br>
+      | 本承诺自本人
