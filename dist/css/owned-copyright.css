@@ -147,10 +147,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 280px;
 }
 .ghost-panel .owner-information .avatar {
   width: 50px;
   height: 50px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -164,21 +167,25 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.ghost-panel .owner-information .column-right {
+  min-width: 0;
+}
 .ghost-panel h4 {
   font-size: 16px;
   margin: 0;
   font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .ghost-panel .auth-badge {
-  margin-left: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 2px;
   display: inline-block;
-  background: #12ce83 url("/static/imgs/purchased-licence-auth-icon.svg") no-repeat 5px;
-  border-radius: 5px;
-  padding: 1px 6px;
-  padding-left: 16px;
-  color: #fff;
-  font-size: 10px;
+  background: url("/static/imgs/auth-icon.svg") no-repeat;
   height: 16px;
+  width: 16px;
 }
 .ghost-panel h5 {
   font-weight: normal;

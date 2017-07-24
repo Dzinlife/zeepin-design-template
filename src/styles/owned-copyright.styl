@@ -103,9 +103,11 @@
     .owner-information
       display flex
       align-items center
+      max-width 280px
       .avatar
         width 50px
         height 50px
+        flex-shrink 0
         border-radius 50%
         background-size cover
         background-position center
@@ -113,20 +115,22 @@
       .line-wrapper
         display flex
         align-items center
+      .column-right
+        min-width 0
     h4
       font-size 16px
       margin 0
       font-weight normal
+      white-space nowrap
+      overflow hidden
+      text-overflow ellipsis
     .auth-badge
-      margin-left 10px
+      flex-shrink 0
+      margin-left 2px
       display inline-block
-      background brand-primary url('/static/imgs/purchased-licence-auth-icon.svg') no-repeat 5px
-      border-radius 5px
-      padding 1px 6px
-      padding-left 16px
-      color white
-      font-size 10px
+      background url('/static/imgs/auth-icon.svg') no-repeat
       height 16px
+      width 16px
       
     h5
       font-weight normal
