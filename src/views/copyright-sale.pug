@@ -25,6 +25,8 @@ block content
           img.thumb(src="/static/imgs/thumbnail.png")
           .column-right
             h1 MarvelComics漫威仅限中国区 IronMan钢铁侠影视正版授权
+            .industry-category
+              | 行业类别 <span>无</span>
             .ghost-panel
               .owner-information
                 .avatar(style="background-image: url('/static/imgs/thumbnail.png')")
@@ -137,5 +139,22 @@ block content
             button.buy 立即购买
         .button-line-wrapper
           button.fav 收藏
-          button.share 私密分享
+          button.share(data-toggle="modal" data-target="#share-modal") 私密分享
+  #share-modal.modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-body
+          button.close(type='button', data-dismiss='modal')
+          h3 私密分享
+          h5 输入对方手机号
+          input
+          h5 什么是私密分享？
+          .description
+            | 智品版权平台基于智能合约保障。因此，只有分享给通过实名验证（KYC）的用户。实名用户可以在系统内发布内容，评论和交易。
+        .modal-footer
+          button.btn.btn-sm.btn-primary 分享版权
+
+block scripts
+  script.
+    $('#share-modal').modal('show')
 

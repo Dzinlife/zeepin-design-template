@@ -36,6 +36,7 @@
           <div class="panel panel-default head"><img class="thumb" src="/static/imgs/thumbnail.png">
             <div class="column-right">
               <h1>MarvelComics漫威仅限中国区 IronMan钢铁侠影视正版授权</h1>
+              <div class="industry-category">行业类别 <span>无</span></div>
               <div class="ghost-panel">
                 <div class="owner-information">
                   <div class="avatar" style="background-image: url('/static/imgs/thumbnail.png');"></div>
@@ -173,7 +174,24 @@
           </div>
           <div class="button-line-wrapper">
             <button class="fav">收藏</button>
-            <button class="share">私密分享</button>
+            <button class="share" data-toggle="modal" data-target="#share-modal">私密分享</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="share-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button" data-dismiss="modal"></button>
+            <h3>私密分享</h3>
+            <h5>输入对方手机号</h5>
+            <input>
+            <h5>什么是私密分享？</h5>
+            <div class="description">智品版权平台基于智能合约保障。因此，只有分享给通过实名验证（KYC）的用户。实名用户可以在系统内发布内容，评论和交易。</div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-sm btn-primary">分享版权</button>
           </div>
         </div>
       </div>
@@ -195,5 +213,6 @@
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script>$('#share-modal').modal('show')</script>
   </body>
 </html>

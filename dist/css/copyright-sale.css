@@ -52,12 +52,22 @@
 #copyright-sale .panel.head .column-right h1 {
   font-size: 24px;
   max-height: 66px;
-  line-height: 33px;
+  line-height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 15px;
+}
+#copyright-sale .panel.head .column-right .industry-category {
+  margin-bottom: 32px;
+  font-size: 12px;
+  font-weight: bold;
+}
+#copyright-sale .panel.head .column-right .industry-category span {
+  font-weight: normal;
+  color: #a1a9b2;
+  margin-left: 8px;
 }
 #copyright-sale .panel.head .column-right .ghost-panel {
-  margin: 32px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,4 +432,57 @@
 }
 #copyright-sale .button-line-wrapper button:active {
   background-color: rgba(231,236,243,0.3);
+}
+#copyright-sale #share-modal.modal .modal-dialog {
+  width: 360px;
+  position: relative;
+}
+#copyright-sale #share-modal.modal .modal-body {
+  padding: 24px 36px;
+}
+#copyright-sale #share-modal.modal .modal-body:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#copyright-sale #share-modal.modal .modal-footer {
+  text-align: center;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+#copyright-sale #share-modal.modal .modal-footer button {
+  width: 138px;
+}
+#copyright-sale #share-modal.modal input {
+  width: 240px;
+}
+#copyright-sale #share-modal.modal h3 {
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 28px;
+}
+#copyright-sale #share-modal.modal h5 {
+  font-size: 12px;
+  color: #a1a9b2;
+  margin-top: 32px;
+}
+#copyright-sale #share-modal.modal button.close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #d2dbe6;
+  opacity: 1;
+  background: url("/static/imgs/close-cross.svg") no-repeat center;
+}
+#copyright-sale #share-modal.modal button.close:hover {
+  background-color: #e7ecf3;
+}
+#copyright-sale #share-modal.modal .description {
+  color: #a1a9b2;
+  font-size: 12px;
 }
