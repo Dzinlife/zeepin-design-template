@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="55px" viewBox="0 0 78 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="3.95404042 27.58594 27.3180135 50.9499131 74.0459596 4.22196694"></polyline>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Shape" fill-rule="nonzero">
+            <use stroke="#1CBA75" stroke-width="7" xlink:href="#path-1"></use>
+            <use stroke="#27CD85" stroke-width="6" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

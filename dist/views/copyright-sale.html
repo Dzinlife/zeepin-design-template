@@ -191,9 +191,14 @@
             <div class="description">智品版权平台基于智能合约保障。因此，只有分享给通过实名验证（KYC）的用户。实名用户可以在系统内发布内容，评论和交易。</div>
           </div>
           <div class="modal-footer">
-            <button class="btn btn-sm btn-primary">分享版权</button>
+            <button class="btn btn-sm btn-primary" onclick="shareSuccess()">分享版权</button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="toast fade" id="share-success">
+      <div class="toast-dialog">
+        <h3>已发送短信至对方</h3>
       </div>
     </div>
     <div class="website-footer">
@@ -213,6 +218,29 @@
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
-    <script>$('#share-modal').modal('show')</script>
+    <script>
+      function shareSuccess(){
+        $('#share-modal').modal('hide')
+      
+        setTimeout(function(){
+          showToast( $('#share-success') )
+        }, 300)
+      }
+      
+      function showToast($toast){
+        $toast.show()
+        setTimeout(function (){
+          $toast.addClass('in')
+          setTimeout(function (){
+            $toast.removeClass('in')
+            setTimeout(function (){
+              $toast.hide()
+            }, 300)
+          }, 2000)
+        })
+      }
+      
+      //- $('#share-modal').modal('show')
+    </script>
   </body>
 </html>
