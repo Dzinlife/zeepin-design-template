@@ -54,12 +54,11 @@ block content
                     input#copyright-owner-name-input(type="text" placeholder="填写权利人姓名" disabled)
                   td
                     label.copyright-licence-upload.disabled
-                      select(disabled)
-                        option(value="上传授权文件" selected) 上传授权文件
+                      select(disabled onchange="uploadLicenceFileSelected.bind(this)()")
+                        option(value="上传授权文件" selected) 选择授权文件
                         option(value="filename" ) testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
-                      //- #licence-upload-button 上传授权文件
-                      //- input#copyright-licence-input(type="file" onchange="uploadLicenceFileSelected.bind(this)()" disabled)
-                      //- input#copyright-licence-input(type="file" onchange="uploadLicenceFileSelected.bind(this)()" disabled)
+                    label.upload-licence-file.disabled 上传授权文件
+                      input(disabled type="file")
             .column-right
               .file-upload-list-heading
                 h3 文件传输列表
@@ -96,8 +95,10 @@ block scripts
       document.getElementById('copyright-owner-name-input').disabled = true
       //- document.getElementById('copyright-licence-input').disabled = true
       document.querySelector('label.copyright-licence-upload select').disabled = true
+      document.querySelector('label.upload-licence-file input').disabled = true
 
       document.querySelector('label.copyright-licence-upload').classList.add("disabled")
+      document.querySelector('label.upload-licence-file').classList.add("disabled")
     }
 
     // 选择代理人
@@ -107,14 +108,11 @@ block scripts
       document.getElementById('copyright-owner-name-input').disabled = false
       //- document.getElementById('copyright-licence-input').disabled = false
       document.querySelector('label.copyright-licence-upload select').disabled = false
+      document.querySelector('label.upload-licence-file input').disabled = false
 
       document.querySelector('label.copyright-licence-upload').classList.remove("disabled")
+      document.querySelector('label.upload-licence-file').classList.remove("disabled")
     }
 
-    // 授权文件名显示
-    //- function uploadLicenceFileSelected(){
-    //-   if (this.files && this.files[0]) {
-    //-     document.getElementById('licence-upload-button').innerHTML = "授权文件: " + this.files[0].name
-    //-   }
-    //- }
+    
 

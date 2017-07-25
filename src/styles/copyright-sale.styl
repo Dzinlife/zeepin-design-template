@@ -311,7 +311,7 @@
         background-color rgba(gray-lightest, 0.1)
       &:active
         background-color rgba(gray-lightest, 0.3)
-  #share-modal.modal
+  #share-modal, #appeal-modal
     .modal-dialog
       width 360px
       position relative
@@ -354,6 +354,39 @@
     .description
       color gray-light
       font-size 12px
+    label#upload-appeal-description
+      height 32px
+      border-radius 16px
+      width 114px
+      line-height 30px
+      text-align center
+      border 1px solid brand-primary
+      font-size 12px
+      color gray-light
+      padding 0 12px
+      cursor pointer
+      font-weight normal
+      overflow hidden
+      text-overflow ellipsis
+      margin-top 24px
+      &:hover
+        background gray-lightest
+      input
+        width 0.1px
+        height 0.1px
+        opacity 0
+        overflow hidden
+        position absolute
+        z-index -1
+    button.submit-appeal
+      display block
+      margin 24px auto
+      width 114px
+    .rules
+      font-size 12px
+      color gray-light
+      margin-top 44px
+    
   #share-success.toast
     position fixed
     top 0

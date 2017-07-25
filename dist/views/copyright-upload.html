@@ -96,10 +96,13 @@
                     </td>
                     <td>
                       <label class="copyright-licence-upload disabled">
-                        <select disabled>
-                          <option value="上传授权文件" selected>上传授权文件</option>
+                        <select disabled onchange="uploadLicenceFileSelected.bind(this)()">
+                          <option value="上传授权文件" selected>选择授权文件</option>
                           <option value="filename">testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</option>
                         </select>
+                      </label>
+                      <label class="upload-licence-file disabled">上传授权文件
+                        <input disabled type="file">
                       </label>
                     </td>
                   </tr>
@@ -171,8 +174,10 @@
         document.getElementById('copyright-owner-name-input').disabled = true
         //- document.getElementById('copyright-licence-input').disabled = true
         document.querySelector('label.copyright-licence-upload select').disabled = true
+        document.querySelector('label.upload-licence-file input').disabled = true
       
         document.querySelector('label.copyright-licence-upload').classList.add("disabled")
+        document.querySelector('label.upload-licence-file').classList.add("disabled")
       }
       
       // 选择代理人
@@ -182,16 +187,11 @@
         document.getElementById('copyright-owner-name-input').disabled = false
         //- document.getElementById('copyright-licence-input').disabled = false
         document.querySelector('label.copyright-licence-upload select').disabled = false
+        document.querySelector('label.upload-licence-file input').disabled = false
       
         document.querySelector('label.copyright-licence-upload').classList.remove("disabled")
+        document.querySelector('label.upload-licence-file').classList.remove("disabled")
       }
-      
-      // 授权文件名显示
-      //- function uploadLicenceFileSelected(){
-      //-   if (this.files && this.files[0]) {
-      //-     document.getElementById('licence-upload-button').innerHTML = "授权文件: " + this.files[0].name
-      //-   }
-      //- }
     </script>
   </body>
 </html>

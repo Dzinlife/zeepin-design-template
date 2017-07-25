@@ -434,42 +434,51 @@
 #copyright-sale .button-line-wrapper button:active {
   background-color: rgba(231,236,243,0.3);
 }
-#copyright-sale #share-modal.modal .modal-dialog {
+#copyright-sale #share-modal .modal-dialog,
+#copyright-sale #appeal-modal .modal-dialog {
   width: 360px;
   position: relative;
 }
-#copyright-sale #share-modal.modal .modal-body {
+#copyright-sale #share-modal .modal-body,
+#copyright-sale #appeal-modal .modal-body {
   padding: 24px 36px;
 }
-#copyright-sale #share-modal.modal .modal-body:after {
+#copyright-sale #share-modal .modal-body:after,
+#copyright-sale #appeal-modal .modal-body:after {
   content: "";
   display: block;
   clear: both;
 }
-#copyright-sale #share-modal.modal .modal-footer {
+#copyright-sale #share-modal .modal-footer,
+#copyright-sale #appeal-modal .modal-footer {
   text-align: center;
   border: none;
   padding-top: 20px;
   padding-bottom: 40px;
 }
-#copyright-sale #share-modal.modal .modal-footer button {
+#copyright-sale #share-modal .modal-footer button,
+#copyright-sale #appeal-modal .modal-footer button {
   width: 138px;
 }
-#copyright-sale #share-modal.modal input {
+#copyright-sale #share-modal input,
+#copyright-sale #appeal-modal input {
   width: 240px;
 }
-#copyright-sale #share-modal.modal h3 {
+#copyright-sale #share-modal h3,
+#copyright-sale #appeal-modal h3 {
   font-size: 17px;
   letter-spacing: 2px;
   text-align: center;
   margin-top: 28px;
 }
-#copyright-sale #share-modal.modal h5 {
+#copyright-sale #share-modal h5,
+#copyright-sale #appeal-modal h5 {
   font-size: 12px;
   color: #a1a9b2;
   margin-top: 32px;
 }
-#copyright-sale #share-modal.modal button.close {
+#copyright-sale #share-modal button.close,
+#copyright-sale #appeal-modal button.close {
   position: absolute;
   right: 16px;
   top: 16px;
@@ -480,12 +489,56 @@
   opacity: 1;
   background: url("/static/imgs/close-cross.svg") no-repeat center;
 }
-#copyright-sale #share-modal.modal button.close:hover {
+#copyright-sale #share-modal button.close:hover,
+#copyright-sale #appeal-modal button.close:hover {
   background-color: #e7ecf3;
 }
-#copyright-sale #share-modal.modal .description {
+#copyright-sale #share-modal .description,
+#copyright-sale #appeal-modal .description {
   color: #a1a9b2;
   font-size: 12px;
+}
+#copyright-sale #share-modal label#upload-appeal-description,
+#copyright-sale #appeal-modal label#upload-appeal-description {
+  height: 32px;
+  border-radius: 16px;
+  width: 114px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #12ce83;
+  font-size: 12px;
+  color: #a1a9b2;
+  padding: 0 12px;
+  cursor: pointer;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 24px;
+}
+#copyright-sale #share-modal label#upload-appeal-description:hover,
+#copyright-sale #appeal-modal label#upload-appeal-description:hover {
+  background: #e7ecf3;
+}
+#copyright-sale #share-modal label#upload-appeal-description input,
+#copyright-sale #appeal-modal label#upload-appeal-description input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#copyright-sale #share-modal button.submit-appeal,
+#copyright-sale #appeal-modal button.submit-appeal {
+  display: block;
+  margin: 24px auto;
+  width: 114px;
+}
+#copyright-sale #share-modal .rules,
+#copyright-sale #appeal-modal .rules {
+  font-size: 12px;
+  color: #a1a9b2;
+  margin-top: 44px;
 }
 #copyright-sale #share-success.toast {
   position: fixed;

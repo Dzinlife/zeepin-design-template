@@ -54,7 +54,7 @@ block content
                 a(data-toggle='tab', href='#tab3') FAQ
             .appeal-wrapper
               span
-              a(href="#") 申诉
+              a(href="#" data-toggle="modal" data-target="#appeal-modal") 申诉
           .panel-body
             tab-content
               #tab0.tab-pane.fade.in.active
@@ -140,6 +140,24 @@ block content
         .button-line-wrapper
           button.fav 收藏
           button.share(data-toggle="modal" data-target="#share-modal") 私密分享
+  #appeal-modal.modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-body
+          button.close(type='button', data-dismiss='modal')
+          h3 申诉说明
+          h5 真实姓名
+          input
+          h5 申诉说明
+          input
+          h5 附件权利申明
+          .description
+            | 如果有相应文件能够证明该版权存在问题，请上传证明文件，可以是时间戳、证书、截图等，我们会通过你提供的证据进行审核
+          label#upload-appeal-description 上传说明文件
+            input(type="file" onchange="uploadDescriptionFileSelected.bind(this)()")
+          button.btn.btn-sm.btn-primary.submit-appeal 提交申诉
+          .rules
+            | 说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字
   #share-modal.modal.fade
     .modal-dialog
       .modal-content
@@ -178,6 +196,12 @@ block scripts
           }, 300)
         }, 2000)
       })
+    }
+
+    function uploadDescriptionFileSelected(){
+      if (this.files && this.files[0]) {
+        document.getElementById('upload-appeal-description').childNodes[0].nodeValue = this.files[0].name
+      }
     }
     
     //- $('#share-modal').modal('show')
