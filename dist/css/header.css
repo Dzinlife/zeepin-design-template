@@ -104,6 +104,80 @@ nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown {
 }
 nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown li a {
   font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #3c4046;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown li a .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown li a .icon.account {
+  background: url("/static/imgs/header-icon-account.svg") no-repeat center;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown li a .icon.transaction {
+  background: url("/static/imgs/header-icon-transaction.svg") no-repeat center;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown li a .icon.fav {
+  background: url("/static/imgs/header-icon-fav.svg") no-repeat center;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown li a .icon.balance {
+  background: url("/static/imgs/header-icon-balance.svg") no-repeat center;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown li a .icon.logout {
+  background: url("/static/imgs/header-icon-logout.svg") no-repeat center;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-menu {
+  border: none;
+  border-radius: 0;
+  width: 220px;
+  left: auto;
+  right: 0;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 22px;
+  padding-right: 16px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading .column-left {
+  min-width: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading .username,
+nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading .email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading .username {
+  font-size: 16px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading .email {
+  color: #a1a9b2;
+  font-weight: normal;
+  margin-top: 2px;
+  font-size: 11px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account li.divider.footer {
+  margin-bottom: 0;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account .navbar-avatar {
   margin-right: 10px;
@@ -114,6 +188,21 @@ nav.navbar.navbar-default .nav.navbar-nav.account .navbar-avatar {
   height: 24px;
   border-radius: 50%;
   background-color: #e7ecf3;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading {
+  height: 72px;
+  margin-bottom: -10px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .auth-badge {
+  margin-left: 10px;
+  display: inline-block;
+  background: #12ce83 url("/static/imgs/purchased-licence-auth-icon.svg") no-repeat 5px;
+  border-radius: 5px;
+  padding: 1px 6px;
+  padding-left: 16px;
+  color: #fff;
+  font-size: 10px;
+  height: 16px;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account .navbar-avatar-name {
   max-width: 100px;

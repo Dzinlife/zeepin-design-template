@@ -61,6 +61,57 @@ nav.navbar.navbar-default
         height 44px
         li a
           font-size 14px
+          padding-top 12px
+          padding-bottom 12px
+          padding-left 16px
+          display flex
+          align-items center
+          font-size 14px
+          color gray-dark
+          font-weight lighter
+          letter-spacing 1px
+          .icon
+            display inline-block
+            width 24px
+            height 24px
+            margin-right 8px
+            &.account
+              background url('/static/imgs/header-icon-account.svg') no-repeat center
+            &.transaction
+              background url('/static/imgs/header-icon-transaction.svg') no-repeat center
+            &.fav
+              background url('/static/imgs/header-icon-fav.svg') no-repeat center
+            &.balance
+              background url('/static/imgs/header-icon-balance.svg') no-repeat center
+            &.logout
+              background url('/static/imgs/header-icon-logout.svg') no-repeat center
+    .dropdown-menu
+      border none
+      border-radius 0
+      width 220px
+      left auto
+      right 0
+    .dropdown-heading
+      display flex
+      align-items center
+      padding-left 22px
+      padding-right 16px
+      .column-left 
+        min-width 0
+        flex 1
+      .username, .email
+        overflow hidden
+        text-overflow ellipsis
+      .username
+        font-size 16px
+      .email
+        color gray-light
+        font-weight normal
+        margin-top 2px
+        font-size 11px
+    li.divider.footer
+      margin-bottom 0
+          
     .navbar-avatar
       margin-right 10px
       flex-shrink 0
@@ -69,6 +120,20 @@ nav.navbar.navbar-default
       height 24px
       border-radius 50%
       background-color gray-lightest
+    .dropdown-heading
+      height 72px
+      margin-bottom -10px
+      // border-bottom 1px solid gray-lightest
+    .auth-badge
+      margin-left 10px
+      display inline-block
+      background brand-primary url('/static/imgs/purchased-licence-auth-icon.svg') no-repeat 5px
+      border-radius 5px
+      padding 1px 6px
+      padding-left 16px
+      color white
+      font-size 10px
+      height 16px
       
     .navbar-avatar-name
       max-width 100px      
@@ -94,3 +159,4 @@ nav.navbar.search-block
     color gray-dark
     &:focus
       border-color brand-primary
+    
