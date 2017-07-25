@@ -143,6 +143,7 @@ nav.navbar.navbar-default .nav.navbar-nav.account>li>a {
           align-items: center;
   font-size: 14px;
   color: #3c4046;
+  font-weight: normal;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account>li.notification {
   margin-right: 0;
