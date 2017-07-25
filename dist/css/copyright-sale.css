@@ -6,6 +6,7 @@
   min-width: 1136px;
 }
 #copyright-sale .breadcrumb {
+  margin-top: 24px;
   background: transparent;
 }
 #copyright-sale .breadcrumb .active {

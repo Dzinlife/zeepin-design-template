@@ -1,12 +1,18 @@
 @import 'variables.styl'
 
 nav.navbar.navbar-default
-  background transparent
+  background white
+  box-shadow 0 2px 4px rgba(gray, 0.2)
   font-size 16px
+  height 70px
+  min-height auto
   .navbar-brand
     width 220px
     display flex
     justify-content center
+    align-items center
+    padding 0
+    height 70px
   .container-fluid
     display flex
     .tabs
@@ -17,8 +23,20 @@ nav.navbar.navbar-default
         margin-left 22px
         margin-right 22px
         a
-          padding-left 6px
-          padding-right 6px
+          padding 24px 6px
+          display flex
+          align-items center
+          .icon
+            height 18px
+            width 18px
+            display inline-block
+            margin-right 8px
+            &.staging-area
+              background url('/static/imgs/header-icon-staging-area.svg') no-repeat center
+            &.copyright-protect
+              background url('/static/imgs/header-icon-copyright-protect.svg') no-repeat center
+            &.copyright-market
+              background url('/static/imgs/header-icon-copyright-market.svg') no-repeat center
         &.active
           position relative
           &:after
@@ -26,7 +44,7 @@ nav.navbar.navbar-default
             position absolute
             height 3px
             width 100%
-            bottom 26px
+            bottom 1px
             background brand-primary
       li.market
         a
@@ -37,6 +55,8 @@ nav.navbar.navbar-default
   .navbar-text.navbar-right.login-register
     width 172px
     margin-right 8px
+    margin-top 24px
+    margin-bottom 24px
     .navbar-link
       margin-left 28px
       text-decoration none
@@ -142,10 +162,11 @@ nav.navbar.navbar-default
             
 nav.navbar.search-block
   input
+    border-radius 0
     flex 1
     margin-left 80px
     margin-right 180px
-    margin-top 20px
+    margin-top 14px
     margin-bottom 20px
     border none
     border-bottom 1px solid gray-lightest

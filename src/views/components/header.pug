@@ -8,13 +8,13 @@ mixin header(type, active)
               img(src="/static/imgs/logo.svg")
           ul.nav.navbar-nav.tabs
             li(class = active === 0 ? 'active' : '')
-              a(href='#') 案例场景
+              a(href='/home') 案例场景
             li(class = active === 1 ? 'active' : '')
               a(href='/latest-trade') 最新公示
             li.market(class = active === 2 ? 'active' : '')
-              a(href='#')
+              a(href='/copyright-market')
                 img(src="/static/imgs/copyright-market-icon.svg")
-                | 版权市场
+                | 交易市场
           p.navbar-text.navbar-right.login-register
             a.navbar-link(href='/register') 注册
             a.navbar-link(href='/login') 登录
@@ -27,13 +27,17 @@ mixin header(type, active)
               img(src="/static/imgs/logo.svg")
           ul.nav.navbar-nav.tabs
             li(class = active === 0 ? 'active' : '')
-              a(href='#') 暂存区
+              a(href='/staging-area')
+                .icon.staging-area
+                | 暂存区
             li(class = active === 1 ? 'active' : '')
-              a(href='/copyright-protect') 版权保护
+              a(href='/copyright-upload')
+                .icon.copyright-protect
+                | 版权保护
             li.market(class = active === 2 ? 'active' : '')
-              a(href='#')
-                img(src="/static/imgs/copyright-market-icon.svg")
-                | 版权市场
+              a(href='/copyright-market')
+                .icon.copyright-market
+                | 交易市场
           ul.nav.navbar-nav.account
             li.cart
               a.navbar-link(href='/register')
