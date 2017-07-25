@@ -191,7 +191,7 @@
               <h5>范围描述 <span>INFO</span></h5>
               <label class="range-descrtption">
                 <input type="checkbox">
-                <div class="text">印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;</div><a>查看详情</a>
+                <div class="text" onclick="return false">印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;</div><a>查看详情</a>
               </label>
               <div class="price-wrapper">价格<span class="price">2,123</span></div>
             </div>
@@ -294,13 +294,6 @@
           document.getElementById('upload-appeal-description').childNodes[0].nodeValue = this.files[0].name
         }
       }
-      
-      //文字点击展开优化
-      document.querySelector('label.range-descrtption .text').addEventListener('click', function(e){
-        e.preventDefault()
-      })
-      
-      //- $('#share-modal').modal('show')
     </script>
   </body>
 </html>
