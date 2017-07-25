@@ -97,6 +97,7 @@ nav.navbar.navbar-default
       padding-left 22px
       padding-right 16px
       .column-left 
+        margin-right 8px
         min-width 0
         flex 1
       .username, .email
@@ -125,15 +126,12 @@ nav.navbar.navbar-default
       margin-bottom -10px
       // border-bottom 1px solid gray-lightest
     .auth-badge
-      margin-left 10px
+      flex-shrink 0
+      margin-left 2px
       display inline-block
-      background brand-primary url('/static/imgs/purchased-licence-auth-icon.svg') no-repeat 5px
-      border-radius 5px
-      padding 1px 6px
-      padding-left 16px
-      color white
-      font-size 10px
+      background url('/static/imgs/auth-icon.svg') no-repeat
       height 16px
+      width 16px
       
     .navbar-avatar-name
       max-width 100px      

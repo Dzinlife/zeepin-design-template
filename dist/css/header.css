@@ -157,6 +157,7 @@ nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading {
   padding-right: 16px;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading .column-left {
+  margin-right: 8px;
   min-width: 0;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -194,15 +195,13 @@ nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading {
   margin-bottom: -10px;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account .auth-badge {
-  margin-left: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 2px;
   display: inline-block;
-  background: #12ce83 url("/static/imgs/purchased-licence-auth-icon.svg") no-repeat 5px;
-  border-radius: 5px;
-  padding: 1px 6px;
-  padding-left: 16px;
-  color: #fff;
-  font-size: 10px;
+  background: url("/static/imgs/auth-icon.svg") no-repeat;
   height: 16px;
+  width: 16px;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account .navbar-avatar-name {
   max-width: 100px;
