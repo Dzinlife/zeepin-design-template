@@ -26,6 +26,8 @@ nav.navbar.navbar-default
           padding 24px 6px
           display flex
           align-items center
+          font-size 14px
+          color gray-dark
           .icon
             height 18px
             width 18px
@@ -60,13 +62,23 @@ nav.navbar.navbar-default
     .navbar-link
       margin-left 28px
       text-decoration none
+      font-size 14px
   .nav.navbar-nav.account
     margin-right 8px
     display flex
     align-items center
     white-space nowrap    
-    img.navbar-cart-icon
+    .icon
       margin-right 10px
+      display inline-block
+      height 18px
+      width 18px
+      &.cart
+        background url('/static/imgs/header-icon-cart.svg') no-repeat center
+      &.notification
+        background url('/static/imgs/header-icon-notification.svg') no-repeat center
+        &.highlight
+          background url('/static/imgs/header-icon-notification-hightlight.svg') no-repeat center
     &>li
       display flex
       align-items center
@@ -75,8 +87,21 @@ nav.navbar.navbar-default
         padding 0
         display flex
         align-items center
+        font-size 14px
+        color gray-dark
+      &.notification
+        margin-right 0
       &.cart
-        margin-right 40px
+        margin-right 24px
+        span
+          font-size 12px
+          margin-left 4px
+          font-weight normal
+          color brand-primary
+      &.divider
+        height 20px
+        border-left 1px solid gray-lightest
+        margin 0 16px
       &.dropdown
         height 44px
         li a
@@ -137,10 +162,12 @@ nav.navbar.navbar-default
       margin-right 10px
       flex-shrink 0
       display inline-block
-      width 24px
-      height 24px
+      width 40px
+      height 40px
       border-radius 50%
       background-color gray-lightest
+      background-size cover
+      background-position center
     .dropdown-heading
       height 72px
       margin-bottom -10px

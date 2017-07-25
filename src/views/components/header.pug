@@ -41,13 +41,16 @@ mixin header(type, active)
           ul.nav.navbar-nav.account
             li.cart
               a.navbar-link(href='/register')
-                img.navbar-cart-icon(src="/static/imgs/header-cart-icon.svg")
-                | 购物车
+                .icon.cart
+                | 购物车 <span>(40)</span>
+            li.notification
+              a.navbar-link(href='/register')
+                .icon.notification.highlight
+                | 提醒
+            li.divider
             li.dropdown
               a.dropdown-toggle(href="#" data-toggle="dropdown")
-                .navbar-avatar
-                span.navbar-avatar-name 这是个比较长的用户名
-                span.caret
+                .navbar-avatar(style="background-image: url('/static/imgs/thumbnail.png')")
               ul.dropdown-menu
                 .dropdown-heading
                   .column-left

@@ -49,6 +49,8 @@ nav.navbar.navbar-default .container-fluid .tabs li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 14px;
+  color: #3c4046;
 }
 nav.navbar.navbar-default .container-fluid .tabs li a .icon {
   height: 18px;
@@ -96,6 +98,7 @@ nav.navbar.navbar-default .navbar-text.navbar-right.login-register {
 nav.navbar.navbar-default .navbar-text.navbar-right.login-register .navbar-link {
   margin-left: 28px;
   text-decoration: none;
+  font-size: 14px;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account {
   margin-right: 8px;
@@ -107,8 +110,20 @@ nav.navbar.navbar-default .nav.navbar-nav.account {
           align-items: center;
   white-space: nowrap;
 }
-nav.navbar.navbar-default .nav.navbar-nav.account img.navbar-cart-icon {
+nav.navbar.navbar-default .nav.navbar-nav.account .icon {
   margin-right: 10px;
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .icon.cart {
+  background: url("/static/imgs/header-icon-cart.svg") no-repeat center;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .icon.notification {
+  background: url("/static/imgs/header-icon-notification.svg") no-repeat center;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account .icon.notification.highlight {
+  background: url("/static/imgs/header-icon-notification-hightlight.svg") no-repeat center;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account>li {
   display: -webkit-box;
@@ -127,9 +142,25 @@ nav.navbar.navbar-default .nav.navbar-nav.account>li>a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 14px;
+  color: #3c4046;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.notification {
+  margin-right: 0;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account>li.cart {
-  margin-right: 40px;
+  margin-right: 24px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.cart span {
+  font-size: 12px;
+  margin-left: 4px;
+  font-weight: normal;
+  color: #12ce83;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.divider {
+  height: 20px;
+  border-left: 1px solid #e7ecf3;
+  margin: 0 16px;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account>li.dropdown {
   height: 44px;
@@ -217,10 +248,12 @@ nav.navbar.navbar-default .nav.navbar-nav.account .navbar-avatar {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #e7ecf3;
+  background-size: cover;
+  background-position: center;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account .dropdown-heading {
   height: 72px;
