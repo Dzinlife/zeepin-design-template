@@ -208,6 +208,24 @@
       padding-bottom 32px
       .range-descrtption 
         color gray-light
+        font-weight normal
+        .text
+          height 60px
+          overflow hidden
+        a
+          float right
+          cursor pointer
+        input
+          width 0.1px
+          height 0.1px
+          opacity 0
+          overflow hidden
+          position absolute
+          z-index -1
+          &:checked + .text
+            height auto
+        
+            
       .price-wrapper
         margin-top 36px
         font-size 17px

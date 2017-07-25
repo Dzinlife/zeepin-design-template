@@ -290,6 +290,26 @@
 }
 #copyright-sale .panel.customer .panel-body .range-descrtption {
   color: #a1a9b2;
+  font-weight: normal;
+}
+#copyright-sale .panel.customer .panel-body .range-descrtption .text {
+  height: 60px;
+  overflow: hidden;
+}
+#copyright-sale .panel.customer .panel-body .range-descrtption a {
+  float: right;
+  cursor: pointer;
+}
+#copyright-sale .panel.customer .panel-body .range-descrtption input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#copyright-sale .panel.customer .panel-body .range-descrtption input:checked + .text {
+  height: auto;
 }
 #copyright-sale .panel.customer .panel-body .price-wrapper {
   margin-top: 36px;
