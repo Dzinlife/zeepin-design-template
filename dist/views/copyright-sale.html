@@ -273,10 +273,7 @@
                 </label>
               </div>
               <h5>范围描述 <span>INFO</span></h5>
-              <label class="range-descrtption">
-                <input type="checkbox">
-                <div class="text" onclick="return false">印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;</div><a>查看详情</a>
-              </label>
+              <div class="range-descrtption">印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利；<a data-toggle="modal" data-target="#licence-modal">查看详情</a></div>
               <div class="price-wrapper">价格<span class="price">2,123</span></div>
             </div>
             <div class="panel-footer">
@@ -287,6 +284,97 @@
           <div class="button-line-wrapper">
             <button class="fav">收藏</button>
             <button class="share" data-toggle="modal" data-target="#share-modal">私密分享</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="licence-modal">
+      <div class="modal-dialog" id="licence-template">
+        <div class="modal-content">
+          <div class="modal-heading">
+            <h1>微信用图授权<span>¥499</span></h1>
+            <button class="close" type="button" data-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="control-label">版权取得方式</label>
+              <div class="column-wrapper">继续取得</div>
+            </div>
+            <div class="form-group">
+              <label class="control-label">授权期限</label>
+              <div class="column-wrapper">6个月</div>
+            </div>
+            <div class="form-group">
+              <label class="control-label">授权版权范围</label>
+              <div class="column-wrapper">
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>复制权
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>发行权
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>出租权
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>展览权
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>表演权
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>放映权
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>广播权
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>信息网络传播权
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>摄制
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>改编权
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>翻译权
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>汇编权
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label">授权方式</label>
+              <div class="column-wrapper">
+                <div class="licence-method-text">普通授权许可&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转授权权限： <span style="color:red;">不允许</span></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label">授权区域</label>
+              <div class="column-wrapper licence-zone">
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>中国大陆
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>中国香港
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>中国澳门
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>中国台湾
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>全球国家及地区
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" checked disabled>其他地区
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-primary quit" data-dismiss="modal">关闭</button>
           </div>
         </div>
       </div>

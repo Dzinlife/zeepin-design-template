@@ -300,22 +300,9 @@
       .range-descrtption 
         color gray-light
         font-weight normal
-        .text
-          height 60px
-          overflow hidden
         a
           float right
           cursor pointer
-        input
-          width 0.1px
-          height 0.1px
-          opacity 0
-          overflow hidden
-          position absolute
-          z-index -1
-          &:checked + .text
-            height auto
-        
             
       .price-wrapper
         margin-top 36px
@@ -526,3 +513,26 @@
         text-align center
         color gray
         padding-top 120px
+  #licence-modal
+    @import 'licence-template.styl'
+    .modal-dialog
+      width 640px
+    .modal-heading
+      border-bottom 1px solid gray-lightest
+    button.quit
+      width 138px
+      display block
+      letter-spacing 3px
+      margin 0 auto
+    button.close
+      position absolute
+      right 16px
+      top 17px
+      width 32px
+      height 32px
+      border-radius 50%
+      border 1px solid gray-lighter
+      opacity 1
+      background url("/static/imgs/close-cross.svg") no-repeat center
+      &:hover
+        background-color gray-lightest

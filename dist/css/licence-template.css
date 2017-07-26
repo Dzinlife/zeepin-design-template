@@ -2,7 +2,8 @@
   width: 770px;
   padding-top: 64px;
 }
-#licence-template .panel-heading {
+#licence-template .panel-heading,
+#licence-template .modal-heading {
   height: 68px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,47 +13,56 @@
           align-items: center;
   padding: 0 70px;
 }
-#licence-template .panel-heading h1 {
+#licence-template .panel-heading h1,
+#licence-template .modal-heading h1 {
   font-size: 22px;
   font-weight: normal;
   color: #3c4046;
   margin: 0;
 }
-#licence-template .panel-heading h1 span {
+#licence-template .panel-heading h1 span,
+#licence-template .modal-heading h1 span {
   margin-left: 32px;
   color: #12ce83;
 }
-#licence-template .panel-body {
+#licence-template .panel-body,
+#licence-template .modal-body {
   padding: 44px 70px;
 }
-#licence-template .panel-body .custom-licence-wrapper {
+#licence-template .panel-body .custom-licence-wrapper,
+#licence-template .modal-body .custom-licence-wrapper {
   max-width: 640px;
   margin: 0 auto;
 }
-#licence-template .panel-body .form-group {
+#licence-template .panel-body .form-group,
+#licence-template .modal-body .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-#licence-template .panel-body .column-wrapper {
+#licence-template .panel-body .column-wrapper,
+#licence-template .modal-body .column-wrapper {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding-top: 12px;
 }
-#licence-template .panel-body .column-wrapper label {
+#licence-template .panel-body .column-wrapper label,
+#licence-template .modal-body .column-wrapper label {
   margin: 0;
   margin-right: 20px;
   height: 44px;
   color: #768da7;
 }
-#licence-template .panel-body label.control-label {
+#licence-template .panel-body label.control-label,
+#licence-template .modal-body label.control-label {
   line-height: 44px;
   width: 120px;
   color: #768da7;
   font-size: 14px;
 }
-#licence-template .panel-body a.quit {
+#licence-template .panel-body a.quit,
+#licence-template .modal-body a.quit {
   color: #768da7;
   font-size: 16px;
   cursor: pointer;

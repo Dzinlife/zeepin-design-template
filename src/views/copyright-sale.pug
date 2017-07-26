@@ -190,10 +190,8 @@ block content
                 input(type="checkbox" name="plan-select")
                 .plan-select-button 授权方案一
             h5 范围描述 <span>INFO</span>
-            label.range-descrtption
-              input(type="checkbox")
-              .text(onclick="return false") 印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利;
-              a 查看详情
+            .range-descrtption 印刷、复印、拓印、录音、录像、翻录、翻拍等方式将作品制作一份或者多份的权利；
+              a(data-toggle="modal" data-target="#licence-modal") 查看详情
             .price-wrapper
               | 价格
               span.price 2,123
@@ -203,6 +201,88 @@ block content
         .button-line-wrapper
           button.fav 收藏
           button.share(data-toggle="modal" data-target="#share-modal") 私密分享
+  #licence-modal.modal.fade
+    .modal-dialog#licence-template
+      .modal-content
+        .modal-heading
+          h1 微信用图授权
+            span ¥499
+          button.close(type='button', data-dismiss='modal')
+        .modal-body
+          .form-group
+            label.control-label 版权取得方式
+            .column-wrapper
+              | 继续取得
+          .form-group
+            label.control-label 授权期限
+            .column-wrapper
+              | 6个月
+          .form-group
+            label.control-label 授权版权范围
+            .column-wrapper
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 复制权
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 发行权
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 出租权
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 展览权
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 表演权
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 放映权
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 广播权
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 信息网络传播权
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 摄制
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 改编权
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 翻译权
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 汇编权
+              
+          .form-group
+            label.control-label 授权方式
+            .column-wrapper
+              .licence-method-text 普通授权许可&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转授权权限： <span style="color:red;">不允许</span>
+          .form-group
+            label.control-label 授权区域
+            .column-wrapper.licence-zone
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 中国大陆
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 中国香港
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 中国澳门
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 中国台湾
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 全球国家及地区
+              label.checkbox-inline
+                input(type="checkbox" checked disabled)
+                | 其他地区
+          button.btn.btn-sm.btn-primary.quit(data-dismiss='modal') 关闭
   #appeal-modal.modal.fade
     .modal-dialog
       .modal-content
