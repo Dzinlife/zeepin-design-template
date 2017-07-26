@@ -1,0 +1,86 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'cart'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/cart.css')
+
+block header
+  include ./components/header.pug
+  +header('logined', 3)
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .width-limit
+    .card.step
+      .step.active
+        .step-bullet 1
+        | 购物车
+      .step
+        .step-bullet 2
+        | 确认信息
+      .step
+        .step-bullet 3
+        | 完成支付
+    .card.item
+      .item-heading
+        label
+          input(type="checkbox")
+          | 权利人： 上海智品行空文化传播有限公司
+        span 授权期限
+        span 交易类型
+        span 金额(元)
+      .item-body
+        .item-info
+          .item-thumbnail(style="background-image: url('/static/imgs/thumbnail.png')")
+          .column-right
+            h5 规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议
+            .badge-wrapper
+              .badge-icon.copyright
+              .badge-icon.licence
+              .badge-icon.derivative
+        span 6个月
+        span 授权通
+        span ¥
+          span.price 599
+      .item-footer
+        a.delete 移除
+        a.fav 收藏
+        .sum-text 小计：
+        .sum 1,399        
+    .card.item
+      .item-heading
+        label
+          input(type="checkbox")
+          | 权利人： 上海智品行空文化传播有限公司
+        span 授权期限
+        span 交易类型
+        span 金额(元)
+      .item-body
+        .item-info
+          .item-thumbnail(style="background-image: url('/static/imgs/thumbnail.png')")
+          .column-right
+            h5 规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议
+            .badge-wrapper
+              .badge-icon.copyright
+              .badge-icon.licence
+              .badge-icon.derivative
+        span 6个月
+        span 授权通
+        span ¥
+          span.price 599
+      .item-footer
+        a.delete 移除
+        a.fav 收藏
+        .sum-text 小计：
+        .sum 1,399 
+    .card.billing
+      label.select-all
+        input(type="checkbox")
+        | 全选
+      .total-text 总计（不含运费）：
+      .total 1,399
+      button.btn.btn-sm.btn-primary.submit 结算

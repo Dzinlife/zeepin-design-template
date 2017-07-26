@@ -146,10 +146,25 @@ nav.navbar.navbar-default .nav.navbar-nav.account>li>a {
   font-weight: normal;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account>li.notification {
+  height: 70px;
   margin-right: 0;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account>li.cart {
+  height: 70px;
   margin-right: 24px;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.cart.active {
+  position: relative;
+}
+nav.navbar.navbar-default .nav.navbar-nav.account>li.cart.active:after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 3px;
+  background: #12ce83;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 nav.navbar.navbar-default .nav.navbar-nav.account>li.cart span {
   font-size: 12px;

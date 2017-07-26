@@ -4,22 +4,22 @@
     <title>智品 - Zeepin</title>
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/static/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/copyright-first.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/cart.css">
   </head>
-  <body id="copyright-first">
+  <body id="cart">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header"><a class="navbar-brand" href="/"><img src="/static/imgs/logo.svg"></a></div>
             <ul class="nav navbar-nav tabs">
               <li><a href="/staging-area">
                   <div class="icon staging-area"></div>暂存区</a></li>
-              <li class="active"><a href="/copyright-upload">
+              <li><a href="/copyright-upload">
                   <div class="icon copyright-protect"></div>版权保护</a></li>
               <li class="market"><a href="/copyright-market">
                   <div class="icon copyright-market"></div>交易市场</a></li>
             </ul>
             <ul class="nav navbar-nav account">
-              <li class="cart"><a class="navbar-link" href="/cart">
+              <li class="cart active"><a class="navbar-link" href="/cart">
                   <div class="icon cart"></div>购物车 <span>(40)</span></a></li>
               <li class="notification"><a class="navbar-link" href="/register">
                   <div class="icon notification highlight"></div>提醒</a></li>
@@ -51,9 +51,75 @@
             </ul>
           </div>
         </nav>
-    <h1 class="first-copyright">添加第一个版权保护项</h1><img class="first-copyright" src="/static/imgs/first-copyright-image.svg">
-    <div class="first-copyright-description">基于智品区块链，让你的创作都有版权指纹<br>极速完成版权保护</div>
-    <button class="btn btn-sm btn-primary first-copyright">开始</button>
+    <div class="width-limit">
+      <div class="card step">
+        <div class="step active">
+          <div class="step-bullet">1</div>购物车
+        </div>
+        <div class="step">
+          <div class="step-bullet">2</div>确认信息
+        </div>
+        <div class="step">
+          <div class="step-bullet">3</div>完成支付
+        </div>
+      </div>
+      <div class="card item">
+        <div class="item-heading">
+          <label>
+            <input type="checkbox">权利人： 上海智品行空文化传播有限公司
+          </label><span>授权期限</span><span>交易类型</span><span>金额(元)</span>
+        </div>
+        <div class="item-body">
+          <div class="item-info">
+            <div class="item-thumbnail" style="background-image: url('/static/imgs/thumbnail.png');"></div>
+            <div class="column-right">
+              <h5>规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议</h5>
+              <div class="badge-wrapper">
+                <div class="badge-icon copyright"></div>
+                <div class="badge-icon licence"></div>
+                <div class="badge-icon derivative"></div>
+              </div>
+            </div>
+          </div><span>6个月</span><span>授权通</span><span>¥<span class="price">599</span></span>
+        </div>
+        <div class="item-footer"><a class="delete">移除</a><a class="fav">收藏</a>
+          <div class="sum-text">小计：</div>
+          <div class="sum">1,399        </div>
+        </div>
+      </div>
+      <div class="card item">
+        <div class="item-heading">
+          <label>
+            <input type="checkbox">权利人： 上海智品行空文化传播有限公司
+          </label><span>授权期限</span><span>交易类型</span><span>金额(元)</span>
+        </div>
+        <div class="item-body">
+          <div class="item-info">
+            <div class="item-thumbnail" style="background-image: url('/static/imgs/thumbnail.png');"></div>
+            <div class="column-right">
+              <h5>规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议</h5>
+              <div class="badge-wrapper">
+                <div class="badge-icon copyright"></div>
+                <div class="badge-icon licence"></div>
+                <div class="badge-icon derivative"></div>
+              </div>
+            </div>
+          </div><span>6个月</span><span>授权通</span><span>¥<span class="price">599</span></span>
+        </div>
+        <div class="item-footer"><a class="delete">移除</a><a class="fav">收藏</a>
+          <div class="sum-text">小计：</div>
+          <div class="sum">1,399 </div>
+        </div>
+      </div>
+      <div class="card billing">
+        <label class="select-all">
+          <input type="checkbox">全选
+        </label>
+        <div class="total-text">总计（不含运费）：</div>
+        <div class="total">1,399</div>
+        <button class="btn btn-sm btn-primary submit">结算</button>
+      </div>
+    </div>
     <div class="website-footer">
       <div class="width-limit">
         <div class="website-footer-left-column">

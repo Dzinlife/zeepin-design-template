@@ -39,11 +39,11 @@ mixin header(type, active)
                 .icon.copyright-market
                 | 交易市场
           ul.nav.navbar-nav.account
-            li.cart
-              a.navbar-link(href='/register')
+            li.cart(class = active === 3 ? 'active' : '')
+              a.navbar-link(href='/cart')
                 .icon.cart
                 | 购物车 <span>(40)</span>
-            li.notification
+            li.notification(class = active === 4 ? 'active' : '')
               a.navbar-link(href='/register')
                 .icon.notification.highlight
                 | 提醒
