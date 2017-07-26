@@ -390,6 +390,9 @@
 #copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(odd) * {
   border-color: #12ce83;
 }
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(odd) .card-heading {
+  background: #e6f6ed;
+}
 #copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(even) {
   border-color: #9ec1e2;
   color: #4a90e2;
@@ -397,11 +400,130 @@
 #copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(even) * {
   border-color: #9ec1e2;
 }
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(even) .card-heading {
+  background: #f2f7ff;
+}
 #copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(even) .card-body .icon {
   background: url("/static/imgs/transcation-icon-blue.svg") no-repeat center center;
 }
 #copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(even) .data-wrapper.status .data {
   background: url("/static/imgs/tick-circle-icon-blue.svg") no-repeat center left;
+}
+#copyright-sale .panel.body .panel-body #tab3 {
+  padding-bottom: 48px;
+}
+#copyright-sale .panel.body .panel-body #tab3 .ask-question h3 {
+  font-size: 16px;
+  font-weight: normal;
+}
+#copyright-sale .panel.body .panel-body #tab3 .ask-question .hint {
+  color: #a1a9b2;
+}
+#copyright-sale .panel.body .panel-body #tab3 .ask-question textarea {
+  display: block;
+  min-height: 100px;
+  width: 100%;
+  margin-top: 24px;
+}
+#copyright-sale .panel.body .panel-body #tab3 .ask-question button.submit {
+  float: right;
+  margin-top: 12px;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 120px;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list:before {
+  content: '';
+  display: block;
+  clear: both;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li {
+  border: 1px solid #e7ecf3;
+  -webkit-box-shadow: 0 2px 4px rgba(118,141,167,0.2);
+          box-shadow: 0 2px 4px rgba(118,141,167,0.2);
+  position: relative;
+  min-height: 48px;
+  margin-top: 18px;
+  padding-left: 34px;
+  padding-right: 48px;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li .fold-icon {
+  width: 48px;
+  height: 48px;
+  background: url("/static/imgs/carpet-icon.svg") no-repeat center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li .fold-icon.open {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li .fold-icon.open ~ .question {
+  padding-top: 14px;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li .fold-icon:not(.open) ~ *:not(.question) {
+  display: none;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li .fold-icon:not(.open) ~ .question {
+  height: 48px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 48px;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li textarea {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 20px;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li button.submit {
+  float: right;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100px;
+  letter-spacing: 4px;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li .answer {
+  color: #a1a9b2;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li.no-reply .fold-icon {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: none;
+  -webkit-transform: none;
+          transform: none;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li.no-reply .fold-icon:after {
+  color: #2b4eaf;
+  content: '回复';
+  line-height: 48px;
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-right: 13px;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li.no-reply .fold-icon:hover:after {
+  text-decoration: underline;
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li.no-reply .fold-icon.open:after {
+  content: '收起';
+}
+#copyright-sale .panel.body .panel-body #tab3 ul.faq-list li:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 #copyright-sale .panel.body .panel-body .line {
   margin: 50px -50px;

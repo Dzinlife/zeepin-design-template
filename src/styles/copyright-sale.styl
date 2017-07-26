@@ -269,16 +269,116 @@
             color brand-primary
             *
               border-color brand-primary
+            .card-heading
+              background #E6F6ED
           &:nth-child(even)
             border-color #9EC1E2
             color #4A90E2
             *
               border-color #9EC1E2
+            .card-heading
+              background #F2F7FF
             .card-body .icon
               background url('/static/imgs/transcation-icon-blue.svg') no-repeat center center
             .data-wrapper.status .data
               background url('/static/imgs/tick-circle-icon-blue.svg') no-repeat center left
-              
+      #tab3
+        padding-bottom 48px
+        .ask-question
+          h3
+            font-size 16px
+            font-weight normal
+          .hint
+            color gray-light
+          textarea
+            display block
+            min-height 100px
+            width 100%
+            margin-top 24px
+          button.submit
+            float right
+            margin-top 12px
+            
+        ul.faq-list
+          &:before
+            content ''
+            display block
+            clear both
+          list-style-type none
+          padding 0
+          margin 0
+          margin-top 120px
+          li
+            border 1px solid gray-lightest
+            box-shadow 0 2px 4px rgba(gray, 0.2)
+            position relative
+            min-height 48px
+            margin-top 18px
+            padding-left 34px
+            padding-right 48px
+            // .question
+            //   padding-right 8px
+            .fold-icon
+              width 48px
+              height 48px
+              background url('/static/imgs/carpet-icon.svg') no-repeat center
+              position absolute
+              right 0
+              top 0
+              cursor pointer
+              transition 0.2s
+              &.open
+                transform rotate(90deg)
+                & ~ .question
+                  padding-top 14px
+              &:not(.open)
+                & ~ *:not(.question)
+                  display none
+                & ~ .question
+                  height 48px
+                  overflow hidden
+                  white-space nowrap
+                  text-overflow ellipsis
+                  line-height 48px
+            textarea
+              display block
+              width 100%
+              min-height 100px
+              margin-top 20px
+            button.submit
+              float right
+              margin-top 16px
+              margin-bottom 16px
+              width 100px
+              letter-spacing 4px
+            .answer
+              color gray-light
+              margin-top 30px
+              margin-bottom 24px
+            &.no-reply
+              .fold-icon
+                user-select none
+                background none
+                transform none
+                &:after
+                  color brand-info
+                  content '回复'
+                  line-height 48px
+                  display block
+                  width 100%
+                  text-align right
+                  padding-right 13px
+                &:hover:after
+                  text-decoration underline
+                &.open:after
+                  content '收起'
+                  
+            &:after
+              content ''
+              display block
+              clear both
+                
+                 
       .line
         margin 50px -50px
         border-bottom 1px solid gray-lightest
