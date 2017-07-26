@@ -3,7 +3,7 @@
 #copyright-sale
   padding-bottom 160px
   .width-limit
-    max-width 1200px
+    max-width 1366px
     min-width 1136px
   .breadcrumb
     margin-top 24px
@@ -16,11 +16,13 @@
       text-overflow ellipsis
   .layout-wrapper
     display flex
-    .column-left
-      flex 1.8
+    > .column-left
+      flex 2
+      min-width 0
       margin-right 30px
-    .column-right
+    > .column-right
       flex 1
+      max-width 400px
   
   .panel.head
     display flex
@@ -33,6 +35,7 @@
       margin-right 30px
     .column-right
       flex 1
+      min-width 0
       h1
         font-size 24px
         max-height 66px
@@ -54,7 +57,9 @@
         .owner-information
           display flex
           align-items center
-          width 200px
+          // width 200px
+          flex 1
+          min-width 0
           .avatar
             width 50px
             height 50px
@@ -94,6 +99,7 @@
             font-weight bold
             margin-left 6px
         .blockchain-information
+          flex 1
           display flex
           align-items center
           margin-left 20px
@@ -187,7 +193,92 @@
                 max-width 136px
                 overflow hidden
                 text-overflow ellipsis
-          
+      #tab1
+        padding 12px 0
+        table.browsing-history
+          td
+            height 40px
+            vertical-align center
+            padding 10px
+            color gray-light
+            &.time
+              padding-left 28px
+              background url("/static/imgs/time-icon.svg") no-repeat center left
+            &.content
+              padding-left 36px
+              span
+                color brand-primary
+                margin-right 10px
+      #tab2
+        padding-top 12px
+        padding-bottom 36px
+        .transcation-card
+          border 1px solid
+          margin-top 20px
+          .column-right
+            min-width 0
+          .data
+            flex 1 
+            overflow hidden
+            text-overflow ellipsis
+            padding 0 28px
+            white-space nowrap
+          .card-heading 
+            height 40px
+            border-bottom 1px solid
+            display flex
+            align-items center
+          .card-sub-heading 
+            height 40px
+            border-bottom 1px solid
+            display flex
+            align-items center
+            justify-content space-between
+          .card-body
+            display flex
+            align-items center
+            height 108px
+            .icon
+              width 32px
+              height 32px
+              background url('/static/imgs/transcation-icon.svg') no-repeat center
+            .hash
+              flex 1
+              min-width 0
+              overflow hidden
+              white-space nowrap
+              text-overflow ellipsis
+              padding 28px
+          .data-wrapper
+            display flex
+            flex 1
+            &.status
+              flex none
+              .data
+                background url('/static/imgs/tick-circle-icon.svg') no-repeat center left
+                padding-left 24px
+                text-align right
+          .card-label
+            white-space nowrap
+            display inline-block
+            width 80px
+            padding 0 28px
+            font-weight bold
+          &:nth-child(odd)
+            border-color brand-primary
+            color brand-primary
+            *
+              border-color brand-primary
+          &:nth-child(even)
+            border-color #9EC1E2
+            color #4A90E2
+            *
+              border-color #9EC1E2
+            .card-body .icon
+              background url('/static/imgs/transcation-icon-blue.svg') no-repeat center center
+            .data-wrapper.status .data
+              background url('/static/imgs/tick-circle-icon-blue.svg') no-repeat center left
+              
       .line
         margin 50px -50px
         border-bottom 1px solid gray-lightest

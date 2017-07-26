@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="005_04_交易记录" transform="translate(-582.000000, -887.000000)">
+            <g id="Group-9" transform="translate(232.000000, 768.000000)">
+                <g id="Group-10" transform="translate(349.000000, 113.000000)">
+                    <polyline id="Shape" stroke="#9EC1E2" stroke-linecap="round" stroke-linejoin="round" points="18.7541 15.7642 21.491 18.501 18.7541 21.2379"></polyline>
+                    <path d="M2.4912,18.501 L21.491,18.501" id="Shape" stroke="#9EC1E2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Shape" stroke="#9EC1E2" stroke-linecap="round" stroke-linejoin="round" points="18.7541 6.7633 21.491 9.5001 18.7541 12.237"></polyline>
+                    <path d="M2.4912,9.5001 L21.491,9.5001" id="Shape" stroke="#9EC1E2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <rect id="Rectangle-path" x="0" y="0.001" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

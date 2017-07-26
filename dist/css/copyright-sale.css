@@ -2,7 +2,7 @@
   padding-bottom: 160px;
 }
 #copyright-sale .width-limit {
-  max-width: 1200px;
+  max-width: 1366px;
   min-width: 1136px;
 }
 #copyright-sale .breadcrumb {
@@ -21,16 +21,18 @@
   display: -ms-flexbox;
   display: flex;
 }
-#copyright-sale .layout-wrapper .column-left {
-  -webkit-box-flex: 1.8;
-      -ms-flex: 1.8;
-          flex: 1.8;
+#copyright-sale .layout-wrapper > .column-left {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  min-width: 0;
   margin-right: 30px;
 }
-#copyright-sale .layout-wrapper .column-right {
+#copyright-sale .layout-wrapper > .column-right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  max-width: 400px;
 }
 #copyright-sale .panel.head {
   display: -webkit-box;
@@ -49,6 +51,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  min-width: 0;
 }
 #copyright-sale .panel.head .column-right h1 {
   font-size: 24px;
@@ -80,7 +83,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
 }
 #copyright-sale .panel.head .column-right .ghost-panel .owner-information .avatar {
   width: 50px;
@@ -133,6 +139,9 @@
   margin-left: 6px;
 }
 #copyright-sale .panel.head .column-right .ghost-panel .blockchain-information {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,6 +270,138 @@
   max-width: 136px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+#copyright-sale .panel.body .panel-body #tab1 {
+  padding: 12px 0;
+}
+#copyright-sale .panel.body .panel-body #tab1 table.browsing-history td {
+  height: 40px;
+  vertical-align: center;
+  padding: 10px;
+  color: #a1a9b2;
+}
+#copyright-sale .panel.body .panel-body #tab1 table.browsing-history td.time {
+  padding-left: 28px;
+  background: url("/static/imgs/time-icon.svg") no-repeat center left;
+}
+#copyright-sale .panel.body .panel-body #tab1 table.browsing-history td.content {
+  padding-left: 36px;
+}
+#copyright-sale .panel.body .panel-body #tab1 table.browsing-history td.content span {
+  color: #12ce83;
+  margin-right: 10px;
+}
+#copyright-sale .panel.body .panel-body #tab2 {
+  padding-top: 12px;
+  padding-bottom: 36px;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card {
+  border: 1px solid;
+  margin-top: 20px;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .column-right {
+  min-width: 0;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .data {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 28px;
+  white-space: nowrap;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .card-heading {
+  height: 40px;
+  border-bottom: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .card-sub-heading {
+  height: 40px;
+  border-bottom: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 108px;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .card-body .icon {
+  width: 32px;
+  height: 32px;
+  background: url("/static/imgs/transcation-icon.svg") no-repeat center;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .card-body .hash {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 28px;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .data-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .data-wrapper.status {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .data-wrapper.status .data {
+  background: url("/static/imgs/tick-circle-icon.svg") no-repeat center left;
+  padding-left: 24px;
+  text-align: right;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card .card-label {
+  white-space: nowrap;
+  display: inline-block;
+  width: 80px;
+  padding: 0 28px;
+  font-weight: bold;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(odd) {
+  border-color: #12ce83;
+  color: #12ce83;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(odd) * {
+  border-color: #12ce83;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(even) {
+  border-color: #9ec1e2;
+  color: #4a90e2;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(even) * {
+  border-color: #9ec1e2;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(even) .card-body .icon {
+  background: url("/static/imgs/transcation-icon-blue.svg") no-repeat center center;
+}
+#copyright-sale .panel.body .panel-body #tab2 .transcation-card:nth-child(even) .data-wrapper.status .data {
+  background: url("/static/imgs/tick-circle-icon-blue.svg") no-repeat center left;
 }
 #copyright-sale .panel.body .panel-body .line {
   margin: 50px -50px;
