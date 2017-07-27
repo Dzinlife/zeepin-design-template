@@ -1,0 +1,257 @@
+@import 'variables.styl'
+
+#order-confirmation
+  padding-bottom 120px
+  .card
+    padding 0 36px
+    border-radius 8px
+    box-shadow 0 2px 2px rgba(gray, 0.1)
+    background white
+    margin-top 20px
+  .card.step
+    display flex
+    height 64px
+    margin-top 64px
+    .step
+      display flex
+      align-items center
+      margin-right 64px
+      color gray-lighter
+      .step-bullet
+        width 24px
+        height 24px
+        border 1px solid gray-lighter
+        border-radius 50%
+        display flex
+        margin-right 10px
+        align-items center
+        justify-content center
+      &.finish
+        .step-bullet
+          color transparent
+          background gray-lightest url('/static/imgs/file-upload-list-heading-finish-icon.svg') no-repeat center
+      &.active
+        color brand-primary
+        .step-bullet
+          border-color brand-primary
+  ul.item-list
+    list-style-type none
+    li
+      margin 0 -36px
+      padding 0 36px
+      &:not(:first-child)
+        border-top 1px solid gray-lightest
+      
+    .item-heading
+      display flex
+      height 80px
+      align-items center
+      font-weight bold
+    .item-body
+      display flex
+      align-items center
+      margin 0 -36px
+      padding 0 36px
+      padding-bottom 36px
+      .item-info
+        flex 2
+        display flex
+        .item-thumbnail
+          width 80px
+          height 80px
+          border-radius 8px
+          background-size cover
+          background-position center
+          flex-shrink 0
+          margin-right 24px
+        .column-right
+          min-width 0
+          h5
+            font-size 16px
+            overflow hidden
+            text-overflow ellipsis
+            margin 0
+            margin-bottom 15px
+            line-height 21px
+            max-height 40px
+          
+      & > span
+        flex 1
+        text-align center
+        font-size 16px
+        color gray-dark
+      .price
+        color gray-dark
+        font-size 16px
+        font-weight bold
+        margin-left 4px
+      .badge-wrapper
+        &:after
+          content ''
+          display block
+          clear both
+        a
+          line-height 24px
+          float right
+        .badge-icon
+          float left
+          min-width 24px
+          height 24px
+          line-height 24px
+          border-radius 12px
+          position relative
+          margin-right 10px
+          font-size 12px
+          .message
+            padding-left 30px
+            padding-right 12px
+            color brand-primary
+          &:after
+            position absolute
+            left 0 
+            top 0 
+            width 24px
+            height 24px
+            border-radius 12px
+            display flex
+            align-items center
+            justify-content center
+            color white
+          &.copyright
+            &:after
+              background brand-info
+              content '版'
+          &.licence
+            background #B7EDD7
+            &:after
+              background brand-primary
+              content '授'
+          &.derivative
+            &:after
+              background gray-lighter
+              content '衍'
+          &.copyright.disabled, &.licence.disabled, &.derivative.disabled
+            &:after
+              background gray-lighter
+  .card.billing
+    .card-heading
+      height 128px
+      display flex
+      align-items center
+      label.apply-delivery-certificate
+        font-size 17px
+        letter-spacing 2px
+        input
+          margin-right 12px
+        .question-tooltip
+          margin-left 4px
+          position relative
+          top -2px
+      .description
+        color gray-light
+        padding-left 26px
+    .card-body
+      margin 0 -36px
+      padding 0 36px
+      border-top 1px solid gray-lightest
+      border-bottom 1px solid gray-lightest
+      padding-bottom 72px
+      h3
+        font-size 17px
+        letter-spacing 2px
+        margin-top 44px
+        margin-bottom 35px
+      .payment-method-wrapper
+        display flex
+        margin 0 -17px
+        .panel
+          cursor pointer
+          border 1px solid gray-lightest
+          transition 0.2s
+          position relative
+          margin 0 17px
+          &:before
+            opacity 0
+            transition 0.2s
+            content ""
+            position absolute
+            display block
+            background url("/static/imgs/copyright-info-sold-type-selected-icon.svg") no-repeat
+            width 44px
+            height 44px
+            left 0
+            top 0
+          &:hover
+            border-color gray-lighter
+            box-shadow 0 11px 11px rgba(gray, 0.3)
+          .panel-body
+            height 116px
+            display flex
+            align-items center
+            justify-content center
+            .icon
+              width 30px
+              height 30px
+              margin-right 15px
+              &.balance
+                background url('/static/imgs/payment-method-balance-icon.svg') no-repeat center
+              &.alipay
+                background url('/static/imgs/payment-method-alipay-icon.svg') no-repeat center
+            h5 
+              font-size 16px 
+              margin 0
+              margin-bottom 6px
+              span font-size 14px
+                color gray
+            .description
+              font-size 12px
+              color gray-light
+              font-weight normal
+              
+        input[type=checkbox]
+          width 0.1px
+          height 0.1px
+          opacity 0
+          overflow hidden
+          position absolute
+          z-index -1
+        label.payment-method
+          // flex 1
+          width 272px
+          input[type=checkbox]:checked
+            & + .panel
+              border-color #469BFF
+              input
+                pointer-events none
+              &:before
+                opacity 1
+
+
+
+      
+    .card-footer
+      height 100px
+      display flex
+      align-items center
+      label.select-all
+        flex 1
+        input
+          margin-right 12px
+      .total-text
+        font-size 12px
+        color gray-light
+        margin-left auto
+        margin-top 10px
+        margin-right 12px
+      .total
+        font-size 30px
+        color brand-danger
+        font-weight bold
+        &:before
+          content '¥'
+          font-size 28px
+          font-weight 300
+          margin-right 8px
+      button.submit
+        width 138px
+        margin-left 20px

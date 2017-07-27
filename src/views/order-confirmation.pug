@@ -1,0 +1,95 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'order-confirmation'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/order-confirmation.css')
+
+block header
+  include ./components/header.pug
+  +header('logined')
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .width-limit
+    .card.step
+      .step.finish
+        .step-bullet 1
+        | 购物车
+      .step.active
+        .step-bullet 2
+        | 确认信息
+      .step
+        .step-bullet 3
+        | 完成支付
+    ul.item-list.card
+      li
+        .item-heading 权利人： 上海智品行空文化传播有限公司
+        .item-body
+          .item-info
+            .item-thumbnail(style="background-image: url('/static/imgs/thumbnail.png')")
+            .column-right
+              h5 规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议
+              .badge-wrapper
+                .badge-icon.copyright
+                .badge-icon.licence
+                .badge-icon.derivative
+          span 6个月
+          span 授权通
+          span ¥
+            span.price 599
+      li
+        .item-heading 权利人： 上海智品行空文化传播有限公司
+        .item-body
+          .item-info
+            .item-thumbnail(style="background-image: url('/static/imgs/thumbnail.png')")
+            .column-right
+              h5 规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议
+              .badge-wrapper
+                .badge-icon.copyright
+                .badge-icon.licence
+                .badge-icon.derivative
+          span 6个月
+          span 授权通
+          span ¥
+            span.price 599
+    .card.billing
+      .card-heading
+        div
+          label.apply-delivery-certificate
+            input(type="checkbox")
+            | 申请联交所交割书
+            .question-tooltip(data-toggle="tooltip" data-placement="top" title="说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字") ?
+          .description 申请费用 ¥29
+      .card-body
+        h3 选择支付方式
+        .payment-method-wrapper
+          label.payment-method.balance
+            input(type="checkbox" checked)
+            .panel
+              .panel-body
+                .icon.balance
+                .column-right
+                  h5 余额支付
+                    span ¥285
+                  .description 如余额不足可申请
+                    a(href="#" target="_blank") 充值
+          label.payment-method.alipay
+            input(type="checkbox" checked)
+            .panel.panel-default
+              .panel-body
+                .icon.alipay
+                .column-right
+                  h5 支付宝支付
+                  .description 支付宝会扣除1%的手续费
+      .card-footer
+        .total-text 总计（不含运费）：
+        .total 1,399
+        button.btn.btn-sm.btn-primary.submit 结算
+
+block scripts
+  script.
+    $('[data-toggle="tooltip"]').tooltip()

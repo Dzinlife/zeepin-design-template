@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>智品 - Zeepin</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/order-confirmation.css">
+  </head>
+  <body id="order-confirmation">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="/"><img src="/static/imgs/logo.svg"></a></div>
+            <ul class="nav navbar-nav tabs">
+              <li><a href="/staging-area">
+                  <div class="icon staging-area"></div>暂存区</a></li>
+              <li><a href="/copyright-upload">
+                  <div class="icon copyright-protect"></div>版权保护</a></li>
+              <li class="market"><a href="/copyright-market">
+                  <div class="icon copyright-market"></div>交易市场</a></li>
+            </ul>
+            <ul class="nav navbar-nav account">
+              <li class="cart"><a class="navbar-link" href="/cart">
+                  <div class="icon cart"></div>购物车 <span>(40)</span></a></li>
+              <li class="notification"><a class="navbar-link" href="/register">
+                  <div class="icon notification highlight"></div>提醒</a></li>
+              <li class="divider"></li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                  <div class="navbar-avatar" style="background-image: url('/static/imgs/thumbnail.png');"></div></a>
+                <ul class="dropdown-menu">
+                  <div class="dropdown-heading">
+                    <div class="column-left">
+                      <div class="username">这是个比较长的用户名</div>
+                      <div class="email">dzinlifedzin@me.com</div>
+                    </div>
+                    <div class="auth-badge"></div>
+                  </div>
+                  <li class="divider"></li>
+                  <li><a href="#">
+                      <div class="icon account"></div>个人资料</a></li>
+                  <li><a href="#"> 
+                      <div class="icon transaction"></div>交易记录</a></li>
+                  <li><a href="#">
+                      <div class="icon fav"></div>我的收藏</a></li>
+                  <li><a href="#">
+                      <div class="icon balance"></div>账户余额</a></li>
+                  <li class="divider footer"></li>
+                  <li><a href="#">
+                      <div class="icon logout"></div>登出</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    <div class="width-limit">
+      <div class="card step">
+        <div class="step finish">
+          <div class="step-bullet">1</div>购物车
+        </div>
+        <div class="step active">
+          <div class="step-bullet">2</div>确认信息
+        </div>
+        <div class="step">
+          <div class="step-bullet">3</div>完成支付
+        </div>
+      </div>
+      <ul class="item-list card">
+        <li>
+          <div class="item-heading">权利人： 上海智品行空文化传播有限公司</div>
+          <div class="item-body">
+            <div class="item-info">
+              <div class="item-thumbnail" style="background-image: url('/static/imgs/thumbnail.png');"></div>
+              <div class="column-right">
+                <h5>规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议</h5>
+                <div class="badge-wrapper">
+                  <div class="badge-icon copyright"></div>
+                  <div class="badge-icon licence"></div>
+                  <div class="badge-icon derivative"></div>
+                </div>
+              </div>
+            </div><span>6个月</span><span>授权通</span><span>¥<span class="price">599</span></span>
+          </div>
+        </li>
+        <li>
+          <div class="item-heading">权利人： 上海智品行空文化传播有限公司</div>
+          <div class="item-body">
+            <div class="item-info">
+              <div class="item-thumbnail" style="background-image: url('/static/imgs/thumbnail.png');"></div>
+              <div class="column-right">
+                <h5>规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议</h5>
+                <div class="badge-wrapper">
+                  <div class="badge-icon copyright"></div>
+                  <div class="badge-icon licence"></div>
+                  <div class="badge-icon derivative"></div>
+                </div>
+              </div>
+            </div><span>6个月</span><span>授权通</span><span>¥<span class="price">599</span></span>
+          </div>
+        </li>
+      </ul>
+      <div class="card billing">
+        <div class="card-heading">
+          <div>
+            <label class="apply-delivery-certificate">
+              <input type="checkbox">申请联交所交割书
+              <div class="question-tooltip" data-toggle="tooltip" data-placement="top" title="说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字">?</div>
+            </label>
+            <div class="description">申请费用 ¥29</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>选择支付方式</h3>
+          <div class="payment-method-wrapper">
+            <label class="payment-method balance">
+              <input type="checkbox" checked>
+              <div class="panel">
+                <div class="panel-body">
+                  <div class="icon balance"></div>
+                  <div class="column-right">
+                    <h5>余额支付<span>¥285</span></h5>
+                    <div class="description">如余额不足可申请<a href="#" target="_blank">充值</a></div>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <label class="payment-method alipay">
+              <input type="checkbox" checked>
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="icon alipay"></div>
+                  <div class="column-right">
+                    <h5>支付宝支付</h5>
+                    <div class="description">支付宝会扣除1%的手续费</div>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="total-text">总计（不含运费）：</div>
+          <div class="total">1,399</div>
+          <button class="btn btn-sm btn-primary submit">结算</button>
+        </div>
+      </div>
+    </div>
+    <div class="website-footer">
+      <div class="width-limit">
+        <div class="website-footer-left-column">
+          <div class="website-footer-logo-area">
+            <div class="website-footer-logo"><img src="/static/imgs/logo-footer.svg"><span class="website-footer-sologan">区块链版权保护与交易</span></div>
+          </div>
+          <div class="website-footer-icp">沪ICP备16040562号-1</div>
+          <div class="website-footer-copyright">© 2016-2017 Zeepin.com. All rights reserved. 智品忘行空  版权所有 保留一切权利</div>
+        </div>
+        <div class="website-footer-right-column">
+          <div class="website-footer-links"><a href="#">服务条款</a><a href="#">联系我们</a><a href="#">团队博客</a><a href="#">关于智品</a></div>
+          <div class="website-footer-counter"><span class="copyright-counter-number">302,153</span>copyrights protected</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script>$('[data-toggle="tooltip"]').tooltip()</script>
+  </body>
+</html>
