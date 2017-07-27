@@ -1,0 +1,149 @@
+@import 'variables.styl'
+
+#purchase-success
+  padding-bottom 160px
+  .card
+    padding 0 36px
+    border-radius 8px
+    box-shadow 0 2px 2px rgba(gray, 0.1)
+    background white
+    margin-top 20px
+  .card.success
+    margin-top 64px
+    text-align center
+    height 228px
+    display flex
+    justify-content center
+    flex-direction column
+    h1
+      color brand-primary
+      margin-top 0
+      margin-bottom 18px
+      font-size 30px
+    .description
+      font-size 16px
+  .card.step
+    display flex
+    height 64px
+    margin-top 64px
+    .step
+      display flex
+      align-items center
+      margin-right 64px
+      color gray-lighter
+      .step-bullet
+        width 24px
+        height 24px
+        border 1px solid gray-lighter
+        border-radius 50%
+        display flex
+        margin-right 10px
+        align-items center
+        justify-content center
+      &.finish
+        .step-bullet
+          color transparent
+          background gray-lightest url('/static/imgs/file-upload-list-heading-finish-icon.svg') no-repeat center
+      &.active
+        color brand-primary
+        .step-bullet
+          border-color brand-primary
+  ul.item-list
+    list-style-type none
+    li
+      margin 0 -36px
+      padding 0 36px
+      &:not(:first-child)
+        border-top 1px solid gray-lightest
+      
+    .item-heading
+      display flex
+      height 80px
+      align-items center
+      font-weight bold
+    .item-body
+      display flex
+      align-items center
+      margin 0 -36px
+      padding 0 36px
+      padding-bottom 36px
+      .item-info
+        flex 2
+        display flex
+        .item-thumbnail
+          width 80px
+          height 80px
+          border-radius 8px
+          background-size cover
+          background-position center
+          flex-shrink 0
+          margin-right 24px
+        .column-right
+          min-width 0
+          h5
+            font-size 16px
+            overflow hidden
+            text-overflow ellipsis
+            margin 0
+            margin-bottom 15px
+            line-height 21px
+            max-height 40px
+          
+      & > span
+        flex 1
+        text-align center
+        font-size 16px
+        color gray-dark
+      .price
+        color gray-dark
+        font-size 16px
+        font-weight bold
+        margin-left 4px
+      .badge-wrapper
+        &:after
+          content ''
+          display block
+          clear both
+        a
+          line-height 24px
+          float right
+        .badge-icon
+          float left
+          min-width 24px
+          height 24px
+          line-height 24px
+          border-radius 12px
+          position relative
+          margin-right 10px
+          font-size 12px
+          .message
+            padding-left 30px
+            padding-right 12px
+            color brand-primary
+          &:after
+            position absolute
+            left 0 
+            top 0 
+            width 24px
+            height 24px
+            border-radius 12px
+            display flex
+            align-items center
+            justify-content center
+            color white
+          &.copyright
+            &:after
+              background brand-info
+              content '版'
+          &.licence
+            background #B7EDD7
+            &:after
+              background brand-primary
+              content '授'
+          &.derivative
+            &:after
+              background gray-lighter
+              content '衍'
+          &.copyright.disabled, &.licence.disabled, &.derivative.disabled
+            &:after
+              background gray-lighter
