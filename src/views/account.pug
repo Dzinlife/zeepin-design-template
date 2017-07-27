@@ -37,6 +37,51 @@ block content
             a(data-toggle='tab', href='#tab2') 我的收藏
       .panel-body
         .tab-content
-          #tab0.tab-pane.fade
+          #tab0.tab-pane.fade.in.active
+            .form-group
+              label.control-label 用户昵称
+              .column-wrapper
+                input(value="Dzinlife")
+            .form-group
+              label.control-label 性别
+              .column-wrapper
+                select
+                  option(selected) 请选择
+                  option 男
+                  option 女
+            .form-group
+              label.control-label 所在地
+              .column-wrapper
+                .select-group.location-select(data-toggle="distpicker")
+                  select(data-province="省")
+                  select(data-city="市")
+                  select(data-district="区")
+            .divider
+            table.account-info
+              tr
+                td 手机号码
+                td 13761240027
+                  a 修改手机
+
+              tr
+                td 登陆邮箱
+                td shadow@julizi.com
+                  a 修改邮箱
+              tr
+                td 微信
+                td 未绑定
+                  a 绑定微信
+                  .hint 绑定微信后，你可以使用微信登录特赞、及时接收留言与通知
+              tr
+                td 我的公钥
+                td jhAEri24wqREYgfrRyfmDZJ2SZv18C1EiR
+              tr
+                td 我的私钥
+                td
+                  button.btn.btn-sm.btn-primary 手机验证码查看
+            button.btn.btn-sm.btn-primary.submit 提交修改
           #tab1.tab-pane.fade
           #tab2.tab-pane.fade
+
+block scripts
+  script(type='text/javascript', src='/static/js/distpicker.min.js')

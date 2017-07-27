@@ -76,7 +76,62 @@
         </div>
         <div class="panel-body">
           <div class="tab-content">
-            <div class="tab-pane fade" id="tab0"></div>
+            <div class="tab-pane fade in active" id="tab0">
+              <div class="form-group">
+                <label class="control-label">用户昵称</label>
+                <div class="column-wrapper">
+                  <input value="Dzinlife">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">性别</label>
+                <div class="column-wrapper">
+                  <select>
+                    <option selected>请选择</option>
+                    <option>男</option>
+                    <option>女</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label">所在地</label>
+                <div class="column-wrapper">
+                  <div class="select-group location-select" data-toggle="distpicker">
+                    <select data-province="省"></select>
+                    <select data-city="市"></select>
+                    <select data-district="区"></select>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <table class="account-info">
+                <tr>
+                  <td>手机号码</td>
+                  <td>13761240027<a>修改手机</a></td>
+                </tr>
+                <tr>
+                  <td>登陆邮箱</td>
+                  <td>shadow@julizi.com<a>修改邮箱</a></td>
+                </tr>
+                <tr>
+                  <td>微信</td>
+                  <td>未绑定<a>绑定微信</a>
+                    <div class="hint">绑定微信后，你可以使用微信登录特赞、及时接收留言与通知</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>我的公钥</td>
+                  <td>jhAEri24wqREYgfrRyfmDZJ2SZv18C1EiR</td>
+                </tr>
+                <tr>
+                  <td>我的私钥</td>
+                  <td>
+                    <button class="btn btn-sm btn-primary">手机验证码查看</button>
+                  </td>
+                </tr>
+              </table>
+              <button class="btn btn-sm btn-primary submit">提交修改</button>
+            </div>
             <div class="tab-pane fade" id="tab1"></div>
             <div class="tab-pane fade" id="tab2"></div>
           </div>
@@ -100,5 +155,6 @@
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/distpicker.min.js"></script>
   </body>
 </html>

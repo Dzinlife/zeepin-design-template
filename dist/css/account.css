@@ -1,6 +1,9 @@
 #account {
   padding-bottom: 140px;
 }
+#account .width-limit {
+  width: 810px;
+}
 #account .panel.top {
   margin-top: 70px;
 }
@@ -61,4 +64,83 @@
 #account .panel.main .panel-heading .nav {
   margin: 0 -15px;
   padding: 0 15px;
+  padding-left: 48px;
+}
+#account .panel.main .panel-body {
+  padding: 0 120px;
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+#account .panel.main .panel-body .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#account .panel.main .panel-body .column-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+}
+#account .panel.main .panel-body .column-wrapper input:not([type=checkbox]) {
+  width: 100%;
+}
+#account .panel.main .panel-body .column-wrapper select {
+  width: 100%;
+}
+#account .panel.main .panel-body label.control-label {
+  line-height: 44px;
+  width: 120px;
+  font-weight: normal;
+  color: #a1a9b2;
+}
+#account .panel.main .panel-body .select-group {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -6px;
+}
+#account .panel.main .panel-body .select-group select {
+  margin: 0 6px;
+}
+#account .panel.main .panel-body .divider {
+  border-bottom: 1px solid #e7ecf3;
+  margin: 0 -120px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+#account .panel.main .panel-body table.account-info td {
+  vertical-align: top;
+  line-height: 56px;
+}
+#account .panel.main .panel-body table.account-info td:first-child {
+  width: 120px;
+  color: #a1a9b2;
+}
+#account .panel.main .panel-body table.account-info td:last-child {
+  width: 400px;
+  color: #3c4046;
+}
+#account .panel.main .panel-body table.account-info td:last-child a {
+  float: right;
+  font-size: 12px;
+  cursor: pointer;
+}
+#account .panel.main .panel-body table.account-info td:last-child .hint {
+  font-size: 12px;
+  color: #a1a9b2;
+  margin-top: -36px;
+}
+#account .panel.main .panel-body table.account-info td:last-child button {
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 16px;
+}
+#account .panel.main .panel-body button.submit {
+  width: 138px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
 }
