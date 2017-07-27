@@ -81,6 +81,23 @@ block content
                   button.btn.btn-sm.btn-primary 手机验证码查看
             button.btn.btn-sm.btn-primary.submit 提交修改
           #tab1.tab-pane.fade
+            .balance-actions-wrapper
+              .icon
+              .balance 19.00
+              a 设置支付密码
+              button.btn.btn-sm.btn-info 充值
+              button.btn.btn-sm.btn-primary 提现
+            ul.nav.nav-tabs
+              li.active
+                a(data-toggle='tab', href='#money-tab0') 交易记录
+              li
+                a(data-toggle='tab', href='#money-tab1') 体现记录
+              li
+                a(data-toggle='tab', href='#money-tab2') 充值记录
+            .tab-content
+              #money-tab0.tab-pane.fade.in.active
+              #money-tab1.tab-pane.fade
+              #money-tab2.tab-pane.fade
           #tab2.tab-pane.fade
 
 block scripts
