@@ -1,0 +1,52 @@
+@import 'variables.styl'
+
+#account
+  padding-bottom 140px
+  .panel.top
+    margin-top 70px
+    .panel-body
+      display flex
+      padding 40px 44px
+      position relative
+      .avatar
+        border-radius 50%
+        width 100px
+        height 100px
+        background-size cover
+        background-position center
+        margin-right 28px
+      .column-right
+        min-width 0
+        flex 1
+        .name
+          font-size 24px
+        .last-login
+          margin-top 5px
+          color gray-light
+          font-size 12px
+        .auth-wrapper
+          margin-top 12px
+          .auth
+            float left
+            background url('/static/imgs/auth-icon.svg') no-repeat center left
+            padding-left 22px
+            margin-right 20px
+            font-size 12px
+            height 16px
+            line-height 18px
+      .reset-password
+        position absolute
+        font-size 12px
+        padding 4px 20px
+        background gray-dark
+        color white
+        border-radius 8px
+        top 23px
+        right 26px
+  .panel.main
+    .panel-heading
+      border none
+      .nav
+        margin 0 -15px
+        padding 0 15px
+    

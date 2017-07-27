@@ -1,0 +1,64 @@
+#account {
+  padding-bottom: 140px;
+}
+#account .panel.top {
+  margin-top: 70px;
+}
+#account .panel.top .panel-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 44px;
+  position: relative;
+}
+#account .panel.top .panel-body .avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 28px;
+}
+#account .panel.top .panel-body .column-right {
+  min-width: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#account .panel.top .panel-body .column-right .name {
+  font-size: 24px;
+}
+#account .panel.top .panel-body .column-right .last-login {
+  margin-top: 5px;
+  color: #a1a9b2;
+  font-size: 12px;
+}
+#account .panel.top .panel-body .column-right .auth-wrapper {
+  margin-top: 12px;
+}
+#account .panel.top .panel-body .column-right .auth-wrapper .auth {
+  float: left;
+  background: url("/static/imgs/auth-icon.svg") no-repeat center left;
+  padding-left: 22px;
+  margin-right: 20px;
+  font-size: 12px;
+  height: 16px;
+  line-height: 18px;
+}
+#account .panel.top .panel-body .reset-password {
+  position: absolute;
+  font-size: 12px;
+  padding: 4px 20px;
+  background: #3c4046;
+  color: #fff;
+  border-radius: 8px;
+  top: 23px;
+  right: 26px;
+}
+#account .panel.main .panel-heading {
+  border: none;
+}
+#account .panel.main .panel-heading .nav {
+  margin: 0 -15px;
+  padding: 0 15px;
+}

@@ -1,0 +1,42 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'account'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/account.css')
+
+block header
+  include ./components/header.pug
+  +header('logined')
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .width-limit
+    .panel.panel-default.top
+      .panel-body
+        .avatar(style="background-image: url('/static/imgs/thumbnail.png')")
+        .column-right
+          .name 朱飞
+          .last-login 上次登录时间：2017-07-13 17:05
+          .auth-wrapper
+            .auth 实名验证
+            .auth 手机验证
+            .auth 邮箱验证
+        a.reset-password(href="/reset-password") 修改密码
+    .panel.panel-default.main
+      .panel-heading
+        ul.nav.nav-tabs
+          li.active
+            a(data-toggle='tab', href='#tab0') 个人资料
+          li
+            a(data-toggle='tab', href='#tab1') 资金管理
+          li
+            a(data-toggle='tab', href='#tab2') 我的收藏
+      .panel-body
+        .tab-content
+          #tab0.tab-pane.fade
+          #tab1.tab-pane.fade
+          #tab2.tab-pane.fade
