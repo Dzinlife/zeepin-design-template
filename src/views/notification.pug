@@ -1,0 +1,63 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'notification'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/notification.css')
+
+block header
+  include ./components/header.pug
+  +header('logined', 4)
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .width-limit
+    .panel.panel-default.top
+      .panel-body
+        .column
+          .number 287
+          .column-label.view 作品被查看
+        .divider
+        .column
+          .number 6
+          .column-label.consult 意向咨询
+        .divider
+        .column
+          .number 14
+          .column-label.trade 成功交易
+    .panel.panel-default.list
+      .panel-body
+        ul.notification-list
+          li
+            img(src="/static/imgs/notification-view.svg")
+            .column-right
+              .name.auth Arting365
+              .description
+                | 浏览了您的作品 
+                a(href="#") 塔卡拉尔斯的早餐
+                |  可能有购买意象，请您跟进！
+            .time 2017-06-29 15:50:45
+          li
+            img(src="/static/imgs/notification-consult.svg")
+            .column-right
+              .name Arting365
+              .description
+                | 在你的作品 
+                a(href="#") 塔卡拉尔斯的早餐
+                |  提出了咨询，请您及时
+                a(href="#") 回复
+            .time 2017-06-29 15:50:45
+          li
+            img(src="/static/imgs/notification-trade.svg")
+            .column-right
+              .name Arting365
+              .description
+                | 购买了 
+                a(href="#") 塔卡拉尔斯的早餐
+                |  授权通微信套餐，你获得了 
+                span.text-danger ¥300 
+                |  收入
+            .time 2017-06-29 15:50:45

@@ -1,0 +1,73 @@
+@import 'variables.styl'
+
+#notification
+  padding-bottom 140px
+  .panel.top
+    margin-top 70px
+    .panel-body
+      display flex
+      justify-content space-between
+      align-items center
+      height 177px
+      .number 
+        font-size 50px
+        font-weight 400
+        text-align center
+      .divider
+        height 44px
+        border-right 1px solid gray-lightest
+      .column-label
+        font-size 12px
+        text-align center
+        text-indent 8px
+        display flex
+        text-align center
+        &:before
+          content ''
+          display inline-block
+          height 16px
+          width 20px
+        &.view:before
+          background url('/static/imgs/notification-view-icon.svg') no-repeat center left
+        &.consult:before
+          background url('/static/imgs/notification-consult-icon.svg') no-repeat center left
+        &.trade:before
+          background url('/static/imgs/notification-trade-icon.svg') no-repeat center left
+  .panel.list
+    .panel-body
+      padding 0
+    ul.notification-list
+      list-style-type none
+      margin 0
+      padding 0
+      li
+        height 114px
+        border-bottom 1px solid gray-lightest
+        padding 0 48px
+        display flex
+        align-items center
+        position relative
+        img
+          margin-right 12px
+        .column-right
+          .name 
+            color gray-light
+            display flex
+            align-items center
+            &.auth:after
+              content ''
+              display inline-block
+              width 16px
+              height 16px
+              background url('/static/imgs/auth-icon.svg') no-repeat center
+              position relative
+              top -1px
+              margin-left 4px
+          .description
+            margin-top 4px
+        .time
+          position absolute
+          right 35px
+          top 36px
+          color gray-lighter
+      

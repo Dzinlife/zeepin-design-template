@@ -153,9 +153,11 @@ nav.navbar.navbar-default .nav.navbar-nav.account>li.cart {
   height: 70px;
   margin-right: 24px;
 }
+nav.navbar.navbar-default .nav.navbar-nav.account>li.notification.active,
 nav.navbar.navbar-default .nav.navbar-nav.account>li.cart.active {
   position: relative;
 }
+nav.navbar.navbar-default .nav.navbar-nav.account>li.notification.active:after,
 nav.navbar.navbar-default .nav.navbar-nav.account>li.cart.active:after {
   position: absolute;
   content: '';
@@ -166,6 +168,7 @@ nav.navbar.navbar-default .nav.navbar-nav.account>li.cart.active:after {
   bottom: 0;
   left: 0;
 }
+nav.navbar.navbar-default .nav.navbar-nav.account>li.notification span,
 nav.navbar.navbar-default .nav.navbar-nav.account>li.cart span {
   font-size: 12px;
   margin-left: 4px;

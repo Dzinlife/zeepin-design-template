@@ -1,0 +1,102 @@
+#notification {
+  padding-bottom: 140px;
+}
+#notification .panel.top {
+  margin-top: 70px;
+}
+#notification .panel.top .panel-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 177px;
+}
+#notification .panel.top .panel-body .number {
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+#notification .panel.top .panel-body .divider {
+  height: 44px;
+  border-right: 1px solid #e7ecf3;
+}
+#notification .panel.top .panel-body .column-label {
+  font-size: 12px;
+  text-align: center;
+  text-indent: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+#notification .panel.top .panel-body .column-label:before {
+  content: '';
+  display: inline-block;
+  height: 16px;
+  width: 20px;
+}
+#notification .panel.top .panel-body .column-label.view:before {
+  background: url("/static/imgs/notification-view-icon.svg") no-repeat center left;
+}
+#notification .panel.top .panel-body .column-label.consult:before {
+  background: url("/static/imgs/notification-consult-icon.svg") no-repeat center left;
+}
+#notification .panel.top .panel-body .column-label.trade:before {
+  background: url("/static/imgs/notification-trade-icon.svg") no-repeat center left;
+}
+#notification .panel.list .panel-body {
+  padding: 0;
+}
+#notification .panel.list ul.notification-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#notification .panel.list ul.notification-list li {
+  height: 114px;
+  border-bottom: 1px solid #e7ecf3;
+  padding: 0 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+#notification .panel.list ul.notification-list li img {
+  margin-right: 12px;
+}
+#notification .panel.list ul.notification-list li .column-right .name {
+  color: #a1a9b2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#notification .panel.list ul.notification-list li .column-right .name.auth:after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("/static/imgs/auth-icon.svg") no-repeat center;
+  position: relative;
+  top: -1px;
+  margin-left: 4px;
+}
+#notification .panel.list ul.notification-list li .column-right .description {
+  margin-top: 4px;
+}
+#notification .panel.list ul.notification-list li .time {
+  position: absolute;
+  right: 35px;
+  top: 36px;
+  color: #d2dbe6;
+}
