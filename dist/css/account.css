@@ -2,7 +2,7 @@
   padding-bottom: 140px;
 }
 #account .width-limit {
-  width: 810px;
+  width: 960px;
 }
 #account .panel.top {
   margin-top: 70px;
@@ -72,6 +72,9 @@
   padding-top: 48px;
   padding-bottom: 56px;
 }
+#account .panel.main #tab0 .width-limit {
+  width: 600px;
+}
 #account .panel.main #tab0 .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,7 +110,7 @@
 }
 #account .panel.main #tab0 .divider {
   border-bottom: 1px solid #e7ecf3;
-  margin: 0 -120px;
+  margin: 0 -180px;
   margin-top: 48px;
   margin-bottom: 24px;
 }
@@ -118,6 +121,7 @@
 #account .panel.main #tab0 table.account-info td:first-child {
   width: 120px;
   color: #a1a9b2;
+  padding-top: 1px;
 }
 #account .panel.main #tab0 table.account-info td:last-child {
   width: 400px;
@@ -185,4 +189,214 @@
   padding-left: 48px;
   font-weight: normal;
   font-size: 14px;
+}
+#account .panel.main #tab2 {
+  padding-top: 16px;
+}
+#account .panel.main #tab2 ul.item-list {
+  list-style-type: none;
+}
+#account .panel.main #tab2 ul.item-list li {
+  margin: 0 -36px;
+  padding: 0 36px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+#account .panel.main #tab2 ul.item-list li:hover a.delete {
+  display: inline;
+}
+#account .panel.main #tab2 ul.item-list a.delete {
+  float: right;
+  display: none;
+  cursor: pointer;
+  color: #a1a9b2;
+  right: 80px;
+  top: 0;
+  position: absolute;
+}
+#account .panel.main #tab2 ul.item-list a.delete:hover {
+  color: #ff470d;
+}
+#account .panel.main #tab2 ul.item-list .item-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -36px;
+  padding: 0 36px;
+  padding-bottom: 36px;
+  width: 640px;
+}
+#account .panel.main #tab2 ul.item-list .item-body .item-info {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#account .panel.main #tab2 ul.item-list .item-body .item-info .item-thumbnail {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 24px;
+}
+#account .panel.main #tab2 ul.item-list .item-body .item-info .column-right {
+  min-width: 0;
+}
+#account .panel.main #tab2 ul.item-list .item-body .item-info .column-right h5 {
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 21px;
+  max-height: 40px;
+}
+#account .panel.main #tab2 ul.item-list .item-body .item-info .column-right .description {
+  margin-bottom: 12px;
+  color: #a1a9b2;
+  line-height: 18px;
+  max-height: 36px;
+  overflow: hidden;
+}
+#account .panel.main #tab2 ul.item-list .item-body > span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  font-size: 16px;
+  color: #3c4046;
+}
+#account .panel.main #tab2 ul.item-list .item-body .price {
+  color: #3c4046;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 4px;
+}
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper a {
+  line-height: 24px;
+  float: right;
+}
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper .badge-icon {
+  float: left;
+  min-width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 12px;
+  position: relative;
+  margin-right: 10px;
+  font-size: 12px;
+}
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper .badge-icon .message {
+  padding-left: 30px;
+  padding-right: 12px;
+  color: #12ce83;
+}
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper .badge-icon:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper .badge-icon.copyright:after {
+  background: #2b4eaf;
+  content: '版';
+}
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper .badge-icon.licence {
+  background: #b7edd7;
+}
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper .badge-icon.licence:after {
+  background: #12ce83;
+  content: '授';
+}
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper .badge-icon.derivative:after {
+  background: #d2dbe6;
+  content: '衍';
+}
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper .badge-icon.copyright.disabled:after,
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper .badge-icon.licence.disabled:after,
+#account .panel.main #tab2 ul.item-list .item-body .badge-wrapper .badge-icon.derivative.disabled:after {
+  background: #d2dbe6;
+}
+#account .panel.main #money-tab0 {
+  padding-bottom: 30px;
+}
+#account .panel.main #money-tab0 table {
+  width: 850px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+#account .panel.main #money-tab0 table td,
+#account .panel.main #money-tab0 table th {
+  line-height: 48px;
+  padding: 0 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+  font-size: 12px;
+}
+#account .panel.main #money-tab0 table th {
+  color: #a1a9b2;
+}
+#account .panel.main #money-tab0 table td:not(:last-child) {
+  color: #768da7;
+}
+#account .panel.main #money-tab0 table td.text-danger {
+  color: #ff470d;
+}
+#account .panel.main #money-tab1 {
+  padding-bottom: 30px;
+}
+#account .panel.main #money-tab1 table {
+  width: 850px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+#account .panel.main #money-tab1 table td,
+#account .panel.main #money-tab1 table th {
+  padding: 0 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+  font-size: 12px;
+}
+#account .panel.main #money-tab1 table th {
+  color: #a1a9b2;
+  line-height: 60px;
+}
+#account .panel.main #money-tab1 table td {
+  line-height: 60px;
+  color: #768da7;
+}
+#account .panel.main #money-tab1 table td:first-child {
+  line-height: 16px;
 }

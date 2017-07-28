@@ -2,7 +2,7 @@
 
 #account
   .width-limit 
-    width 810px
+    width 960px
   padding-bottom 140px
   .panel.top
     margin-top 70px
@@ -57,6 +57,8 @@
       padding 0 120px
       padding-top 48px
       padding-bottom 56px
+      .width-limit
+        width 600px
       .form-group
         display flex
       .column-wrapper
@@ -79,7 +81,7 @@
           margin 0 6px
       .divider
         border-bottom 1px solid gray-lightest
-        margin 0 -120px
+        margin 0 -180px
         margin-top 48px
         margin-bottom 24px
       table.account-info
@@ -89,6 +91,7 @@
         td:first-child
           width 120px
           color gray-light
+          padding-top 1px
         td:last-child
           width 400px
           color gray-dark
@@ -139,6 +142,163 @@
         padding-left 48px
         font-weight normal
         font-size 14px
-    
+    #tab2
+      padding-top 16px
+      ul.item-list
+        list-style-type none
+        li
+          margin 0 -36px
+          padding 0 36px
+          margin-top 20px
+          display flex
+          position relative
+          &:hover
+            a.delete
+              display inline
+        a.delete
+          float right
+          display none
+          cursor pointer
+          color gray-light
+          right 80px
+          top 0
+          position absolute
           
+          &:hover
+            color #FF470D
+        .item-body
+          display flex
+          align-items center
+          margin 0 -36px
+          padding 0 36px
+          padding-bottom 36px
+          width 640px
+          
+          .item-info
+            flex 2
+            display flex
+            .item-thumbnail
+              width 100px
+              height 100px
+              border-radius 8px
+              background-size cover
+              background-position center
+              flex-shrink 0
+              margin-right 24px
+            .column-right
+              min-width 0
+              h5
+                font-size 16px
+                overflow hidden
+                text-overflow ellipsis
+                margin 0
+                margin-bottom 10px
+                line-height 21px
+                max-height 40px
+              .description
+                margin-bottom 12px
+                color gray-light
+                line-height 18px
+                max-height 36px
+                overflow hidden
+              
+          & > span
+            flex 1
+            text-align center
+            font-size 16px
+            color gray-dark
+          .price
+            color gray-dark
+            font-size 16px
+            font-weight bold
+            margin-left 4px
+          .badge-wrapper
+            &:after
+              content ''
+              display block
+              clear both
+            a
+              line-height 24px
+              float right
+            .badge-icon
+              float left
+              min-width 24px
+              height 24px
+              line-height 24px
+              border-radius 12px
+              position relative
+              margin-right 10px
+              font-size 12px
+              .message
+                padding-left 30px
+                padding-right 12px
+                color brand-primary
+              &:after
+                position absolute
+                left 0 
+                top 0 
+                width 24px
+                height 24px
+                border-radius 12px
+                display flex
+                align-items center
+                justify-content center
+                color white
+              &.copyright
+                &:after
+                  background brand-info
+                  content '版'
+              &.licence
+                background #B7EDD7
+                &:after
+                  background brand-primary
+                  content '授'
+              &.derivative
+                &:after
+                  background gray-lighter
+                  content '衍'
+              &.copyright.disabled, &.licence.disabled, &.derivative.disabled
+                &:after
+                  background gray-lighter
+    #money-tab0
+      padding-bottom 30px
+      table
+        width 850px
+        margin 0 auto
+        margin-top 24px
+        td, th
+          line-height 48px
+          padding 0 16px
+          overflow hidden
+          text-overflow ellipsis
+          white-space nowrap
+          max-width 200px
+          font-size 12px
+        th
+          color gray-light
+        td:not(:last-child)
+          color gray
+        td.text-danger
+          color #FF470D
+    #money-tab1
+      padding-bottom 30px
+      table
+        width 850px
+        margin 0 auto
+        margin-top 24px
+        td, th
+          padding 0 16px
+          overflow hidden
+          text-overflow ellipsis
+          white-space nowrap
+          max-width 200px
+          font-size 12px
+        th
+          color gray-light
+          line-height 60px
+        td
+          line-height 60px
+          color gray
+          &:first-child
+            line-height 16px
     

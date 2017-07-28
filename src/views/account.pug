@@ -38,48 +38,49 @@ block content
       .panel-body
         .tab-content
           #tab0.tab-pane.fade.in.active
-            .form-group
-              label.control-label 用户昵称
-              .column-wrapper
-                input(value="Dzinlife")
-            .form-group
-              label.control-label 性别
-              .column-wrapper
-                select
-                  option(selected) 请选择
-                  option 男
-                  option 女
-            .form-group
-              label.control-label 所在地
-              .column-wrapper
-                .select-group.location-select(data-toggle="distpicker")
-                  select(data-province="省")
-                  select(data-city="市")
-                  select(data-district="区")
-            .divider
-            table.account-info
-              tr
-                td 手机号码
-                td 13761240027
-                  a 修改手机
+            .width-limit
+              .form-group
+                label.control-label 用户昵称
+                .column-wrapper
+                  input(value="Dzinlife")
+              .form-group
+                label.control-label 性别
+                .column-wrapper
+                  select
+                    option(selected) 请选择
+                    option 男
+                    option 女
+              .form-group
+                label.control-label 所在地
+                .column-wrapper
+                  .select-group.location-select(data-toggle="distpicker")
+                    select(data-province="省")
+                    select(data-city="市")
+                    select(data-district="区")
+              .divider
+              table.account-info
+                tr
+                  td 手机号码
+                  td 13761240027
+                    a 修改手机
 
-              tr
-                td 登陆邮箱
-                td shadow@julizi.com
-                  a 修改邮箱
-              tr
-                td 微信
-                td 未绑定
-                  a 绑定微信
-                  .hint 绑定微信后，你可以使用微信登录特赞、及时接收留言与通知
-              tr
-                td 我的公钥
-                td jhAEri24wqREYgfrRyfmDZJ2SZv18C1EiR
-              tr
-                td 我的私钥
-                td
-                  button.btn.btn-sm.btn-primary 手机验证码查看
-            button.btn.btn-sm.btn-primary.submit 提交修改
+                tr
+                  td 登陆邮箱
+                  td shadow@julizi.com
+                    a 修改邮箱
+                tr
+                  td 微信
+                  td 未绑定
+                    a 绑定微信
+                    .hint 绑定微信后，你可以使用微信登录特赞、及时接收留言与通知
+                tr
+                  td 我的公钥
+                  td jhAEri24wqREYgfrRyfmDZJ2SZv18C1EiR
+                tr
+                  td 我的私钥
+                  td
+                    button.btn.btn-sm.btn-primary 手机验证码查看
+              button.btn.btn-sm.btn-primary.submit 提交修改
           #tab1.tab-pane.fade
             .balance-actions-wrapper
               .icon
@@ -91,14 +92,122 @@ block content
               li.active
                 a(data-toggle='tab', href='#money-tab0') 交易记录
               li
-                a(data-toggle='tab', href='#money-tab1') 体现记录
+                a(data-toggle='tab', href='#money-tab1') 提现记录
               li
                 a(data-toggle='tab', href='#money-tab2') 充值记录
             .tab-content
               #money-tab0.tab-pane.fade.in.active
+                table
+                  thead
+                    tr
+                      th 版权名称
+                      th 交易人
+                      th 授权期限
+                      th 交易类型
+                      th 收支(元)
+                  tbody
+                    tr
+                      td 规范与设计建议
+                      td 上海举栗网络科技上海举栗网络科技上海举栗网络科技上海举栗网络科技
+                      td 6个月
+                      td 购买 | 授权通
+                      td.text-primary - ¥599
+                    tr
+                      td 规范与设计建议
+                      td 上海举栗网络科技上海举栗网络科技
+                      td 6个月
+                      td 购买 | 授权通
+                      td.text-danger + ¥599
+                    tr
+                      td 规范与设计建议
+                      td 上海举栗网络科技上海举栗网络科技
+                      td 6个月
+                      td 购买 | 授权通
+                      td.text-primary - ¥599
+                    tr
+                      td 规范与设计建议
+                      td 上海举栗网络科技上海举栗网络科技
+                      td 6个月
+                      td 购买 | 授权通
+                      td.text-danger + ¥599
               #money-tab1.tab-pane.fade
+                table
+                  thead
+                    tr
+                      th 时间
+                      th 收／支
+                      th 流水号
+                      th 备注
+                      th 金额(元)
+                  tbody
+                    tr
+                      td 发起：2014.06.02<br>完结：23:10:59
+                      td 支出
+                      td 203023200
+                      td 提现
+                      td ¥599
+                    tr
+                      td 发起：2014.06.02<br>完结：23:10:59
+                      td 支出
+                      td 203023200
+                      td 提现
+                      td ¥599
+                    tr
+                      td 发起：2014.06.02<br>完结：23:10:59
+                      td 支出
+                      td 203023200
+                      td 提现
+                      td ¥599
+                    tr
+                      td 发起：2014.06.02<br>完结：23:10:59
+                      td 支出
+                      td 203023200
+                      td 提现
+                      td ¥599
+                    tr
+                      td 发起：2014.06.02<br>完结：23:10:59
+                      td 支出
+                      td 203023200
+                      td 提现
+                      td ¥599
               #money-tab2.tab-pane.fade
           #tab2.tab-pane.fade
+            ul.item-list
+              li
+                .item-body
+                  .item-info
+                    .item-thumbnail(style="background-image: url('/static/imgs/thumbnail.png')")
+                    .column-right
+                      h5 规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议
+                      .description First, a fast-growing middle class feels insecure, and that’s fueling new forms of populismFirst, a fast-growing middle class feels insecure, and that’s fueling new forms of populism
+                      .badge-wrapper
+                        .badge-icon.copyright
+                        .badge-icon.licence
+                        .badge-icon.derivative
+                a.delete 删除
+              li
+                .item-body
+                  .item-info
+                    .item-thumbnail(style="background-image: url('/static/imgs/thumbnail.png')")
+                    .column-right
+                      h5 规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议
+                      .description First, a fast-growing middle class feels insecure, and that’s fueling new forms of populism
+                      .badge-wrapper
+                        .badge-icon.copyright
+                        .badge-icon.licence
+                        .badge-icon.derivative
+                a.delete 删除
+              li
+                .item-body
+                  .item-info
+                    .item-thumbnail(style="background-image: url('/static/imgs/thumbnail.png')")
+                    .column-right
+                      h5 规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议规范与设计建议
+                      .badge-wrapper
+                        .badge-icon.copyright
+                        .badge-icon.licence
+                        .badge-icon.derivative
+                a.delete 删除
 
 block scripts
   script(type='text/javascript', src='/static/js/distpicker.min.js')
