@@ -68,7 +68,7 @@ block content
         h3 选择支付方式
         .payment-method-wrapper
           label.payment-method.balance
-            input(type="checkbox" checked)
+            input(type="radio" checked name="payment-method")
             .panel
               .panel-body
                 .icon.balance
@@ -78,7 +78,7 @@ block content
                   .description 如余额不足可申请
                     a(href="#" target="_blank") 充值
           label.payment-method.alipay
-            input(type="checkbox" checked)
+            input(type="radio" name="payment-method")
             .panel.panel-default
               .panel-body
                 .icon.alipay

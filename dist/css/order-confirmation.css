@@ -295,7 +295,7 @@
   color: #a1a9b2;
   font-weight: normal;
 }
-#order-confirmation .card.billing .card-body .payment-method-wrapper input[type=checkbox] {
+#order-confirmation .card.billing .card-body .payment-method-wrapper input[type=radio] {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -306,13 +306,13 @@
 #order-confirmation .card.billing .card-body .payment-method-wrapper label.payment-method {
   width: 272px;
 }
-#order-confirmation .card.billing .card-body .payment-method-wrapper label.payment-method input[type=checkbox]:checked + .panel {
+#order-confirmation .card.billing .card-body .payment-method-wrapper label.payment-method input[type=radio]:checked + .panel {
   border-color: #469bff;
 }
-#order-confirmation .card.billing .card-body .payment-method-wrapper label.payment-method input[type=checkbox]:checked + .panel input {
+#order-confirmation .card.billing .card-body .payment-method-wrapper label.payment-method input[type=radio]:checked + .panel input {
   pointer-events: none;
 }
-#order-confirmation .card.billing .card-body .payment-method-wrapper label.payment-method input[type=checkbox]:checked + .panel:before {
+#order-confirmation .card.billing .card-body .payment-method-wrapper label.payment-method input[type=radio]:checked + .panel:before {
   opacity: 1;
 }
 #order-confirmation .card.billing .card-footer {
