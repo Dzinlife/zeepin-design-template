@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="15px" viewBox="0 0 21 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <style type="text/css"><![CDATA[
+        #Path-4 {
+          stroke-dasharray: 30;
+          animation: dash 6s linear infinite;
+        }
+
+        @keyframes dash {
+          0%{
+            stroke-dashoffset: 30;
+          }
+          10% {
+            stroke-dashoffset: 0;
+          }
+          50% {
+            stroke-dashoffset: 0;
+            opacity: 1
+          }
+          100% {
+            stroke-dashoffset: 0;
+            opacity: 0
+          }
+        }
+      ]]></style>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="check" transform="translate(0.036096, -15.995972)" stroke-width="2" >
+            <polyline id="Path-4" stroke="#E7FFF5" points="1.89359122 23.1792101 7.84196351 29.1288702 19.999875 17.0837705"></polyline>
+        </g>
+    </g>
+</svg>
