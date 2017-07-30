@@ -1,5 +1,10 @@
 #home #key-carousel .item {
   position: relative;
+  height: 500px;
+}
+#home #key-carousel .item.kv-0 {
+  background: url("/static/imgs/kv-0.jpg") no-repeat center;
+  background-size: cover;
 }
 #home #key-carousel .item .content {
   position: absolute;
@@ -13,17 +18,18 @@
   padding-top: 100px;
 }
 #home #key-carousel .item .content h1 {
-  font-size: 72px;
-  line-height: 70px;
+  font-size: 60px;
+  line-height: 60px;
 }
 #home #key-carousel .item .content .description {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 18px;
+  width: 600px;
 }
 #home #key-carousel .item .content .btn {
   width: 169px;
   margin-top: 40px;
-  margin-right: 10px;
+  margin-right: 16px;
 }
 #home #key-carousel .item .content .btn-default {
   background: transparent;
@@ -49,14 +55,21 @@
           align-items: center;
 }
 #home .info-bar .column {
-  width: 160px;
+  width: 140px;
 }
 #home .info-bar .icon {
   height: 100%;
   width: 44px;
-  margin-right: 16px;
-  margin-left: -24px;
-  background: url("/static/imgs/home-info-bar-icon.svg") no-repeat center;
+  margin-right: 10px;
+}
+#home .info-bar .icon.icon-1 {
+  background: url("/static/imgs/home-info-bar-icon-0.svg") no-repeat center;
+}
+#home .info-bar .icon.icon-2 {
+  background: url("/static/imgs/home-info-bar-icon-1.svg") no-repeat center;
+}
+#home .info-bar .icon.icon-3 {
+  background: url("/static/imgs/home-info-bar-icon-2.svg") no-repeat center;
 }
 #home .info-bar .number {
   font-size: 24px;
@@ -75,26 +88,28 @@
   font-size: 24px;
   font-weight: lighter;
 }
-#home h3 {
+#home .section h3 {
   left: 0;
   width: 100%;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
-#home .description {
+#home .section .description {
   left: 0;
   width: 100%;
   line-height: 25px;
   text-align: center;
   font-size: 16px;
   color: #a1a9b2;
+  margin-top: 20px;
 }
 #home .section-1 {
   position: relative;
   margin-top: 64px;
-  background: url("/static/imgs/home-section-bg-1.png") no-repeat center top;
+  background: url("/static/imgs/home-section-bg-1.png") no-repeat center center;
   background-size: 1400px auto;
-  height: 800px;
+  height: 700px;
+  margin-bottom: 100px;
 }
 #home .section-1 h3 {
   position: absolute;
@@ -103,12 +118,27 @@
 #home .section-1 .description {
   position: absolute;
   top: 120px;
+  color: #3c4046;
 }
-#home .section-2 {
-  background: url("/static/imgs/home-section-bg-2.png") no-repeat center;
-  background-size: 1400px auto;
+#home .section-2 h3 {
+  margin-top: 0;
+}
+#home .section-2 .icon {
+  background: url("/static/imgs/home-section-bg-2-icon.svg") no-repeat center;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
   position: relative;
-  height: 550px;
+  top: -40px;
+}
+#home .section-2 .text-area {
+  background: #fff;
+  height: 270px;
+}
+#home .section-2 .img-area {
+  height: 500px;
+  background: url("/static/imgs/home-section-bg-2.png") no-repeat center;
+  background-size: 1110px auto;
 }
 #home .section-3 {
   background: url("/static/imgs/home-section-bg-3.png") no-repeat 40%;
@@ -256,6 +286,36 @@
   background: url("/static/imgs/work-bg-2-text.png") no-repeat center;
   background-size: 100%;
 }
+#home .section-3 #work-carousel .work-2 .content .shield {
+  background: url("/static/imgs/work-bg-2-shield.svg") no-repeat center;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 55%;
+  top: 29%;
+  -webkit-animation: float 1.2s ease-in-out infinite alternate;
+          animation: float 1.2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0);
+  }
+}
+@keyframes float {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0);
+  }
+}
 #home .section-3 #work-carousel .work-2 .content:after {
   content: '';
   position: absolute;
@@ -306,56 +366,54 @@
 }
 #home .section-4 {
   margin-top: 160px;
-  background: url("/static/imgs/home-section-bg-4.png") no-repeat center;
-  background-size: 1500px auto;
+  background: url("/static/imgs/home-section-bg-4.png") no-repeat bottom;
+  background-size: 1600px auto;
   z-index: 1;
   position: relative;
-  height: 800px;
+  height: 750px;
 }
 #home .section-5 {
-  margin-top: -220px;
-  background: #6b7f95 url("/static/imgs/home-section-bg-5.png") no-repeat center 70%;
-  background-size: 800px auto;
+  margin-top: -120px;
+  background: #f1f7ff url("/static/imgs/home-section-bg-5.png") no-repeat center 70%;
+  background-size: 1200px auto;
   padding-top: 180px;
   height: 900px;
 }
-#home .section-5 h3 {
-  color: #fff;
-}
-#home .section-5 .description {
-  color: #a1a9b2;
-}
 #home .section-6 {
-  height: 470px;
-  background: #12ce83;
+  padding-top: 108px;
+  height: 574px;
+  text-align: center;
+  background: #2b4eaf url("/static/imgs/home-section-bg-6.png") no-repeat center;
+  background-size: 1000px auto;
+}
+#home .section-6 h3 {
+  color: #12ce83;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+#home .section-6 .description {
   color: #fff;
+  margin-top: 10px;
 }
-#home .section-6 .content {
-  width: 1000px;
-  margin: 0 auto;
-  padding-top: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#home .section-6 .description span {
+  font-weight: bold;
 }
-#home .section-6 .content button {
-  height: 80px;
-  width: 240px;
-  margin-left: auto;
-  border-radius: 40px;
-  background: #fff;
-  color: #3c4046;
-  font-size: 35px;
-  letter-spacing: 24px;
-  text-indent: 24px;
+#home .section-6 .apply-text {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 72px;
 }
-#home .section-6 .content button:hover {
-  opacity: 0.8;
+#home .section-6 .input-wrapper {
+  margin-top: 24px;
 }
-#home .section-6 h2 {
-  margin: 0;
-  font-size: 40px;
+#home .section-6 .input-wrapper input {
+  background: transparent;
+  border-color: rgba(231,236,242,0.3);
+}
+#home .section-6 .input-wrapper input:focus {
+  border-color: rgba(231,236,242,0.6);
+}
+#home .section-6 button.submit {
+  margin-top: 35px;
+  width: 250px;
 }

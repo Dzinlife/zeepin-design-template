@@ -22,7 +22,6 @@ block content
         //- li(data-target='#key-carousel', data-slide-to='2')
       .carousel-inner
         .item.active.kv-0
-          img(src='/static/imgs/kv-0.png')
           .content
             h1 Blockchain Protect<br>Your Idea
             .description OmiseGO is a public Ethereum-based financial technology for use in mainstream digital wallets, that enables real-time, peer-to-peer value exchange and payment services agnostically across jurisdictions and organizational silos
@@ -42,13 +41,15 @@ block content
       //-   span.sr-only Next
     .info-bar
       .content
+        .icon.icon-1
         .column
           .number 302,153
           .column-label 区块高度
-        .icon
+        .icon.icon-2
         .column
           .number 290
           .column-label 保护节点
+        .icon.icon-3
         .column
           .number 182,742
           .column-label 累计用户量
@@ -62,10 +63,13 @@ block content
         | 无数创作者在如何保护版权、维权的问题上束手无策<br>
         | 智品希望通过区块链帮助创作者解决版权问题<br>
     .section.section-2
-      h3 免费 / 极速版权保护
-      .description
-        | 创造者不必再担心繁琐的版权申报过程
-        | 只需要三步，智品数字版权区块链将为创造者的创作版权保驾护航
+      .text-area
+        .icon
+        h3 免费 / 极速版权保护
+        .description
+          | 创造者不必再担心繁琐的版权申报过程<br>
+          | 只需要三步，智品数字版权区块链将为创造者的创作版权保驾护航
+      .img-area
     .section.section-3
       h3 智品区块链如何运作
       .description
@@ -100,6 +104,7 @@ block content
             .item.work-2
               img(src='/static/imgs/work-bg-2.png')
               .content
+                .shield
     .section.section-4
       h3 为何选择智品保护你的版权？
       .description
@@ -110,9 +115,17 @@ block content
       .description
         | Who Should Zeepin?
     .section.section-6
-      .content
-        H2 Register Now<br>Protection your copyrights 
-        button.btn 注册
+      h3 限量招募首批智品尝鲜官，体验极速版权保护
+      .description 
+        span Register Now ! 
+        | Zeepin Protection Your Copyrights 
+      .apply-text 申请内测账号
+      .input-wrapper
+        input(placeholder="姓名")
+        input(placeholder="职业")
+        input(placeholder="手机")
+        input(placeholder="邮箱")
+      button.btn.btn-primary.submit 提交申请
            
 
 

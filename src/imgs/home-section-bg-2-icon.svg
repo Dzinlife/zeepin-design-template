@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="34" cy="34" r="34"></circle>
+        <filter x="-10.3%" y="-7.4%" width="120.6%" height="120.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.123188406 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="001_01_home" transform="translate(-762.000000, -1459.000000)">
+            <g id="Group" transform="translate(766.000000, 1461.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#12CE83" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M20.1,38.4 C20.2,38.7 20.6,39 21,39 L31.8,39 L30,46.8 C29.9,47.2 30.1,47.7 30.5,47.9 C30.7,48 30.8,48 31,48 C31.2,48 31.5,47.9 31.7,47.7 L47.7,32.7 C48,32.4 48.1,32 47.9,31.6 C47.8,31.3 47.4,31 47,31 L36.2,31 L38,23.2 C38.1,22.8 37.9,22.3 37.5,22.1 C37.1,21.9 36.6,21.9 36.3,22.2 L20.3,37.2 C20,37.6 19.9,38 20.1,38.4 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

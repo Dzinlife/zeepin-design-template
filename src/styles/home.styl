@@ -4,6 +4,10 @@
   #key-carousel
     .item
       position relative
+      height 500px
+      &.kv-0
+        background url('/static/imgs/kv-0.jpg') no-repeat center
+        background-size cover
       .content
         position absolute
         width 1024px
@@ -15,15 +19,16 @@
         color white
         padding-top 100px
         h1
-          font-size 72px
-          line-height 70px
+          font-size 60px
+          line-height 60px
         .description
-          font-size 16px
+          font-size 14px
           margin-top 18px
+          width 600px
         .btn
           width 169px
           margin-top 40px
-          margin-right 10px
+          margin-right 16px
         .btn-default
           background transparent
           color white
@@ -40,13 +45,17 @@
       display flex
       align-items center
     .column
-      width 160px
+      width 140px
     .icon
       height 100%
       width 44px
-      margin-right 16px
-      margin-left -24px
-      background url('/static/imgs/home-info-bar-icon.svg') no-repeat center
+      margin-right 10px
+      &.icon-1
+        background url('/static/imgs/home-info-bar-icon-0.svg') no-repeat center
+      &.icon-2
+        background url('/static/imgs/home-info-bar-icon-1.svg') no-repeat center
+      &.icon-3
+        background url('/static/imgs/home-info-bar-icon-2.svg') no-repeat center
     .number
       font-size 24px
       font-weight bold
@@ -59,36 +68,54 @@
       .text
         font-size 24px
         font-weight lighter
-  // .section
-  h3
-    left 0
-    width 100%
-    font-size 40px
-    text-align center
-  .description
-    left 0
-    width 100%
-    line-height 25px
-    text-align center
-    font-size 16px
-    color gray-light
+  .section
+    h3
+      left 0
+      width 100%
+      font-size 30px
+      text-align center
+    .description
+      left 0
+      width 100%
+      line-height 25px
+      text-align center
+      font-size 16px
+      color gray-light
+      margin-top 20px
   .section-1
     position relative
     margin-top 64px
-    background url("/static/imgs/home-section-bg-1.png") no-repeat center top
+    background url("/static/imgs/home-section-bg-1.png") no-repeat center center
     background-size 1400px auto
-    height 800px
+    height 700px
+    margin-bottom 100px
     h3
       position absolute
       top 36px
     .description
       position absolute
       top 120px
+      color gray-dark
   .section-2
-    background url("/static/imgs/home-section-bg-2.png") no-repeat center
-    background-size 1400px auto
-    position relative
-    height 550px
+    h3 
+      margin-top 0
+    .icon
+      background url("/static/imgs/home-section-bg-2-icon.svg") no-repeat center
+      margin 0 auto
+      width 80px
+      height 80px
+      position relative
+      top -40px
+    .text-area
+      background white
+      height 270px
+    .img-area
+      // display none
+      height 500px
+      background url("/static/imgs/home-section-bg-2.png") no-repeat center
+      background-size 1110px auto
+      
+    
   .section-3
     background url("/static/imgs/home-section-bg-3.png") no-repeat 40%
     background-size 1800px auto
@@ -188,6 +215,24 @@
         .content
           background url('/static/imgs/work-bg-2-text.png') no-repeat center
           background-size 100%
+          .shield
+            background url('/static/imgs/work-bg-2-shield.svg') no-repeat center
+            width 120px
+            height 120px
+            position absolute
+            left 55%
+            top 29%
+            animation float 1.2s ease-in-out infinite alternate
+            
+            @keyframes float{
+              0% {
+                transform translate3d(0,0,0)
+              }
+              100% {
+                transform translate3d(0,10px,0)
+              }
+            }
+            
           &:after
             content ''
             position absolute
@@ -222,46 +267,44 @@
             }
   .section-4
     margin-top 160px
-    background url("/static/imgs/home-section-bg-4.png") no-repeat center
-    background-size 1500px auto
+    background url("/static/imgs/home-section-bg-4.png") no-repeat bottom
+    background-size 1600px auto
     z-index 1
     position relative
-    height 800px
+    height 750px
   .section-5
-    margin-top -220px
-    background #6B7F95 url("/static/imgs/home-section-bg-5.png") no-repeat center 70%
-    background-size 800px auto
+    margin-top -120px
+    background #F1F7FF url("/static/imgs/home-section-bg-5.png") no-repeat center 70%
+    background-size 1200px auto
     padding-top 180px
     height 900px
-    h3
-      color white
-    .description
-      color #A1A9B2
   .section-6
-    height 470px
-    background brand-primary
-    color white
-    .content 
-      width 1000px
-      margin 0 auto
-      padding-top 150px
-      display flex
-      align-items center
-      button
-        height 80px
-        width 240px
-        margin-left auto
-        border-radius 40px
-        background white
-        color gray-dark
-        font-size 35px
-        letter-spacing 24px
-        text-indent 24px
-        &:hover
-          opacity 0.8
-    h2
-      margin 0
-      font-size 40px
-      
-    
+    padding-top 108px
+    height 574px
+    text-align center
+    background brand-info url("/static/imgs/home-section-bg-6.png") no-repeat center
+    background-size 1000px auto
+    h3
+      color brand-primary
+      margin-top 0
+      margin-bottom 0px
+    .description
+      color white
+      margin-top 10px
+      span
+        font-weight bold
+    .apply-text
+      color white
+      font-size 20px
+      margin-top 72px
+    .input-wrapper
+      margin-top 24px
+      input
+        background transparent
+        border-color rgba(#E7ECF2, 0.3)
+        &:focus
+          border-color rgba(#E7ECF2, 0.6)
+    button.submit
+      margin-top 35px
+      width 250px
 
