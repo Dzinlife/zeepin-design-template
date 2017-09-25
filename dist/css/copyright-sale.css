@@ -42,7 +42,7 @@
   margin-bottom: 30px;
 }
 #copyright-sale .panel.head img.thumb {
-  width: 208px;
+  height: 208px;
   margin-bottom: auto;
   border-radius: 8px;
   margin-right: 30px;
@@ -692,6 +692,9 @@
 }
 #copyright-sale .button-line-wrapper button.fav {
   background: #fff url("/static/imgs/fav-icon.svg") no-repeat 35% center;
+}
+#copyright-sale .button-line-wrapper button.faved {
+  background: #fff url("/static/imgs/faved-icon.svg") no-repeat 30% center;
 }
 #copyright-sale .button-line-wrapper button.share {
   background: #fff url("/static/imgs/share-icon.svg") no-repeat 24% center;

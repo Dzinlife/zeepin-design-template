@@ -1,0 +1,256 @@
+#balance-payment {
+  padding-bottom: 120px;
+}
+#balance-payment .card {
+  padding: 0 36px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(118,141,167,0.1);
+          box-shadow: 0 2px 2px rgba(118,141,167,0.1);
+  background: #fff;
+  margin-top: 120px;
+}
+#balance-payment .card.billing .card-heading {
+  height: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#balance-payment .card.billing .card-heading label.apply-delivery-certificate {
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+#balance-payment .card.billing .card-heading label.apply-delivery-certificate input {
+  margin-right: 12px;
+}
+#balance-payment .card.billing .card-heading label.apply-delivery-certificate .question-tooltip {
+  margin-left: 4px;
+  position: relative;
+  top: -2px;
+}
+#balance-payment .card.billing .card-heading .description {
+  color: #a1a9b2;
+  padding-left: 26px;
+}
+#balance-payment .card.billing .card-body {
+  margin: 0 -36px;
+  padding: 0 36px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #e7ecf3;
+  padding-bottom: 72px;
+}
+#balance-payment .card.billing .card-body h3 {
+  font-size: 17px;
+  letter-spacing: 2px;
+  margin-top: 34px;
+  margin-bottom: 8px;
+  font-size: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#balance-payment .card.billing .card-body h3:before {
+  content: '';
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-right: 12px;
+  background: url("/static/imgs/check-success-icon.svg");
+}
+#balance-payment .card.billing .card-body .text {
+  font-size: 14px;
+  color: #a1a9b2;
+  margin-left: 36px;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -17px;
+  margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .payment-success-wrapper {
+  margin-right: 50px;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .panel {
+  cursor: pointer;
+  border: 1px solid #e7ecf3;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: relative;
+  margin: 0 17px;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .panel:before {
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("/static/imgs/copyright-info-sold-type-selected-icon.svg") no-repeat;
+  width: 44px;
+  height: 44px;
+  left: 0;
+  top: 0;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .panel:hover {
+  border-color: #d2dbe6;
+  -webkit-box-shadow: 0 11px 11px rgba(118,141,167,0.3);
+          box-shadow: 0 11px 11px rgba(118,141,167,0.3);
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .panel .panel-body {
+  height: 116px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .panel .panel-body .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .panel .panel-body .icon.balance {
+  background: url("/static/imgs/payment-method-balance-icon.svg") no-repeat center;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .panel .panel-body .icon.alipay {
+  background: url("/static/imgs/payment-method-alipay-icon.svg") no-repeat center;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .panel .panel-body h5 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 6px;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .panel .panel-body h5 span font-size 14px {
+  color: #768da7;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper .panel .panel-body .description {
+  font-size: 12px;
+  color: #a1a9b2;
+  font-weight: normal;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper input[type=radio] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper label.payment-method {
+  width: 272px;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper label.payment-method input[type=radio]:checked + .panel {
+  border-color: #469bff;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper label.payment-method input[type=radio]:checked + .panel input {
+  pointer-events: none;
+}
+#balance-payment .card.billing .card-body .payment-method-wrapper label.payment-method input[type=radio]:checked + .panel:before {
+  opacity: 1;
+}
+#balance-payment .card.billing .card-footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#balance-payment .card.billing .card-footer label.select-all {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#balance-payment .card.billing .card-footer label.select-all input {
+  margin-right: 12px;
+}
+#balance-payment .card.billing .card-footer .total-text {
+  font-size: 19px;
+  font-weight: bold;
+  color: #3c4046;
+  margin-left: auto;
+  margin-top: 4px;
+  margin-right: 12px;
+}
+#balance-payment .card.billing .card-footer .total {
+  font-size: 30px;
+  color: #ed2a0b;
+  font-weight: bold;
+}
+#balance-payment .card.billing .card-footer .total:before {
+  content: '¥';
+  font-size: 28px;
+  font-weight: 300;
+  margin-right: 8px;
+}
+#balance-payment .card.billing .card-footer button.submit {
+  width: 138px;
+  margin-left: 44px;
+}
+#balance-payment #payment-password-modal .modal-dialog {
+  width: 436px;
+}
+#balance-payment #payment-password-modal h3 {
+  font-size: 19px;
+  text-align: center;
+  margin-top: 50px;
+}
+#balance-payment #payment-password-modal a.go-to-setting {
+  font-size: 14px;
+  font-weight: bold;
+  color: #469bff;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+#balance-payment #payment-password-modal button.close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #d2dbe6;
+  opacity: 1;
+  background: url("/static/imgs/close-cross.svg") no-repeat center;
+}
+#balance-payment #payment-password-modal button.close:hover {
+  background-color: #e7ecf3;
+}
+#balance-payment #payment-password-modal button.ok {
+  width: 138px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 24px;
+}
+#balance-payment #payment-password-modal .input-wrapper {
+  margin: 0 auto;
+  width: 280px;
+  margin-top: 38px;
+}
+#balance-payment #payment-password-modal .input-wrapper input {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+#balance-payment #payment-password-modal .input-label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #a1a9b2;
+}

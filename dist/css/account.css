@@ -48,7 +48,13 @@
   height: 16px;
   line-height: 18px;
 }
-#account .panel.top .panel-body .reset-password {
+#account .panel.top .panel-body a.appeal-list {
+  position: absolute;
+  top: 25px;
+  right: 144px;
+  color: #3c4046;
+}
+#account .panel.top .panel-body a.reset-password {
   position: absolute;
   font-size: 12px;
   padding: 4px 20px;
@@ -399,4 +405,65 @@
 }
 #account .panel.main #money-tab1 table td:first-child {
   line-height: 16px;
+}
+#account .panel.main #tab3 .stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 32px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+#account .panel.main #tab3 .stat h3 {
+  font-size: 16px;
+  margin: 0;
+  margin-right: 80px;
+}
+#account .panel.main #tab3 .stat h3 strong {
+  font-weight: 500;
+  font-size: 40px;
+  margin-left: 7px;
+}
+#account .panel.main #tab3 .nav {
+  margin: 0 -15px;
+  padding: 0 15px;
+  padding-left: 48px;
+  font-size: 16px;
+}
+#account .panel.main #tab3 table {
+  width: 850px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+#account .panel.main #tab3 table td,
+#account .panel.main #tab3 table th {
+  line-height: 48px;
+  padding: 0 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+  font-size: 12px;
+}
+#account .panel.main #tab3 table th {
+  color: #a1a9b2;
+}
+#account .panel.main #tab3 table td:not(:last-child) {
+  color: #768da7;
+}
+#account .panel.main #tab3 table td.text-danger {
+  color: #ff470d;
+}
+#account .panel.main #tab3 table a {
+  color: #469bff;
+  font-weight: bold;
+}
+#account .panel.main #tab3 #order-tab0 {
+  padding-bottom: 100px;
+}
+#account .panel.main #tab3 #order-tab1 {
+  padding-bottom: 100px;
+}
+#account .panel.main #tab3 #order-tab2 {
+  padding-bottom: 100px;
 }

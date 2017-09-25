@@ -25,6 +25,7 @@ block content
             .auth 实名验证
             .auth 手机验证
             .auth 邮箱验证
+        a.appeal-list(href="/appeal-list") 申诉列表
         a.reset-password(href="/reset-password") 修改密码
     .panel.panel-default.main
       .panel-heading
@@ -35,6 +36,8 @@ block content
             a(data-toggle='tab', href='#tab1') 资金管理
           li
             a(data-toggle='tab', href='#tab2') 我的收藏
+          li
+            a(data-toggle='tab', href='#tab3') 个人订单
       .panel-body
         .tab-content
           #tab0.tab-pane.fade.in.active
@@ -208,6 +211,117 @@ block content
                         .badge-icon.licence
                         .badge-icon.derivative
                 a.delete 删除
-
+          #tab3.tab-pane.fade
+            .stat
+              h3 购买记录:<strong>27</strong>
+              h3 出售记录:<strong>7</strong>
+            ul.nav.nav-tabs
+              li.active
+                a(data-toggle='tab', href='#order-tab0') 购买记录
+              li
+                a(data-toggle='tab', href='#order-tab1') 出售记录
+              li
+                a(data-toggle='tab', href='#order-tab2') 充值记录
+            .tab-content
+              #order-tab0.tab-pane.fade.in.active
+                table
+                  thead
+                    tr
+                      th 版权名称
+                      th 订单号
+                      th 作品价格
+                      th 交割书价格
+                      th 交易总价
+                      th 订单状态
+                      th 操作
+                  tbody
+                    tr
+                      td 规范与设计建议
+                      td 20924023
+                      td ¥59
+                      td ¥59
+                      td ¥599
+                      td 未付款
+                      td
+                        a(href="#") 去付款
+                    tr
+                      td 打造一个更健康的内容生态平台
+                      td 20924023
+                      td ¥599
+                      td ¥59
+                      td ¥599
+                      td 已付款
+                    tr
+                      td 规范与设计建议
+                      td 20924023
+                      td ¥599
+                      td ¥59
+                      td ¥599
+                      td 已付款
+                    tr
+                      td 小鱼儿花无缺
+                      td 20924023
+                      td ¥599
+                      td ¥59
+                      td ¥599
+                      td 已付款
+                    tr
+                      td 规范与设计建议
+                      td 20924023
+                      td ¥599
+                      td ¥59
+                      td ¥599
+                      td 已付款
+              #order-tab1.tab-pane.fade
+                table
+                  thead
+                    tr
+                      th 版权名称
+                      th 订单号
+                      th 作品价格
+                      th 交割书价格
+                      th 交易总价
+                      th 订单状态
+                      th 操作
+                  tbody
+                    tr
+                      td 规范与设计建议
+                      td 20924023
+                      td ¥59
+                      td ¥59
+                      td ¥599
+                      td 未付款
+                      td
+                        a(href="#") 修改价格
+                    tr
+                      td 打造一个更健康的内容生态平台
+                      td 20924023
+                      td ¥599
+                      td ¥59
+                      td ¥599
+                      td 已付款
+                    tr
+                      td 规范与设计建议
+                      td 20924023
+                      td ¥599
+                      td ¥59
+                      td ¥599
+                      td 已付款
+                    tr
+                      td 小鱼儿花无缺
+                      td 20924023
+                      td ¥599
+                      td ¥59
+                      td ¥599
+                      td 已付款
+                    tr
+                      td 规范与设计建议
+                      td 20924023
+                      td ¥599
+                      td ¥59
+                      td ¥599
+                      td 已付款
+              #order-tab2.tab-pane.fade
+              
 block scripts
   script(type='text/javascript', src='/static/js/distpicker.min.js')

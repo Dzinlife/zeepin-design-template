@@ -1,0 +1,118 @@
+@import 'variables.styl'
+
+#appeal-list
+  padding-bottom 120px
+  .panel.top
+    margin-top 68px
+    .panel-body
+      display flex
+      align-items center
+      height 96px
+      padding 0 36px
+      h1
+        margin 0
+        font-size 24px
+        font-weight 300
+      a
+        margin-left auto
+  .panel.content
+    margin-top 32px
+    .panel-body
+      padding-bottom 120px
+  table
+    width 850px
+    margin 0 auto
+    margin-top 24px
+    td, th
+      line-height 48px
+      padding 0 16px
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      max-width 200px
+      font-size 12px
+    th
+      color gray-light
+    td:not(:last-child)
+      color gray
+    td.text-danger
+      color #FF470D
+    a
+      color #469BFF
+      font-weight bold
+  #appeal-modal
+    .modal-dialog
+      width 436px
+    .modal-body
+      padding 0 44px
+      border-top 1px solid transparent
+      padding-bottom 48px
+    h3
+      font-size 20px
+      margin-top 50px
+      margin-bottom 42px
+      text-align center
+    button.close
+      position absolute
+      right 16px
+      top 16px
+      width 32px
+      height 32px
+      border-radius 50%
+      border 1px solid gray-lighter
+      opacity 1
+      background url("/static/imgs/close-cross.svg") no-repeat center
+      &:hover
+        background-color gray-lightest
+    form
+      width 288px
+    .label
+      font-size 14px
+      font-weight bold
+      color gray-light
+      padding 0
+      margin-bottom 10px
+      display block
+      text-align left
+    input
+      display block
+      width 100%
+      margin-bottom 20px
+    .text
+      font-size 12px
+      color gray-light
+    label.upload-file
+      margin-top 21px
+      height 32px
+      border-radius (@height/2)
+      position relative
+      top -1px
+      width 114px
+      line-height 30px
+      text-align center
+      border 1px solid brand-primary
+      font-size 12px
+      color gray
+      padding 0 12px
+      cursor pointer
+      font-weight normal
+      overflow hidden
+      text-overflow ellipsis
+      &:hover
+        background gray-lightest
+      &.disabled
+        cursor not-allowed
+      input
+        width 0.1px
+        height 0.1px
+        opacity 0
+        overflow hidden
+        position absolute
+        z-index -1
+    button.apply 
+      margin 0 auto
+      display block
+      margin-top 34px
+      width 138px
+    .text.rule
+      margin-top 38px

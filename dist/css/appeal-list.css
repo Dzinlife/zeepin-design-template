@@ -1,0 +1,148 @@
+#appeal-list {
+  padding-bottom: 120px;
+}
+#appeal-list .panel.top {
+  margin-top: 68px;
+}
+#appeal-list .panel.top .panel-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 96px;
+  padding: 0 36px;
+}
+#appeal-list .panel.top .panel-body h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+}
+#appeal-list .panel.top .panel-body a {
+  margin-left: auto;
+}
+#appeal-list .panel.content {
+  margin-top: 32px;
+}
+#appeal-list .panel.content .panel-body {
+  padding-bottom: 120px;
+}
+#appeal-list table {
+  width: 850px;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+#appeal-list table td,
+#appeal-list table th {
+  line-height: 48px;
+  padding: 0 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+  font-size: 12px;
+}
+#appeal-list table th {
+  color: #a1a9b2;
+}
+#appeal-list table td:not(:last-child) {
+  color: #768da7;
+}
+#appeal-list table td.text-danger {
+  color: #ff470d;
+}
+#appeal-list table a {
+  color: #469bff;
+  font-weight: bold;
+}
+#appeal-list #appeal-modal .modal-dialog {
+  width: 436px;
+}
+#appeal-list #appeal-modal .modal-body {
+  padding: 0 44px;
+  border-top: 1px solid transparent;
+  padding-bottom: 48px;
+}
+#appeal-list #appeal-modal h3 {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 42px;
+  text-align: center;
+}
+#appeal-list #appeal-modal button.close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #d2dbe6;
+  opacity: 1;
+  background: url("/static/imgs/close-cross.svg") no-repeat center;
+}
+#appeal-list #appeal-modal button.close:hover {
+  background-color: #e7ecf3;
+}
+#appeal-list #appeal-modal form {
+  width: 288px;
+}
+#appeal-list #appeal-modal .label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #a1a9b2;
+  padding: 0;
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+}
+#appeal-list #appeal-modal input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#appeal-list #appeal-modal .text {
+  font-size: 12px;
+  color: #a1a9b2;
+}
+#appeal-list #appeal-modal label.upload-file {
+  margin-top: 21px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  top: -1px;
+  width: 114px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #12ce83;
+  font-size: 12px;
+  color: #768da7;
+  padding: 0 12px;
+  cursor: pointer;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#appeal-list #appeal-modal label.upload-file:hover {
+  background: #e7ecf3;
+}
+#appeal-list #appeal-modal label.upload-file.disabled {
+  cursor: not-allowed;
+}
+#appeal-list #appeal-modal label.upload-file input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#appeal-list #appeal-modal button.apply {
+  margin: 0 auto;
+  display: block;
+  margin-top: 34px;
+  width: 138px;
+}
+#appeal-list #appeal-modal .text.rule {
+  margin-top: 38px;
+}

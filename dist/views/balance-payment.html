@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>智品 - Zeepin</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/balance-payment.css">
+  </head>
+  <body id="balance-payment">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="/"><img src="/static/imgs/logo.svg"></a></div>
+            <ul class="nav navbar-nav tabs">
+              <li><a href="/staging-area">
+                  <div class="icon staging-area"></div>暂存区</a></li>
+              <li><a href="/copyright-upload">
+                  <div class="icon copyright-protect"></div>版权保护</a></li>
+              <li class="market"><a href="/copyright-market">
+                  <div class="icon copyright-market"></div>交易市场</a></li>
+            </ul>
+            <ul class="nav navbar-nav account">
+              <li class="cart"><a class="navbar-link" href="/cart">
+                  <div class="icon cart"></div>购物车 <span>(40)</span></a></li>
+              <li class="notification"><a class="navbar-link" href="/register">
+                  <div class="icon notification highlight"></div>提醒</a></li>
+              <li class="divider"></li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                  <div class="navbar-avatar" style="background-image: url('/static/imgs/thumbnail.png');"></div></a>
+                <ul class="dropdown-menu">
+                  <div class="dropdown-heading">
+                    <div class="column-left">
+                      <div class="username">这是个比较长的用户名</div>
+                      <div class="email">dzinlifedzin@me.com</div>
+                    </div>
+                    <div class="auth-badge"></div>
+                  </div>
+                  <li class="divider"></li>
+                  <li><a href="#">
+                      <div class="icon account"></div>个人资料</a></li>
+                  <li><a href="#"> 
+                      <div class="icon transaction"></div>交易记录</a></li>
+                  <li><a href="#">
+                      <div class="icon fav"></div>我的收藏</a></li>
+                  <li><a href="#">
+                      <div class="icon balance"></div>账户余额</a></li>
+                  <li class="divider footer"></li>
+                  <li><a href="#">
+                      <div class="icon logout"></div>登出</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    <div class="width-limit">
+      <div class="card billing">
+        <div class="card-body">
+          <div class="payment-method-wrapper">
+            <div class="payment-success-wrapper">
+              <h3>你的交易已提交成功</h3>
+              <div class="text">申请费用 ¥29</div>
+            </div>
+            <label class="payment-method alipay">
+              <input type="radio" checked name="payment-method">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="icon alipay"></div>
+                  <div class="column-right">
+                    <h5>支付宝支付</h5>
+                    <div class="description">支付宝会扣除1%的手续费</div>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="total-text">您选择的方式是余额支付，应付金额：</div>
+          <div class="total">1,399</div>
+          <button class="btn btn-sm btn-primary submit">结算</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="payment-password-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button" data-dismiss="modal"></button>
+            <h3>输入支付密码</h3><a class="go-to-setting" href="#">您可能还未设置支付密码，请点击这里去设置</a>
+            <div class="input-wrapper">
+              <div class="input-label">支付密码：</div>
+              <input type="password">
+            </div>
+            <button class="btn btn-sm btn-primary ok" data-dismiss="modal">确定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="website-footer">
+      <div class="width-limit">
+        <div class="website-footer-left-column">
+          <div class="website-footer-logo-area">
+            <div class="website-footer-logo"><img src="/static/imgs/logo-footer.svg"><span class="website-footer-sologan">区块链版权保护与交易</span></div>
+          </div>
+          <div class="website-footer-icp">沪ICP备16040562号-1</div>
+          <div class="website-footer-copyright">© 2016-2017 Zeepin.com. All rights reserved. 智品忘行空  版权所有 保留一切权利</div>
+        </div>
+        <div class="website-footer-right-column">
+          <div class="website-footer-links"><a href="#">服务条款</a><a href="#">联系我们</a><a href="#">团队博客</a><a href="#">关于智品</a></div>
+          <div class="website-footer-counter"><span class="copyright-counter-number">302,153</span>copyrights protected</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script>$('#payment-password-modal').modal('show')</script>
+  </body>
+</html>

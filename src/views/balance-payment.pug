@@ -1,0 +1,50 @@
+extends ./layouts/main.pug
+
+block locals
+  - var pid = 'balance-payment'
+
+block styles
+  link(rel='stylesheet', type='text/css', href='/static/css/balance-payment.css')
+
+block header
+  include ./components/header.pug
+  +header('logined')
+
+block footer
+  include ./components/footer.pug
+  
+block content
+  .width-limit
+    .card.billing
+      .card-body
+        .payment-method-wrapper
+          .payment-success-wrapper
+            h3 你的交易已提交成功
+            .text 申请费用 ¥29
+          label.payment-method.alipay
+            input(type="radio" checked name="payment-method")
+            .panel.panel-default
+              .panel-body
+                .icon.alipay
+                .column-right
+                  h5 支付宝支付
+                  .description 支付宝会扣除1%的手续费
+      .card-footer
+        .total-text 您选择的方式是余额支付，应付金额：
+        .total 1,399
+        button.btn.btn-sm.btn-primary.submit 结算
+  #payment-password-modal.modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-body
+          button.close(type='button', data-dismiss='modal')
+          h3 输入支付密码
+          a.go-to-setting(href="#") 您可能还未设置支付密码，请点击这里去设置
+          .input-wrapper
+            .input-label 支付密码：
+            input(type="password")
+          button.btn.btn-sm.btn-primary.ok(data-dismiss='modal') 确定
+block scripts
+  script.
+    $('#payment-password-modal').modal('show')
+

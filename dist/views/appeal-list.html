@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>智品 - Zeepin</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/appeal-list.css">
+  </head>
+  <body id="appeal-list">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand" href="/"><img src="/static/imgs/logo.svg"></a></div>
+            <ul class="nav navbar-nav tabs">
+              <li><a href="/staging-area">
+                  <div class="icon staging-area"></div>暂存区</a></li>
+              <li><a href="/copyright-upload">
+                  <div class="icon copyright-protect"></div>版权保护</a></li>
+              <li class="market"><a href="/copyright-market">
+                  <div class="icon copyright-market"></div>交易市场</a></li>
+            </ul>
+            <ul class="nav navbar-nav account">
+              <li class="cart"><a class="navbar-link" href="/cart">
+                  <div class="icon cart"></div>购物车 <span>(40)</span></a></li>
+              <li class="notification"><a class="navbar-link" href="/register">
+                  <div class="icon notification highlight"></div>提醒</a></li>
+              <li class="divider"></li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                  <div class="navbar-avatar" style="background-image: url('/static/imgs/thumbnail.png');"></div></a>
+                <ul class="dropdown-menu">
+                  <div class="dropdown-heading">
+                    <div class="column-left">
+                      <div class="username">这是个比较长的用户名</div>
+                      <div class="email">dzinlifedzin@me.com</div>
+                    </div>
+                    <div class="auth-badge"></div>
+                  </div>
+                  <li class="divider"></li>
+                  <li><a href="#">
+                      <div class="icon account"></div>个人资料</a></li>
+                  <li><a href="#"> 
+                      <div class="icon transaction"></div>交易记录</a></li>
+                  <li><a href="#">
+                      <div class="icon fav"></div>我的收藏</a></li>
+                  <li><a href="#">
+                      <div class="icon balance"></div>账户余额</a></li>
+                  <li class="divider footer"></li>
+                  <li><a href="#">
+                      <div class="icon logout"></div>登出</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    <div class="width-limit">
+      <div class="panel panel-default top">
+        <div class="panel-body">
+          <h1>申诉列表</h1><a href="/account">返回个人中心</a>
+        </div>
+      </div>
+      <div class="panel panel-default content">
+        <div class="panel-body">
+          <table>
+            <thead>
+              <tr>
+                <th>申诉作品</th>
+                <th>申诉人</th>
+                <th>申诉描述</th>
+                <th>申诉内容</th>
+                <th>联系人</th>
+                <th>联系电话</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>规范与设计建议</td>
+                <td>天妇罗</td>
+                <td>作品已侵权需要处理</td>
+                <td><a href="#">查看</a></td>
+                <td>丹尼</td>
+                <td>13720388832</td>
+                <td><strong>已过期</strong></td>
+              </tr>
+              <tr>
+                <td>规范与设计建议</td>
+                <td>天妇罗</td>
+                <td>作品已侵权需要处理</td>
+                <td><a href="#">查看</a></td>
+                <td>丹尼</td>
+                <td>13720388832</td>
+                <td><a href="#">举证</a><strong>已过期</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="appeal-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button" data-dismiss="modal"></button>
+            <h3>申诉说明</h3>
+            <form>
+              <div class="label">取证作品链接</div>
+              <input>
+              <div class="label">取证作品说明</div>
+              <input>
+              <div class="label">附件权利声明</div>
+              <div class="text">如果有相应文件能够证明该版权存在问题，请上传证明文件，可以是时间戳、证书、截图等，我们会通过你提供的证据进行审核</div>
+              <label class="upload-file">上传说明文件
+                <input type="file">
+              </label>
+            </form>
+            <button class="btn-sm btn btn-primary apply">提交举证</button>
+            <div class="text rule">
+              《要求删除或断开链接侵权网络内容的通知》填写说明<br>
+              一、《要求恢复被删除或断开链接的网络内容的说明》系根据我国《信息网络传播权保护条例》的有关规定及“Zeepin”用户规则而制定的通知模板，以供“Zeepin”用户使用。<br>
+              二、通知中带“*”的栏目为必填事项。<br>
+              三、“侵权内容”，指权利人认为侵犯其信息网络传播权或者删除改变其权利管理电子信息的作品、表演、录音录像制品。<br>
+              四、“侵权内容网页地址”，指权利人提出的侵权作品所在的具体网络地址。即：浏览器顶部地址框中显示的信息。该信息对应网络内容的位置。<br>
+              五、“侵权事实及证明材料”，侵权事实，指侵犯权利人信息网络传播权或者删除改变其权利管理电子信息的客观情况。证明材料包括侵权的物证、书证及著作权人的权属证明等。权属证明包括著作权登记证书（号）、首次出版的出版物版权页、授权证明、代理人授权委托书等证明文件。填写证明材料应以附件的形式提供证明性文件的原件或复印件。<br>
+              六、“通知要求”，指发出本通知的一方向接受通知一方提出的需要履行的具体事项。包括立即删除或断开链接侵权网络内容等事项。<br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="website-footer">
+      <div class="width-limit">
+        <div class="website-footer-left-column">
+          <div class="website-footer-logo-area">
+            <div class="website-footer-logo"><img src="/static/imgs/logo-footer.svg"><span class="website-footer-sologan">区块链版权保护与交易</span></div>
+          </div>
+          <div class="website-footer-icp">沪ICP备16040562号-1</div>
+          <div class="website-footer-copyright">© 2016-2017 Zeepin.com. All rights reserved. 智品忘行空  版权所有 保留一切权利</div>
+        </div>
+        <div class="website-footer-right-column">
+          <div class="website-footer-links"><a href="#">服务条款</a><a href="#">联系我们</a><a href="#">团队博客</a><a href="#">关于智品</a></div>
+          <div class="website-footer-counter"><span class="copyright-counter-number">302,153</span>copyrights protected</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script>
+      $('#appeal-modal').modal('show')
+      var labelUploadFile = document.querySelector('#appeal-modal label.upload-file')
+      labelUploadFile.querySelector('input').onchange = function(){
+        labelUploadFile.innerText = this.files[0].name
+      }
+    </script>
+  </body>
+</html>
